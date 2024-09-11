@@ -1,0 +1,73 @@
+import './Video.css';
+import {Link} from 'react-router-dom';
+function Video() {
+  return (
+    <>
+      <video
+        id='backgroundvideo'
+        style={{width: '100%'}}
+        autoPlay
+        muted
+        loop>
+        <source
+          src='./src/assets/videos/2016 W Gloria Ln_V1.mp4'
+          type='video/mp4'
+        />
+      </video>
+      <div
+        className='text-container d-none d-md-block '
+        style={{marginTop: '100px'}}>
+        <h1
+          className=' text-white'
+          style={{letterSpacing: '10px'}}>
+          A REAL ESTATE
+          <br />
+          <b style={{fontSize: '60px'}}>MEDIA COMPANY</b>
+        </h1>
+        <h4
+          className=' text-white'
+          style={{fontSize: '18px'}}>
+          THE VALLEY'S PREMIER REAL ESTATE MARKETING SOLUTION
+        </h4>
+        <button
+          className='btn btn-light'
+          style={{marginTop: '100px', borderRadius: '0px', padding: '10px 30px'}}>
+          <Link
+            to='https://spiro.media/'
+            target='_blank'
+            style={{textDecoration: 'none', color: 'black'}}>
+            SCHEDULE NOW
+          </Link>
+        </button>
+      </div>
+      <div
+        className='text-container d-md-none '
+        style={{marginTop: '100px'}}>
+        <h1
+          className=' text-white'
+          style={{letterSpacing: '10px'}}>
+          A REAL ESTATE
+          <br />
+          <b style={{fontSize: '30px'}}>MEDIA COMPANY</b>
+        </h1>
+        <h4
+          className=' text-white'
+          style={{fontSize: '13px'}}>
+          THE VALLEY'S PREMIER REAL ESTATE MARKETING SOLUTION
+        </h4>
+        <button
+          className='btn btn-light'
+          style={{marginTop: '100px', borderRadius: '0px', padding: '9px 20px'}}>
+          <Link
+            to='https://spiro.media/'
+            target='_blank'
+            style={{textDecoration: 'none', color: 'black'}}>
+            SCHEDULE NOW
+          </Link>
+        </button>
+      </div>
+    </>
+  );
+}
+
+export default Video;

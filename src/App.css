@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    font-size: 16px;
+    font-family: "Nexa";
+
+}
+
+.firstphoto{
+    width: 100%;
+    padding: 2%;
+    height: 350px;
+    object-fit: cover;
+    border-radius : 25px;
+    background: none;
+}
+
+.firstphotoanother {
+    
+    margin-top: 10px;
+    width: 100%;
+    padding: 2%;
+    height: 300px;
+    object-fit: cover;
+    border: none;
+        background: none;
+        cursor: pointer;
+}
+
+.table td {
+    padding: 3px !important; 
+    
+}
+
+
+
+
+
+.cardsservices:hover {
+    border: 1px solid #ffffff;
+}
+.cardsservicesanother:hover {
+    border: 1px solid #ffffff;
+}
+
+
+
+
+
+@font-face {
+    font-family: "Nexa";
+    src: url("./assets/fonts/Nexa-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Nexa Heavy";
+    src: url("./assets/fonts/Nexa-Heavy.ttf") format("truetype");
+}
+
+
+
+
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    
+}
+
+
+
+
+
+
