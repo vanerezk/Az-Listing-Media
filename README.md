@@ -18,5 +18,10 @@ Welcome to my Az Listing Media cutting-edge web application that empowers real e
 
 ## Deploy
 
+## Frames
+
+
+![Untitled-1](https://github.com/user-attachments/assets/5541469a-c986-4d87-9ba4-3e6b8fd569a0)
+
 
 
