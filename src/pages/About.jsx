@@ -37,7 +37,7 @@ function About() {
             <img
               src='./src/assets/photos/Twilight_28556 N 124th Dr-1.png'
               alt='about'
-              style={{width: '100%'}}
+              style={{width: '100%', borderRadius: '15px'}}
             />
           </div>
         </div>
@@ -58,7 +58,7 @@ function About() {
               <img
                 src='./src/assets/photos/Realty_ONE_Group_Logo_Black_Text.png'
                 alt='about'
-                style={{height: '100px'}}
+                style={{height: '120px'}}
               />
             </div>
             <div

@@ -9,7 +9,7 @@ function Faq() {
             letterSpacing: '5px',
             color: 'black',
             textAlign: 'center',
-            marginTop: '50px',
+
             marginBottom: '50px',
           }}>
           FREQUENTLY ASKED QUESTIONS
