@@ -71,7 +71,7 @@ function Pricings() {
       <Videopricings />
       {/*desktop view*/}
 
-      <div className='mx-auto w-100 p-5 text-center d-none d-md-block'>
+      <div className='mx-auto w-100  text-center d-none d-md-block'>
         {/* PHOTOGRAPHY */}
         <Card
           style={{
@@ -86,6 +86,7 @@ function Pricings() {
               <Card.Title
                 style={{
                   textAlign: 'center',
+                  marginTop: '70px',
 
                   fontSize: '28px',
                   letterSpacing: '10px',
@@ -229,137 +230,129 @@ function Pricings() {
                 />
               </Col>
             </Row>
-            <Row>
-              <h4>UPGRADE YOUR SHOOTINGS</h4>
-            </Row>
-            <Row>
-              <div className=' d-flex justify-content-center '>
-                <div className='d-none d-md-block'>
-                  <div>
-                    <Row style={{scale: '0.9'}}>
-                      <Col style={{paddingRight: '50px'}}>
-                        <Card
-                          style={{
-                            marginTop: '40px',
-                            borderRadius: '15px',
-                            marginBottom: '80px',
-                            boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
-                          }}>
-                          <Card.Img
-                            variant='top'
-                            src='./src/assets/photos/6822 W Amigo Dr_Drone-7.jpg'
-                            style={{
-                              padding: '20px',
-
-                              height: '19rem',
-                              objectFit: 'cover',
-                              borderRadius: '30px',
-                            }}
-                          />
-                          <Card.Body className='text-center'>
-                            <Card.Title
-                              style={{
-                                letterSpacing: '2px',
-                                marginTop: '-10px',
-                                fontWeight: 'bold',
-                                marginBottom: '10px',
-                              }}>
-                              DRONE PHOTOGRAPHY
-                            </Card.Title>
-                          </Card.Body>
-                        </Card>
-                      </Col>
-                      <Col style={{paddingRight: '50px'}}>
-                        <Card
-                          style={{
-                            marginTop: '40px',
-                            borderRadius: '15px',
-                            marginBottom: '80px',
-                            boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
-                          }}>
-                          <Card.Img
-                            variant='top'
-                            src='./src/assets/photos/19312 W Puget Ave-29.jpg'
-                            style={{
-                              padding: '20px',
-                              height: '19rem',
-                              objectFit: 'cover',
-                              borderRadius: '30px',
-                            }}
-                          />
-                          <Card.Body className='text-center'>
-                            <Card.Title
-                              style={{
-                                letterSpacing: '2px',
-                                marginTop: '-10px',
-                                fontWeight: 'bold',
-                                marginBottom: '10px',
-                              }}>
-                              TWILIGHT PHOTOGRAPHY
-                            </Card.Title>
-                          </Card.Body>
-                        </Card>
-                      </Col>
-                      <Col>
-                        <Card
-                          style={{
-                            marginTop: '40px',
-                            borderRadius: '15px',
-                            marginBottom: '80px',
-                            boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
-                          }}>
-                          <Card.Img
-                            variant='top'
-                            src='./src/assets/photos/19312 W Puget Ave-29.jpg'
-                            style={{
-                              padding: '20px',
-                              height: '19rem',
-                              objectFit: 'cover',
-                              borderRadius: '30px',
-                            }}
-                          />
-                          <Card.Body className='text-center'>
-                            <Card.Title
-                              style={{
-                                letterSpacing: '2px',
-                                marginTop: '-10px',
-                                fontWeight: 'bold',
-                                marginBottom: '10px',
-                              }}>
-                              SOMETHING ELSE
-                            </Card.Title>
-                          </Card.Body>
-                        </Card>
-                      </Col>
-                    </Row>
-
-                    <div
-                      className='text-center d-none d-md-block '
-                      style={{marginBottom: '60px'}}>
-                      <button
-                        className='btn  mx-auto '
-                        style={{
-                          borderRadius: '0px',
-                          backgroundColor: '#EDEDED',
-                          padding: '10px 30px',
-                          letterSpacing: '2px',
-                          fontWeight: 'bold',
-                          boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
-                        }}>
-                        <Link
-                          to='https://spiro.media/'
-                          target='_blank'
-                          style={{textDecoration: 'none', color: 'black', padding: '10px'}}>
-                          SCHEDULE NOW
-                        </Link>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Row>
           </Card.Body>
         </Card>
+        <div className='text-center container-fluid p-5 bg-light'>
+          <h4 className='text-center mt-5'>UPGRADE YOUR SHOOTINGS</h4>
+
+          <div className=' text-center container      '>
+            <Row style={{scale: '0.8'}}>
+              <Col style={{paddingRight: '70px'}}>
+                <Card
+                  style={{
+                    borderRadius: '15px',
+
+                    boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
+                  }}>
+                  <Card.Img
+                    variant='top'
+                    src='./src/assets/photos/6822 W Amigo Dr_Drone-7.jpg'
+                    style={{
+                      padding: '20px',
+
+                      height: '19rem',
+                      objectFit: 'cover',
+                      borderRadius: '30px',
+                    }}
+                  />
+                  <Card.Body className='text-center'>
+                    <Card.Title
+                      style={{
+                        letterSpacing: '2px',
+                        marginTop: '-10px',
+                        fontWeight: 'bold',
+                        marginBottom: '10px',
+                      }}>
+                      AERIAL PHOTOGRAPHY
+                    </Card.Title>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col style={{paddingRight: '70px'}}>
+                <Card
+                  style={{
+                    borderRadius: '15px',
+
+                    boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
+                  }}>
+                  <Card.Img
+                    variant='top'
+                    src='./src/assets/photos/19312 W Puget Ave-29.jpg'
+                    style={{
+                      padding: '20px',
+                      height: '19rem',
+                      objectFit: 'cover',
+                      borderRadius: '30px',
+                    }}
+                  />
+                  <Card.Body className='text-center'>
+                    <Card.Title
+                      style={{
+                        letterSpacing: '2px',
+                        marginTop: '-10px',
+                        fontWeight: 'bold',
+                        marginBottom: '10px',
+                      }}>
+                      TWILIGHT PHOTOGRAPHY
+                    </Card.Title>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col>
+                <Card
+                  style={{
+                    borderRadius: '15px',
+
+                    boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
+                  }}>
+                  <Card.Img
+                    variant='top'
+                    src='./src/assets/photos/19312 W Puget Ave-29.jpg'
+                    style={{
+                      padding: '20px',
+                      height: '19rem',
+                      objectFit: 'cover',
+                      borderRadius: '30px',
+                    }}
+                  />
+                  <Card.Body className='text-center'>
+                    <Card.Title
+                      style={{
+                        letterSpacing: '2px',
+                        marginTop: '-10px',
+                        fontWeight: 'bold',
+                        marginBottom: '10px',
+                      }}>
+                      ENHANCEMENTS
+                    </Card.Title>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </div>
+          <div
+            className='text-center d-none d-md-block '
+            style={{marginBottom: '40px', marginTop: '40px'}}>
+            <button
+              className='btn  mx-auto '
+              style={{
+                borderRadius: '0px',
+
+                backgroundColor: '#EDEDED',
+                padding: '10px 30px',
+                letterSpacing: '2px',
+                fontWeight: 'bold',
+                boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
+              }}>
+              <Link
+                to='https://spiro.media/'
+                target='_blank'
+                style={{textDecoration: 'none', color: 'black', padding: '10px'}}>
+                SCHEDULE NOW
+              </Link>
+            </button>
+          </div>
+        </div>
 
         <br />
         {/* VIDEOGRAPHY */}

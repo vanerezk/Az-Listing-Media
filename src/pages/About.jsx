@@ -1,5 +1,5 @@
 import Faq from '../components/Faq/Faq';
-import Row from 'react-bootstrap/Row';
+
 function About() {
   return (
     <>
@@ -43,41 +43,37 @@ function About() {
         </div>
 
         <div
-          className='mx-auto d-none d-md-block mt-5 mb-5'
-          style={{width: '80%', height: '100px'}}
+          className='mx-auto d-none d-md-block mt-5  bg-light'
+          style={{width: '100%', height: '150px'}}
           id='clients'>
-          <Row>
-            <div className='col-lg-3 col-md-3 col-sm-12'>
-              <img
-                src='./src/assets/photos/Pulte_Group_updated_logo.png'
-                alt='about'
-                style={{height: '100px'}}
-              />
-            </div>
-            <div className='col-lg-3 col-md-3 col-sm-12'>
-              <img
-                src='./src/assets/photos/Realty_ONE_Group_Logo_Black_Text.png'
-                alt='about'
-                style={{height: '120px'}}
-              />
-            </div>
-            <div
-              className='col-lg-3 col-md-3 col-sm-12'
-              style={{marginTop: '20px'}}>
-              <img
-                src='./src/assets/photos/REAX_BIG.png'
-                alt='about'
-                style={{height: '50px'}}
-              />
-            </div>
-            <div className='col-lg-3 col-md-3 col-sm-12'>
-              <img
-                src='./src/assets/photos/Noble_Logo_Final_Blk.png'
-                alt='about'
-                style={{height: '100px'}}
-              />
-            </div>
-          </Row>
+          <div style={{display: 'inline-block', paddingRight: '50px'}}>
+            <img
+              src='./src/assets/photos/Pulte_Group_updated_logo.png'
+              alt='about'
+              style={{height: '100px'}}
+            />
+          </div>
+          <div style={{display: 'inline-block', paddingRight: '50px'}}>
+            <img
+              src='./src/assets/photos/Realty_ONE_Group_Logo_Black_Text.png'
+              alt='about'
+              style={{height: '150px'}}
+            />
+          </div>
+          <div style={{display: 'inline-block', marginTop: '20px', paddingRight: '50px'}}>
+            <img
+              src='./src/assets/photos/REAX_BIG.png'
+              alt='about'
+              style={{height: '40px'}}
+            />
+          </div>
+          <div style={{display: 'inline-block'}}>
+            <img
+              src='./src/assets/photos/Noble_Logo_Final_Blk.png'
+              alt='about'
+              style={{height: '100px'}}
+            />
+          </div>
         </div>
 
         <Faq />

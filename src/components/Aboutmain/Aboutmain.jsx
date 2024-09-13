@@ -1,5 +1,5 @@
 import Col from 'react-bootstrap/Col';
-import {Link} from 'react-router-dom';
+
 import Row from 'react-bootstrap/Row';
 
 function Abooutmain() {
