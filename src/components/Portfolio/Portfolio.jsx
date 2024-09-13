@@ -65,8 +65,9 @@ function Portfolio() {
         />
         <Carousel
           responsive={responsive}
+          interval={5000}
           infinite={true}
-          autoPlay={false}
+          autoPlay={true}
           swipeable={true}
           draggable={true}
           renderDotsOutside={true}

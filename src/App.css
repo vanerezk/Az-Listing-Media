@@ -49,6 +49,20 @@ div.before-after-slider img {
 
 
 
+.react-multiple-carousel__arrow--left {
+    background-color: black !important;
+    color: white !important;
+    
+    
+}
+
+.react-multiple-carousel__arrow--right {
+    background-color: black !important;
+    color: white !important;
+    
+    
+}
+
 
 
 @font-face {

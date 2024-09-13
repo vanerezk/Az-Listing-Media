@@ -34,7 +34,7 @@ function Reviews() {
         </h1>
 
         <Carousel
-          interval={5000}
+          interval={4000}
           variant='dark'
           autoPlay
           infiniteLoop

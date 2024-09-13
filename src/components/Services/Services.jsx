@@ -1,6 +1,10 @@
 import {Card, Col, Row} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
+import listingmedia from '../../assets/photos/Home Example-1.jpg';
+import aerialmedia from '../../assets/photos/6822 W Amigo Dr_Drone-7.jpg';
+import marketingvideos from '../../assets/photos/19312 W Puget Ave-29.jpg';
+import virtualtour from '../../assets/photos/Dining Room-1.jpg';
 
 function Services() {
   return (
@@ -40,7 +44,7 @@ function Services() {
                   }}>
                   <Card.Img
                     variant='top'
-                    src='./src/assets/photos/Home Example-1.jpg'
+                    src={listingmedia}
                     style={{
                       padding: '20px',
                       width: '18rem',
@@ -78,7 +82,7 @@ function Services() {
                   }}>
                   <Card.Img
                     variant='top'
-                    src='./src/assets/photos/6822 W Amigo Dr_Drone-7.jpg'
+                    src={aerialmedia}
                     style={{
                       padding: '20px',
                       width: '18rem',
@@ -116,7 +120,7 @@ function Services() {
                   }}>
                   <Card.Img
                     variant='top'
-                    src='./src/assets/photos/19312 W Puget Ave-29.jpg'
+                    src={marketingvideos}
                     style={{
                       padding: '20px',
                       width: '18rem',
@@ -153,7 +157,7 @@ function Services() {
                   }}>
                   <Card.Img
                     variant='top'
-                    src='./src/assets/photos/Dining Room-1.jpg'
+                    src={virtualtour}
                     style={{
                       padding: '20px',
                       width: '18rem',
@@ -228,7 +232,7 @@ function Services() {
                 }}>
                 <Card.Img
                   variant='top'
-                  src='./src/assets/photos/6822 W Amigo Dr-26.jpg'
+                  src={listingmedia}
                   style={{padding: '20px', height: '18rem'}}
                 />
                 <Card.Body className='text-center'>
@@ -260,7 +264,7 @@ function Services() {
                 }}>
                 <Card.Img
                   variant='top'
-                  src='./src/assets/photos/6822 W Amigo Dr_Drone-7.jpg'
+                  src={aerialmedia}
                   style={{padding: '20px', height: '18rem'}}
                 />
                 <Card.Body className='text-center'>
@@ -291,7 +295,7 @@ function Services() {
                 }}>
                 <Card.Img
                   variant='top'
-                  src='./src/assets/photos/Dining Room-1.jpg'
+                  src={marketingvideos}
                   style={{padding: '20px', height: '18rem'}}
                 />
                 <Card.Body className='text-center '>
@@ -322,7 +326,7 @@ function Services() {
                 }}>
                 <Card.Img
                   variant='top'
-                  src='./src/assets/photos/Dining Room-1.jpg'
+                  src={virtualtour}
                   style={{padding: '20px', height: '18rem'}}
                 />
                 <Card.Body className='text-center '>
