@@ -16,24 +16,12 @@ function Portfolio() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const images = [
-    {
-      image: firstphoto,
-    },
-    {
-      image: secondphoto,
-    },
-    {
-      image: thirdphoto,
-    },
-    {
-      image: fourthphoto,
-    },
-    {
-      image: fifthphoto,
-    },
-    {
-      image: sixthphoto,
-    },
+    {firstphoto},
+    {secondphoto},
+    {thirdphoto},
+    {fourthphoto},
+    {fifthphoto},
+    {sixthphoto},
   ];
 
   const handleImageClick = (image) => {
