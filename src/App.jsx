@@ -6,6 +6,7 @@ import Pricings from './pages/Pricings';
 import './App.css';
 import {Routes, Route} from 'react-router-dom';
 import Header from './components/Header/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/Footer/Footer';
 
 function App() {
