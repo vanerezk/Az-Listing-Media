@@ -247,7 +247,7 @@ function Listings() {
                 }}>
                 <Card.Img
                   variant='top'
-                  src='./src/assets/photos/Liing Room 1.jpg'
+                  src={photographyphoto}
                   style={{padding: '20px', width: '18rem', height: '18rem', objectFit: 'cover'}}
                 />
                 <Card.Body className='text-center'>
@@ -275,7 +275,7 @@ function Listings() {
                 }}>
                 <Card.Img
                   variant='top'
-                  src='./src/assets/photos/17655 W Model Creek Rd-6.jpg'
+                  src={aerialphoto}
                   style={{padding: '20px', width: '18rem', height: '18rem', objectFit: 'cover'}}
                 />
                 <Card.Body className='text-center'>
@@ -303,7 +303,7 @@ function Listings() {
                 }}>
                 <Card.Img
                   variant='top'
-                  src='./src/assets/photos/42 E Interlacken Dr-36.jpg'
+                  src={videographyphoto}
                   style={{padding: '20px', width: '18rem', height: '18rem', objectFit: 'cover'}}
                 />
                 <Card.Body className='text-center '>
@@ -331,7 +331,7 @@ function Listings() {
                 }}>
                 <Card.Img
                   variant='top'
-                  src='./src/assets/photos/19312 W Puget Ave-51.jpg'
+                  src={virtualtourphoto}
                   style={{padding: '20px', width: '18rem', height: '18rem', objectFit: 'cover'}}
                 />
                 <Card.Body className='text-center '>
@@ -359,7 +359,7 @@ function Listings() {
                 }}>
                 <Card.Img
                   variant='top'
-                  src='./src/assets/photos/floorplan-with-a-garage.png'
+                  src={floorplansphoto}
                   style={{padding: '20px', width: '18rem', height: '18rem', objectFit: 'cover'}}
                 />
                 <Card.Body className='text-center '>
