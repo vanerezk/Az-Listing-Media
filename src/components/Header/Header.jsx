@@ -4,11 +4,10 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import logo from '../../assets/logo.png';
+
 import './Header.css';
 
 function Header() {
-  const logoaz = logo;
   return (
     <>
       <div style={{position: 'fixed', top: '0', width: '100%', zIndex: '999'}}>
@@ -128,7 +127,7 @@ function Header() {
               to='/'
               className='navbar-brand'>
               <img
-                src={logoaz}
+                src='https://media.discordapp.net/attachments/1270138186823372920/1270139471370784779/AZ_Listing_Media_Logo_Long.png?ex=66e55ed0&is=66e40d50&hm=969efb722b07b26c11e4b582cd8a14bb87052d17a7da8dff186c62a82efb79e4&=&format=webp&quality=lossless&width=1440&height=219'
                 width='250'
                 alt='logo'
                 className='logo'
