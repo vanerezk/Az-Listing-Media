@@ -3,8 +3,13 @@ import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel';
-
 import {useNavigate} from 'react-router-dom';
+import photographyphoto from '../../assets/photos/6822 W Amigo Dr-26.jpg';
+import aerialphoto from '../../assets/photos/17655 W Model Creek Rd-6.jpg';
+import videographyphoto from '../../assets/photos/42 E Interlacken Dr-36.jpg';
+import virtualtourphoto from '../../assets/photos/19312 W Puget Ave-51.jpg';
+import floorplansphoto from '../../assets/photos/floorplan-with-a-garage.png';
+
 function Listings() {
   const navigate = useNavigate();
   const navigateToSection = () => {
@@ -16,6 +21,7 @@ function Listings() {
       }
     }, 100);
   };
+
   return (
     <>
       <div className='bg-light  mx-auto w-100'>
@@ -71,7 +77,7 @@ function Listings() {
                     </Card.Title>
                     <Card.Img
                       variant='top'
-                      src='./src/assets/photos/6822 W Amigo Dr-26.jpg'
+                      src={photographyphoto}
                       className='mx-auto'
                       style={{height: '350px', width: '100%', objectFit: 'cover', padding: '20px'}}
                     />
@@ -97,7 +103,7 @@ function Listings() {
                     </Card.Title>
                     <Card.Img
                       variant='top'
-                      src='./src/assets/photos/17655 W Model Creek Rd-6.jpg'
+                      src={aerialphoto}
                       className='mx-auto'
                       style={{height: '350px', width: '100%', objectFit: 'cover', padding: '20px'}}
                     />
@@ -133,7 +139,7 @@ function Listings() {
                     </Card.Title>
                     <Card.Img
                       variant='top'
-                      src='./src/assets/photos/42 E Interlacken Dr-36.jpg'
+                      src={videographyphoto}
                       className='mx-auto'
                       style={{height: '350px', width: '100%', objectFit: 'cover', padding: '20px'}}
                     />
@@ -159,7 +165,7 @@ function Listings() {
                       VIRTUAL TOURS
                     </Card.Title>
                     <Card.Img
-                      src='./src/assets/photos/19312 W Puget Ave-51.jpg'
+                      src={virtualtourphoto}
                       className='mx-auto'
                       style={{
                         height: '350px',
@@ -191,7 +197,7 @@ function Listings() {
                     </Card.Title>
                     <Card.Img
                       variant='top'
-                      src='./src/assets/photos/floorplan-with-a-garage.png'
+                      src={floorplansphoto}
                       className='mx-auto'
                       style={{
                         height: '350px',
