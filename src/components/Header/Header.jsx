@@ -9,6 +9,7 @@ import logo from '../../assets/AZ_Listing_Media_Logo_Long.png';
 import './Header.css';
 
 function Header() {
+  const logoaz = logo;
   return (
     <>
       <div style={{position: 'fixed', top: '0', width: '100%', zIndex: '999'}}>
@@ -128,7 +129,7 @@ function Header() {
               to='/'
               className='navbar-brand'>
               <img
-                src={logo}
+                src={logoaz}
                 width='250'
                 alt='logo'
                 className='logo'
