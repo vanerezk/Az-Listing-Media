@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import logo from '../../assets/AZ_Listing_Media_Logo_Long.png';
 
 import './Header.css';
 
@@ -127,7 +128,7 @@ function Header() {
               to='/'
               className='navbar-brand'>
               <img
-                src='./src/assets/AZ_Listing_Media_Logo_Long.png'
+                src={logo}
                 width='250'
                 alt='logo'
                 className='logo'
