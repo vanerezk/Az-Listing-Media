@@ -5,7 +5,6 @@
     font-style: normal;
     font-size: 16px;
     font-family: "Nexa";
-
 }
 
 .firstphoto{
@@ -54,12 +53,12 @@ div.before-after-slider img {
 
 @font-face {
     font-family: "Nexa";
-    src: url("./assets/fonts/Nexa-ExtraLight.ttf") format("truetype");
+    src: url("../src/assets/fonts/Nexa-ExtraLight.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Nexa Heavy";
-    src: url("./assets/fonts/Nexa-Heavy.ttf") format("truetype");
+    src: url("../src/assets/fonts/Nexa-Heavy.ttf") format("truetype");
 }
 
 
