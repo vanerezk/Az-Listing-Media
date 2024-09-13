@@ -1,4 +1,5 @@
 import {Container, Row, Col} from 'react-bootstrap';
+import logofooter from '../../assets/photos/AZ_Listing_Media.png';
 
 function Footer() {
   return (
@@ -53,7 +54,7 @@ function Footer() {
                 className='d-flex flex-column align-items-center '
                 style={{marginTop: '60px'}}>
                 <img
-                  src='./src/assets/photos/AZ_Listing_Media.png'
+                  src={logofooter}
                   style={{width: '100px', height: '100px'}}
                   alt='logo'
                 />
