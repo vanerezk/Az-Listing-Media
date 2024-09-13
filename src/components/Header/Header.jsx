@@ -8,6 +8,7 @@ import Col from 'react-bootstrap/Col';
 import './Header.css';
 
 function Header() {
+  const logo = './src/assets/AZ_Listing_Media_Logo_Long.png';
   return (
     <>
       <div style={{position: 'fixed', top: '0', width: '100%', zIndex: '999'}}>
@@ -127,7 +128,7 @@ function Header() {
               to='/'
               className='navbar-brand'>
               <img
-                src='./src/assets/AZ_Listing_Media_Logo_Long.png'
+                src={logo}
                 width='250'
                 alt='logo'
                 className='logo'
