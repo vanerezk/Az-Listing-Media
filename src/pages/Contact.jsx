@@ -1,5 +1,3 @@
-import Faq from '../components/Faq/Faq';
-import Row from 'react-bootstrap/Row';
 function Contact() {
   return (
     <>

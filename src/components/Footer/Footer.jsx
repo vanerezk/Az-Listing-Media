@@ -61,7 +61,7 @@ function Footer() {
                   <button
                     className='btn btn-light mx-3 d-flex justify-content-center align-items-center'
                     style={{
-                      border: '1px solid black',
+                      border: 'none',
 
                       padding: '10px',
                       width: '40px',
@@ -78,7 +78,7 @@ function Footer() {
                   <button
                     className='btn btn-light mx-3 d-flex justify-content-center align-items-center'
                     style={{
-                      border: '1px solid black',
+                      border: 'none',
 
                       padding: '10px',
                       width: '40px',
@@ -95,7 +95,7 @@ function Footer() {
                   <button
                     className='btn btn-light mx-3 d-flex justify-content-center align-items-center'
                     style={{
-                      border: '1px solid black',
+                      border: 'none',
 
                       padding: '10px',
                       width: '40px',
