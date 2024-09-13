@@ -4,11 +4,11 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import logo from '../../assets/AZ_Listing_Media_Logo_Long.png';
 
 import './Header.css';
 
 function Header() {
-  const logo = './src/assets/AZ_Listing_Media_Logo_Long.png';
   return (
     <>
       <div style={{position: 'fixed', top: '0', width: '100%', zIndex: '999'}}>
