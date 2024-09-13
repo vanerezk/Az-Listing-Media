@@ -15,14 +15,7 @@ function Portfolio() {
   const [modalShow, setModalShow] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const images = [
-    {firstphoto},
-    {secondphoto},
-    {thirdphoto},
-    {fourthphoto},
-    {fifthphoto},
-    {sixthphoto},
-  ];
+  const images = [firstphoto, secondphoto, thirdphoto, fourthphoto, fifthphoto, sixthphoto];
 
   const handleImageClick = (image) => {
     setSelectedImage(image);
