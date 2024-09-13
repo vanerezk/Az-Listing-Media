@@ -1,5 +1,6 @@
 import './Video.css';
 import {Link} from 'react-router-dom';
+import video from '../../assets/videos/2016 W Gloria Ln_V1.mp4';
 function Video() {
   return (
     <>
@@ -10,7 +11,7 @@ function Video() {
         muted
         loop>
         <source
-          src='./src/assets/videos/2016 W Gloria Ln_V1.mp4'
+          src={video}
           type='video/mp4'
         />
       </video>
