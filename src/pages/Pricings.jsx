@@ -71,7 +71,7 @@ function Pricings() {
       <Videopricings />
       {/*desktop view*/}
 
-      <div className='mx-auto w-100 p-5 text-center d-none d-md-block'>
+      <div className='mx-auto w-100  text-center d-none d-md-block'>
         {/* PHOTOGRAPHY */}
         <Card
           style={{
@@ -86,6 +86,7 @@ function Pricings() {
               <Card.Title
                 style={{
                   textAlign: 'center',
+                  marginTop: '70px',
 
                   fontSize: '28px',
                   letterSpacing: '10px',
@@ -231,12 +232,12 @@ function Pricings() {
             </Row>
           </Card.Body>
         </Card>
-        <div className='text-center mx-auto p-5 bg-light '>
-          <h4>UPGRADE YOUR SHOOTINGS</h4>
+        <div className='text-center container-fluid p-5 bg-light'>
+          <h4 className='text-center mt-5'>UPGRADE YOUR SHOOTINGS</h4>
 
-          <div className=' d-flex justify-content-center mx-auto '>
+          <div className=' text-center container      '>
             <Row style={{scale: '0.8'}}>
-              <Col style={{paddingRight: '50px'}}>
+              <Col style={{paddingRight: '70px'}}>
                 <Card
                   style={{
                     borderRadius: '15px',
@@ -267,7 +268,7 @@ function Pricings() {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col style={{paddingRight: '50px'}}>
+              <Col style={{paddingRight: '70px'}}>
                 <Card
                   style={{
                     borderRadius: '15px',

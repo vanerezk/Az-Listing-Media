@@ -141,28 +141,34 @@ function Header() {
                 className='me-2 my-2 my-lg-0'
                 style={{maxHeight: '200px'}}
                 navbarScroll>
-                <Link
-                  to='/Pricings'
-                  className='nav-link'>
-                  Pricings
-                </Link>
-
-                <Link
-                  to='/portfolio'
-                  className='nav-link'>
-                  Portfolio
-                </Link>
-                <Link
-                  to='/about'
-                  className='nav-link'>
-                  About
-                </Link>
-
-                <Link
-                  to='/contact'
-                  className='nav-link'>
-                  Contact
-                </Link>
+                <b>
+                  <Link
+                    to='/Pricings'
+                    className='nav-link'>
+                    Pricings
+                  </Link>
+                </b>
+                <b>
+                  <Link
+                    to='/portfolio'
+                    className='nav-link'>
+                    Portfolio
+                  </Link>
+                </b>
+                <b>
+                  <Link
+                    to='/about'
+                    className='nav-link'>
+                    About
+                  </Link>
+                </b>
+                <b>
+                  <Link
+                    to='/contact'
+                    className='nav-link'>
+                    Contact
+                  </Link>
+                </b>
               </Nav>
             </Navbar.Collapse>
           </Container>
