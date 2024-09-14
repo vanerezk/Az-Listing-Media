@@ -276,7 +276,7 @@ function Portfolio() {
       {/* Video  PUGGET AVE */}
       <Row
         style={{marginTop: '20px', width: '80%'}}
-        className='mx-auto d-none d-md-block'>
+        className='mx-auto '>
         <video
           style={{
             width: '50%',
