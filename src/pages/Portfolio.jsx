@@ -5,8 +5,8 @@ import firstvideo from '../assets/videos/V1_15323 W Campbell Ave.mp4';
 import puggetvideo from '../assets/videos/19321 W Puget Ave_V1.mp4';
 import interlacken from '../assets/photos/42 E Interlacken Dr-1.jpg';
 import interlackentwo from '../assets/photos/42 E Interlacken Dr-5.jpg';
-import interlackenthree from '../assets/photos/42 E Interlacken Dr-35.jpg';
-import interlackenfour from '../assets/photos/42 E Interlacken Dr-36.jpg';
+import droneone from '../assets/photos/42 E Interlacken Dr-35.jpg';
+import dronetwo from '../assets/photos/42 E Interlacken Dr-36.jpg';
 import interlackenfive from '../assets/photos/42 E Interlacken Dr-43.jpg';
 import puggetone from '../assets/photos/19312 W Puget Ave-21.jpg';
 import puggettwo from '../assets/photos/19312 W Puget Ave-25.jpg';
@@ -19,10 +19,24 @@ import puggeteight from '../assets/photos/19312 W Puget Ave_Twilight-2.jpg';
 import drfirst from '../assets/photos/207208 N 129th Dr-89.jpg';
 import drsecond from '../assets/photos/207208 N 129th Dr-90.jpg';
 import drthird from '../assets/photos/207208 N 129th Dr-95.jpg';
-import drfourth from '../assets/photos/207208 N 129th Dr-98.jpg';
-import drfifth from '../assets/photos/207208 N 129th Dr-145.jpg';
+
+import dronethird from '../assets/photos/207208 N 129th Dr-145.jpg';
+import dronefourth from '../assets/photos/22619 N San Ramon_Drone-3.jpg';
+import dronefifth from '../assets/photos/39718 N Bridlewood Way Drone-10.jpg';
+import {useLocation} from 'react-router-dom';
+import {useEffect} from 'react';
 
 function Portfolio() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.slice(1));
+      if (element) {
+        element.scrollIntoView();
+      }
+    }
+  }, [location]);
   return (
     <>
       <video
@@ -67,8 +81,13 @@ function Portfolio() {
           style={{letterSpacing: '10px', fontSize: '40px', fontWeight: 'bold'}}>
           PORTFOLIO
         </h1>
+        <h1
+          id='photography'
+          style={{zIndex: '-1', position: 'absolute', marginTop: '200px'}}>
+          ASDDDDDDD
+        </h1>
       </div>
-      <div className='text-container d-md-none  '>
+      <div className='text-container d-md-none   '>
         <h1
           className=' text-white'
           style={{
@@ -81,105 +100,237 @@ function Portfolio() {
           PORTFOLIO
         </h1>
       </div>
+
       {/* Images */}
+      <section>
+        <div
+          className=' col-lg-12 col-md-6 col-sm-12 mx-auto '
+          style={{marginTop: '20px', width: '80%'}}>
+          <h4
+            className='text-center '
+            style={{marginTop: '40px', fontSize: '30px'}}>
+            PHOTOGRAPHY
+          </h4>
+          <hr style={{width: '10%', margin: 'auto', marginBottom: '20px'}} />
+          <Row>
+            <Col
+              xs={4}
+              md={4}>
+              <img
+                src={interlacken}
+                alt=''
+                className='img-fluid'
+              />
+            </Col>
+            <Col
+              xs={4}
+              md={4}>
+              <img
+                src={interlackentwo}
+                alt=''
+                className='img-fluid'
+              />
+            </Col>
+            <Col
+              xs={4}
+              md={4}>
+              <img
+                src={interlackenfive}
+                alt=''
+                className='img-fluid'
+              />
+            </Col>
+          </Row>
+          <Row style={{marginTop: '20px'}}>
+            <Col
+              xs={4}
+              md={4}>
+              <img
+                src={puggetone}
+                alt=''
+                className='img-fluid'
+              />
+            </Col>
+            <Col
+              xs={4}
+              md={4}>
+              <img
+                src={puggettwo}
+                alt=''
+                className='img-fluid'
+              />
+            </Col>
+            <Col
+              xs={4}
+              md={4}>
+              <img
+                src={puggetthree}
+                alt=''
+                className='img-fluid'
+              />
+            </Col>
+          </Row>
+          <Row style={{marginTop: '20px'}}>
+            <Col
+              xs={4}
+              md={4}>
+              <img
+                src={puggetfour}
+                alt=''
+                className='img-fluid'
+              />
+            </Col>
+            <Col
+              xs={4}
+              md={4}>
+              <img
+                src={puggetfive}
+                alt=''
+                className='img-fluid'
+              />
+            </Col>
+            <Col
+              xs={4}
+              md={4}>
+              <img
+                src={puggetsix}
+                alt=''
+                className='img-fluid'
+              />
+            </Col>
+          </Row>
+          <Row style={{marginTop: '20px'}}>
+            <Col
+              xs={4}
+              md={4}>
+              <img
+                src={puggetsix}
+                alt=''
+                className='img-fluid'
+              />
+            </Col>
+            <Col
+              xs={4}
+              md={4}>
+              <img
+                src={puggetseven}
+                alt=''
+                className='img-fluid'
+              />
+            </Col>
+            <Col
+              xs={4}
+              md={4}>
+              <img
+                src={puggeteight}
+                alt=''
+                className='img-fluid'
+              />
+            </Col>
+          </Row>
+          <Row style={{marginTop: '20px'}}>
+            <Col
+              xs={4}
+              md={4}>
+              <img
+                src={drfirst}
+                alt=''
+                className='img-fluid'
+              />
+            </Col>
+
+            <Col
+              xs={4}
+              md={4}>
+              <img
+                src={drsecond}
+                alt=''
+                className='img-fluid'
+              />
+            </Col>
+            <h1
+              id='videography'
+              style={{zIndex: '-1', position: 'absolute', marginTop: '250px'}}></h1>
+            <Col
+              xs={4}
+              md={4}>
+              <img
+                src={drthird}
+                alt=''
+                className='img-fluid'
+              />
+            </Col>
+          </Row>
+        </div>
+      </section>
+
       <div
-        className=' col-lg-12 col-md-6 col-sm-12 '
-        style={{marginTop: '20px'}}>
-        <Row>
-          <Col
-            xs={4}
-            md={4}>
-            <img
-              src={interlacken}
-              alt=''
-              className='img-fluid'
-            />
-          </Col>
-          <Col
-            xs={4}
-            md={4}>
-            <img
-              src={interlackentwo}
-              alt=''
-              className='img-fluid'
-            />
-          </Col>
-          <Col
-            xs={4}
-            md={4}>
-            <img
-              src={interlackenthree}
-              alt=''
-              className='img-fluid'
-            />
-          </Col>
-        </Row>
-        <Row style={{marginTop: '20px'}}>
-          <Col
-            xs={6}
-            md={6}>
-            <img
-              src={interlackenfour}
-              alt=''
-              className='img-fluid'
-            />
-          </Col>
-          <Col
-            xs={6}
-            md={6}>
-            <img
-              src={interlackenfive}
-              alt=''
-              className='img-fluid'
-            />
-          </Col>
-        </Row>
+        className=' col-lg-12 col-md-6 col-sm-12 mx-auto '
+        style={{marginTop: '20px', width: '80%'}}>
+        <h4
+          className='text-center '
+          style={{marginTop: '40px', fontSize: '30px'}}>
+          VIDEOGRAPHY
+        </h4>
+        <hr style={{width: '10%', margin: 'auto', marginBottom: '20px'}} />
       </div>
+
       {/* Video  PUGGET AVE */}
-      <video
-        className='d-none d-md-block'
-        style={{
-          width: '100%',
-          height: '75vh',
-          objectFit: 'cover',
-          zIndex: '-1',
-          marginTop: '20px',
-        }}
-        autoPlay
-        muted
-        loop>
-        <source
-          src={puggetvideo}
-          type='video/mp4'
-        />
-      </video>
-      <video
-        className='d-md-none'
-        style={{
-          width: '100%',
-          height: '25vh',
-          objectFit: 'cover',
-          zIndex: '-1',
-          marginTop: '20px',
-        }}
-        autoPlay
-        muted
-        loop>
-        <source
-          src={puggetvideo}
-          type='video/mp4'
-        />
-      </video>
-      {/* Images */}
+      <Row
+        style={{marginTop: '20px', width: '80%'}}
+        className='mx-auto d-none d-md-block'>
+        <video
+          style={{
+            width: '50%',
+            height: '100%',
+            objectFit: 'contain',
+            zIndex: '-1',
+            marginTop: '20px',
+          }}
+          autoPlay
+          muted
+          loop>
+          <source
+            src={puggetvideo}
+            type='video/mp4'
+          />
+        </video>
+
+        {/* Video  129th */}
+        <video
+          style={{
+            width: '50%',
+            height: '100%',
+            objectFit: 'contain',
+            zIndex: '-1',
+            marginTop: '20px',
+          }}
+          autoPlay
+          muted
+          loop>
+          <source
+            src={firstvideo}
+            type='video/mp4'
+          />
+        </video>
+      </Row>
+
       <div
-        className=' col-lg-12 col-md-6 col-sm-12 '
-        style={{marginTop: '20px'}}>
+        className=' col-lg-12 col-md-6 col-sm-12 mx-auto '
+        id='drone'
+        style={{marginTop: '20px', width: '80%'}}>
+        <h4
+          className='text-center '
+          style={{marginTop: '40px', fontSize: '30px'}}>
+          DRONE
+        </h4>
+        <hr style={{width: '10%', margin: 'auto', marginBottom: '20px'}} />
         <Row>
           <Col
             xs={4}
             md={4}>
             <img
-              src={puggetone}
+              src={droneone}
               alt=''
               className='img-fluid'
             />
@@ -188,7 +339,7 @@ function Portfolio() {
             xs={4}
             md={4}>
             <img
-              src={puggettwo}
+              src={dronetwo}
               alt=''
               className='img-fluid'
             />
@@ -197,27 +348,7 @@ function Portfolio() {
             xs={4}
             md={4}>
             <img
-              src={puggetthree}
-              alt=''
-              className='img-fluid'
-            />
-          </Col>
-        </Row>
-        <Row style={{marginTop: '20px'}}>
-          <Col
-            xs={6}
-            md={6}>
-            <img
-              src={puggetfour}
-              alt=''
-              className='img-fluid'
-            />
-          </Col>
-          <Col
-            xs={6}
-            md={6}>
-            <img
-              src={puggetfive}
+              src={dronethird}
               alt=''
               className='img-fluid'
             />
@@ -228,122 +359,24 @@ function Portfolio() {
             xs={4}
             md={4}>
             <img
-              src={puggetsix}
+              src={dronefourth}
               alt=''
               className='img-fluid'
+              style={{width: '100%', height: '100%', objectFit: 'cover'}}
             />
           </Col>
           <Col
             xs={4}
             md={4}>
             <img
-              src={puggetseven}
-              alt=''
-              className='img-fluid'
-            />
-          </Col>
-          <Col
-            xs={4}
-            md={4}>
-            <img
-              src={puggeteight}
+              src={dronefifth}
               alt=''
               className='img-fluid'
             />
           </Col>
         </Row>
       </div>
-      {/* Video  129th */}
-      <video
-        id='backgroundvideo'
-        className='d-none d-md-block'
-        style={{
-          width: '100%',
-          height: '75vh',
-          objectFit: 'cover',
-          zIndex: '-1',
-          marginTop: '20px',
-        }}
-        autoPlay
-        muted
-        loop>
-        <source
-          src={puggetvideo}
-          type='video/mp4'
-        />
-      </video>
-      <video
-        id='backgroundvideo'
-        className='d-md-none'
-        style={{
-          width: '100%',
-          height: '25vh',
-          objectFit: 'cover',
-          zIndex: '-1',
-          marginTop: '20px',
-        }}
-        autoPlay
-        muted
-        loop>
-        <source
-          src={puggetvideo}
-          type='video/mp4'
-        />
-      </video>
-      {/* Images */}
-      <div
-        className=' col-lg-12 col-md-6 col-sm-12 '
-        style={{marginTop: '20px'}}>
-        <Row>
-          <Col
-            xs={4}
-            md={4}>
-            <img
-              src={drfirst}
-              alt=''
-              className='img-fluid'
-            />
-          </Col>
-          <Col
-            xs={4}
-            md={4}>
-            <img
-              src={drsecond}
-              alt=''
-              className='img-fluid'
-            />
-          </Col>
-          <Col
-            xs={4}
-            md={4}>
-            <img
-              src={drthird}
-              alt=''
-              className='img-fluid'
-            />
-          </Col>
-        </Row>
-        <Row style={{marginTop: '20px'}}>
-          <Col
-            xs={6}
-            md={6}>
-            <img
-              src={drfourth}
-              alt=''
-              className='img-fluid'
-            />
-          </Col>
-          <Col
-            xs={6}
-            md={6}>
-            <img
-              src={drfifth}
-              alt=''
-              className='img-fluid'
-            />
-          </Col>
-        </Row>
-      </div>
+
       <TopButton />
     </>
   );

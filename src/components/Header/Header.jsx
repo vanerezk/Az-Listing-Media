@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Header.css';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Header() {
   return (
@@ -148,11 +149,31 @@ function Header() {
                   </Link>
                 </b>
                 <b>
-                  <Link
-                    to='/portfolio'
-                    className='nav-link'>
-                    Portfolio
-                  </Link>
+                  <NavDropdown
+                    title='Portfolio'
+                    id='basic-nav-dropdown'>
+                    <NavDropdown.Item
+                      as={Link}
+                      to='/portfolio'>
+                      Full portfolio
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item
+                      as={Link}
+                      to='/portfolio#photography'>
+                      Photography
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to='/portfolio#videography'>
+                      Videography
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to='/portfolio#drone'>
+                      Drone
+                    </NavDropdown.Item>
+                  </NavDropdown>
                 </b>
                 <b>
                   <Link
