@@ -144,6 +144,7 @@ function Header() {
                 <b>
                   <Link
                     to='/Pricings'
+                    reloadDocument
                     className='nav-link'>
                     Pricings
                   </Link>
@@ -154,6 +155,7 @@ function Header() {
                     id='basic-nav-dropdown'>
                     <NavDropdown.Item
                       as={Link}
+                      reloadDocument
                       to='/portfolio'>
                       Full portfolio
                     </NavDropdown.Item>
@@ -177,6 +179,7 @@ function Header() {
                 </b>
                 <b>
                   <Link
+                    reloadDocument
                     to='/about'
                     className='nav-link'>
                     About
@@ -184,6 +187,7 @@ function Header() {
                 </b>
                 <b>
                   <Link
+                    reloadDocument
                     to='/contact'
                     className='nav-link'>
                     Contact

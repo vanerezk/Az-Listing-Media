@@ -83,9 +83,7 @@ function Portfolio() {
         </h1>
         <h1
           id='photography'
-          style={{zIndex: '-1', position: 'absolute', marginTop: '200px'}}>
-          ASDDDDDDD
-        </h1>
+          style={{zIndex: '-1', position: 'absolute', marginTop: '200px'}}></h1>
       </div>
       <div className='text-container d-md-none   '>
         <h1
