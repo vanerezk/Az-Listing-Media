@@ -23,6 +23,7 @@ import photoslideshowtwo from '../assets/photos/28556 N 124th Dr Website-2 2.jpg
 import photoslideshowthree from '../assets/photos/Dining Room-1.jpg';
 import photosslideshowfour from '../assets/photos/2842 N Claire Dr-45.jpg';
 import floorplans from '../assets/photos/floorplan-with-a-garage.png';
+import videopricings from '../assets/videos/V1_15323 W Campbell Ave.mp4';
 function Pricings() {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [firstphoto, secondphoto, thirdphoto, fourthphoto];
@@ -50,7 +51,7 @@ function Pricings() {
         loop
         className='d-none d-md-block'>
         <source
-          src='./src/assets/videos/V1_15323 W Campbell Ave.mp4'
+          src={videopricings}
           type='video/mp4'
         />
       </video>
