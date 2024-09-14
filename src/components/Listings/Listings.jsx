@@ -223,10 +223,10 @@ function Listings() {
 
       <div className='d-md-none'>
         <div className='text-center'>
-          <h1 style={{marginTop: '70px', letterSpacing: '10px', fontSize: '40px'}}>
+          <h1 style={{marginTop: '70px', letterSpacing: '8px', fontSize: '28px'}}>
             LISTING SERVICES
           </h1>
-          <h5>We offer a variety of different services depending on your listing needs.</h5>
+          <hr style={{width: '100px', marginLeft: 'auto', marginRight: 'auto'}} />
         </div>
         <div
           className='d-md-none  d-flex justify-content-center '
@@ -377,6 +377,11 @@ function Listings() {
             </Carousel.Item>
           </Carousel>
         </div>
+        <h5
+          className='text-center'
+          style={{marginBottom: '40px', textAlign: 'justify'}}>
+          We offer a variety of different services depending on your listing needs.
+        </h5>
         <div className='text-center'>
           <button
             className='btn btn-light mx-auto'

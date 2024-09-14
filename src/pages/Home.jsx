@@ -6,7 +6,7 @@ import Topbutton from '../components/Top/Topbutton';
 import Services from '../components/Services/Services';
 import Portfolio from '../components/Portfolio/Portfolio';
 import Listings from '../components/Listings/Listings';
-import Abooutmain from '../components/Aboutmain/Aboutmain';
+import Aboutmain from '../components/Aboutmain/Aboutmain';
 import firstlogo from '../assets/photos/Pulte_Group_updated_logo.png';
 import secondlogo from '../assets/photos/Realty_ONE_Group_Logo_Black_Text.png';
 import thirdlogo from '../assets/photos/REAX_BIG.png';
@@ -38,7 +38,7 @@ function Home() {
       <Video />
       <Services />
       <Portfolio />
-      <Abooutmain />
+      <Aboutmain />
       <Listings />
       <Reviews />
       {/* brands */}

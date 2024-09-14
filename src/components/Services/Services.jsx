@@ -228,12 +228,18 @@ function Services() {
                   marginTop: '40px',
                   marginLeft: '28px',
                   marginBottom: '80px',
+                  borderRadius: '15px',
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
                 }}>
                 <Card.Img
                   variant='top'
                   src={listingmedia}
-                  style={{padding: '20px', height: '18rem'}}
+                  style={{
+                    padding: '20px',
+                    height: '18rem',
+                    objectFit: 'cover',
+                    borderRadius: '30px',
+                  }}
                 />
                 <Card.Body className='text-center'>
                   <Card.Title
@@ -258,6 +264,7 @@ function Services() {
                 style={{
                   width: '65vw',
                   marginTop: '40px',
+                  borderRadius: '15px',
                   marginLeft: '28px',
                   marginBottom: '80px',
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -265,7 +272,12 @@ function Services() {
                 <Card.Img
                   variant='top'
                   src={aerialmedia}
-                  style={{padding: '20px', height: '18rem'}}
+                  style={{
+                    padding: '20px',
+                    height: '18rem',
+                    objectFit: 'cover',
+                    borderRadius: '30px',
+                  }}
                 />
                 <Card.Body className='text-center'>
                   <Card.Title
@@ -288,6 +300,7 @@ function Services() {
                 className='mx-auto '
                 style={{
                   width: '65vw',
+                  borderRadius: '15px',
                   marginTop: '40px',
                   marginLeft: '28px',
                   marginBottom: '80px',
@@ -296,7 +309,12 @@ function Services() {
                 <Card.Img
                   variant='top'
                   src={marketingvideos}
-                  style={{padding: '20px', height: '18rem'}}
+                  style={{
+                    padding: '20px',
+                    height: '18rem',
+                    objectFit: 'cover',
+                    borderRadius: '30px',
+                  }}
                 />
                 <Card.Body className='text-center '>
                   <Card.Title
@@ -322,12 +340,18 @@ function Services() {
                   marginTop: '40px',
                   marginLeft: '28px',
                   marginBottom: '80px',
+                  borderRadius: '15px',
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
                 }}>
                 <Card.Img
                   variant='top'
                   src={virtualtour}
-                  style={{padding: '20px', height: '18rem'}}
+                  style={{
+                    padding: '20px',
+                    height: '18rem',
+                    objectFit: 'cover',
+                    borderRadius: '30px',
+                  }}
                 />
                 <Card.Body className='text-center '>
                   <Card.Title

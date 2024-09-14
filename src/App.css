@@ -16,6 +16,14 @@
     background: none;
 }
 
+.carousel-control-next-icon {
+    display: none;
+}
+
+.carousel-control-prev-icon {
+    display: none;
+}
+
 .firstphotoanother {
     
     margin-top: 10px;
@@ -64,6 +72,8 @@ div.before-after-slider img {
     
     
 }
+
+
 
 .divcompare {
     height: 100%;
@@ -114,7 +124,16 @@ div.before-after-slider img {
 } */
 
 
+@media screen and (max-width: 768px) {
+    .react-multiple-carousel__arrow--left {
+        display: none !important;
+    }
 
+    .react-multiple-carousel__arrow--right {
+        display: none !important;
+    }
+
+}
 
 
 
