@@ -1,3 +1,4 @@
+import video from '../../assets/videos/V1_15323 W Campbell Ave.mp4';
 function Videopricings() {
   return (
     <div
@@ -27,7 +28,7 @@ function Videopricings() {
         muted
         loop>
         <source
-          src='./src/assets/videos/V1_15323 W Campbell Ave.mp4'
+          src={video}
           type='video/mp4'
         />
       </video>

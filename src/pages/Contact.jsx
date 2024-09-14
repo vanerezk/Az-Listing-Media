@@ -1,18 +1,22 @@
+import contactphoto from '../assets/photos/19312 W Puget Ave-77.jpg';
+import {Link} from 'react-router-dom';
+
 function Contact() {
   return (
     <>
       <div
         className=' text-center'
-        style={{marginTop: '200px', marginBottom: '100px'}}>
+        style={{marginTop: '200px', marginBottom: '100px', letterSpacing: '2px'}}>
         <div
           className='row container text-center mx-auto'
           style={{marginTop: '100px'}}>
           <div className='col-lg-6 col-md-6 col-sm-12'>
             <h1
               className='text-black'
-              style={{fontSize: '26px', marginBottom: '20px'}}>
+              style={{fontSize: '24px', marginBottom: '20px'}}>
               CONTACT INFO
             </h1>
+            <hr style={{width: '30%', margin: 'auto', marginBottom: '20px'}} />
             <div
               className='text-black text-justify '
               style={{
@@ -30,9 +34,10 @@ function Contact() {
             </div>{' '}
             <h1
               className='text-black'
-              style={{fontSize: '26px', marginBottom: '20px'}}>
+              style={{fontSize: '24px', marginBottom: '20px'}}>
               HOURS OF OPERATION
             </h1>
+            <hr style={{width: '30%', margin: 'auto', marginBottom: '20px'}} />
             <div
               className='text-black text-justify mt-5 '
               style={{
@@ -56,36 +61,34 @@ function Contact() {
                 <b>Weekends:</b> upon request{' '}
               </p>
             </div>
-            <h1
-              className='text-black'
-              style={{fontSize: '26px', marginBottom: '20px'}}>
-              BOOKING
-            </h1>
-            <div
-              className='text-black text-justify mt-5 '
+            <button
+              className='btn btn-light d-none d-md-block mx-auto'
               style={{
-                fontSize: '16px',
-                paddingLeft: '25px',
-                paddingRight: '25px',
-                marginBottom: '40px',
+                marginTop: '40px',
+                borderRadius: '0px',
+                padding: '10px 30px',
+                boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
               }}>
-              <p>
-                {' '}
-                If you are ready to schedule a shoot with us you can make an appointment at this{' '}
-                <a
-                  href='https://calendly.com/azlistingmedia'
-                  target='_blank'>
-                  link
-                </a>
-              </p>
-            </div>
+              <Link
+                to='https://spiro.media/'
+                target='_blank'
+                style={{textDecoration: 'none', color: 'black', letterSpacing: '2px'}}>
+                SCHEDULE NOW
+              </Link>
+            </button>
           </div>
 
           <div className='col-lg-6 col-md-6 col-sm-12'>
             <img
-              src='./src/assets/photos/Twilight_28556 N 124th Dr-1.png'
+              src={contactphoto}
               alt='about'
-              style={{width: '100%', height: '100%', objectFit: 'cover'}}
+              style={{
+                width: '90%',
+                height: '110%',
+                objectFit: 'cover',
+                borderRadius: '15px',
+                boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
+              }}
             />
           </div>
         </div>

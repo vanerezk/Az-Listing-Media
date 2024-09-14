@@ -48,6 +48,7 @@ function Abooutmain() {
             <Col className='text-center'>
               <img
                 src='./src/assets/photos/Twilight_28556 N 124th Dr-1.png'
+                alt='NO PHOTO YET'
                 style={{
                   width: '70%',
                   height: '500px',

@@ -8,7 +8,7 @@ import firstphoto from '../../assets/photos/15323 W Campbell Ave-1.jpg';
 import secondphoto from '../../assets/photos/16053 N 159th Ln_Drone-2.png';
 import thirdphoto from '../../assets/photos/207208 N 129th Dr-95.jpg';
 import fourthphoto from '../../assets/photos/42 E Interlacken Dr-5.jpg';
-import fifthphoto from '../../assets/photos/28556 N 124th Dr-2.jpg';
+import fifthphoto from '../../assets/photos/28556 N 124th Dr Website-2 2.jpg';
 import sixthphoto from '../../assets/photos/22619 N San Ramon_Drone-1.jpg';
 
 function Portfolio() {

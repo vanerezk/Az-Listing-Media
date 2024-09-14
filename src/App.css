@@ -7,12 +7,12 @@
     font-family: "Nexa";
 }
 
-.firstphoto{
+.firstphoto {
     width: 100%;
     padding: 2%;
     height: 350px;
     object-fit: cover;
-    border-radius : 25px;
+    border-radius: 25px;
     background: none;
 }
 
@@ -27,6 +27,8 @@
         background: none;
         cursor: pointer;
 }
+
+
 
 .table td {
     padding: 3px !important; 
@@ -63,7 +65,43 @@ div.before-after-slider img {
     
 }
 
+.divcompare {
+    height: 100%;
+        width: 100%;
+       
+        
+}
 
+.divcomparefirst {
+    width: 100%;
+    height: 100%;
+       
+        
+}
+
+
+.image-container {
+    position: relative;
+}
+
+.image-container .price-tag {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: rgba(255, 255, 255, 0.88);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-container .price-tag::before {
+    content: "$";
+    font-size: 12px;
+    margin-right: 2px;
+}
 
 @font-face {
     font-family: "Nexa";

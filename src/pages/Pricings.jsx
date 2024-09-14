@@ -1,42 +1,38 @@
 import Card from 'react-bootstrap/Card';
 import Accordion from 'react-bootstrap/Accordion';
+import ReactCompareImage from 'react-compare-image';
+import {useState, useEffect} from 'react';
 
 import {Col, Row} from 'react-bootstrap';
 import Topbutton from '../components/Top/Topbutton';
-import {useState} from 'react';
-
 import Videopricings from '../components/Videopricings/Videopricings';
 import {Link} from 'react-router-dom';
-
+import before from '../assets/photos/2244 W Madre Del Oro Virtual Stage-1 2.jpg';
+import after from '../assets/photos/2244 W Madre Del Oro Virtual Stage-2 2.jpg';
+import firstphoto from '../assets/photos/207208 N 129th Dr-95.jpg';
+import secondphoto from '../assets/photos/28556 N 124th Dr Website-2 2.jpg';
+import thirdphoto from '../assets/photos/23326 N 70th Ln-4.jpg';
+import fourthphoto from '../assets/photos/2842 N Claire Dr-45.jpg';
+import upgradedronephoto from '../assets/photos/42 E Interlacken Dr-36.jpg';
+import upgradedtwilightphoto from '../assets/photos/49903 N 26th Ave_Virtual Twilight-1.jpg';
+import videography from '../assets/videos/2016 W Gloria Ln_V1.mp4';
+import dronevideography from '../assets/photos/27247 N 78th Ln Drone-5.jpg';
+import videowalkthrough from '../assets/photos/6822 W Amigo Dr-26.jpg';
+import photoslideshow from '../assets/photos/207208 N 129th Dr-95.jpg';
+import photoslideshowtwo from '../assets/photos/28556 N 124th Dr Website-2 2.jpg';
+import photoslideshowthree from '../assets/photos/Dining Room-1.jpg';
+import photosslideshowfour from '../assets/photos/2842 N Claire Dr-45.jpg';
+import floorplans from '../assets/photos/floorplan-with-a-garage.png';
 function Pricings() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = [
-    {
-      id: 0,
-      src: '../../src/assets/photos/207208 N 129th Dr-145.jpg',
-      alt: 'Drone Photography',
-    },
-    {
-      id: 1,
-      src: '../../src/assets/photos/207208 N 129th Dr-90.jpg',
-      alt: 'Twilight exterior photography',
-    },
-    {
-      id: 2,
-      src: '../../src/assets/photos/6822 W Amigo Dr-26.jpg',
-      alt: 'Video walkthrough',
-    },
-    {
-      id: 3,
-      src: '../../src/assets/photos/27247 N 78th Ln Drone-5.jpg',
-      alt: 'Drone video',
-    },
-    {
-      id: 4,
-      src: '../../src/assets/photos/207208 N 129th Dr-98.jpg',
-      alt: 'Photo slideshow',
-    },
-  ];
+  const [currentImage, setCurrentImage] = useState(0);
+  const images = [firstphoto, secondphoto, thirdphoto, fourthphoto];
+  const videophotos = [photoslideshow, photoslideshowtwo, photoslideshowthree, photosslideshowfour];
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((currentImage + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [currentImage, images.length, videophotos.length]);
 
   return (
     <>
@@ -218,140 +214,173 @@ function Pricings() {
                 </button>
               </Col>
               <Col md={6}>
-                <Card.Img
-                  style={{
-                    width: '100%',
-                    height: '470px',
-                    objectFit: 'cover',
-
-                    borderRadius: '15px',
-                  }}
-                  src='../../src/assets/photos/207208 N 129th Dr-90.jpg'
-                />
+                <Col md={6}>
+                  <Card.Img
+                    style={{
+                      width: '250%',
+                      height: '470px',
+                      objectFit: 'cover',
+                      borderRadius: '15px',
+                    }}
+                    src={images[currentImage]}
+                  />
+                </Col>
               </Col>
             </Row>
           </Card.Body>
         </Card>
-        <div className='text-center container-fluid p-5 bg-light'>
-          <h4 className='text-center mt-5'>UPGRADE YOUR SHOOTINGS</h4>
-
-          <div className=' text-center container      '>
-            <Row style={{scale: '0.8'}}>
-              <Col style={{paddingRight: '70px'}}>
-                <Card
-                  style={{
-                    borderRadius: '15px',
-
-                    boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
-                  }}>
+        <div className=' bg-light  w-100 '>
+          <Row className='mx-auto mt-5 p-5 w-75'>
+            <h4 className='text-center mb-5'>UPGRADE YOUR SHOOTINGS</h4>
+            <Col>
+              <Card
+                style={{
+                  width: '400px',
+                  marginBottom: '80px',
+                  margin: 'auto',
+                  border: 'none',
+                  display: 'block',
+                  marginLeft: 'auto',
+                  marginRight: 'auto',
+                  boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
+                  borderRadius: '15px',
+                }}
+                className='mx-auto'>
+                <div className='image-container'>
                   <Card.Img
                     variant='top'
-                    src='./src/assets/photos/6822 W Amigo Dr_Drone-7.jpg'
+                    src={upgradedronephoto}
                     style={{
                       padding: '20px',
-
-                      height: '19rem',
+                      height: '300px',
                       objectFit: 'cover',
                       borderRadius: '30px',
                     }}
                   />
-                  <Card.Body className='text-center'>
-                    <Card.Title
-                      style={{
-                        letterSpacing: '2px',
-                        marginTop: '-10px',
-                        fontWeight: 'bold',
-                        marginBottom: '10px',
-                      }}>
-                      AERIAL PHOTOGRAPHY
-                    </Card.Title>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col style={{paddingRight: '70px'}}>
-                <Card
-                  style={{
-                    borderRadius: '15px',
-
-                    boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
-                  }}>
+                  <span className='price-tag'>99</span>
+                </div>
+                <Card.Body className='text-center'>
+                  <Card.Title
+                    style={{
+                      letterSpacing: '2px',
+                      marginTop: '-10px',
+                      fontWeight: 'bold',
+                      marginBottom: '10px',
+                    }}>
+                    AERIAL PHOTOGRAPHY
+                  </Card.Title>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col>
+              <Card
+                style={{
+                  width: '400px',
+                  marginBottom: '80px',
+                  margin: 'auto',
+                  border: 'none',
+                  display: 'block',
+                  marginLeft: 'auto',
+                  marginRight: 'auto',
+                  boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
+                  borderRadius: '15px',
+                }}
+                className='mx-auto'>
+                <div className='image-container'>
                   <Card.Img
                     variant='top'
-                    src='./src/assets/photos/19312 W Puget Ave-29.jpg'
+                    src={upgradedtwilightphoto}
                     style={{
                       padding: '20px',
-                      height: '19rem',
+                      height: '300px',
                       objectFit: 'cover',
                       borderRadius: '30px',
                     }}
                   />
-                  <Card.Body className='text-center'>
-                    <Card.Title
-                      style={{
-                        letterSpacing: '2px',
-                        marginTop: '-10px',
-                        fontWeight: 'bold',
-                        marginBottom: '10px',
-                      }}>
-                      TWILIGHT PHOTOGRAPHY
-                    </Card.Title>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col>
-                <Card
-                  style={{
-                    borderRadius: '15px',
-
-                    boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
-                  }}>
-                  <Card.Img
-                    variant='top'
-                    src='./src/assets/photos/19312 W Puget Ave-29.jpg'
+                  <span className='price-tag'>99</span>
+                </div>
+                <Card.Body className='text-center'>
+                  <Card.Title
                     style={{
-                      padding: '20px',
-                      height: '19rem',
-                      objectFit: 'cover',
-                      borderRadius: '30px',
-                    }}
-                  />
-                  <Card.Body className='text-center'>
-                    <Card.Title
-                      style={{
-                        letterSpacing: '2px',
-                        marginTop: '-10px',
-                        fontWeight: 'bold',
-                        marginBottom: '10px',
-                      }}>
-                      ENHANCEMENTS
-                    </Card.Title>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
-          </div>
-          <div
-            className='text-center d-none d-md-block '
-            style={{marginBottom: '40px', marginTop: '40px'}}>
-            <button
-              className='btn  mx-auto '
-              style={{
-                borderRadius: '0px',
+                      letterSpacing: '2px',
+                      marginTop: '-10px',
+                      fontWeight: 'bold',
+                      marginBottom: '10px',
+                    }}>
+                    TWILIGHT PHOTOGRAPHY
+                  </Card.Title>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col>
+              <Card
+                style={{
+                  width: '400px',
+                  boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
+                  borderRadius: '15px',
+                }}
+                className='mx-auto'>
+                <div className='image-container'>
+                  {' '}
+                  <div className='divcomparefirst'>
+                    <div
+                      className='divcompare'
+                      style={{padding: '18px', marginBottom: '15px'}}>
+                      <ReactCompareImage
+                        leftImage={before}
+                        rightImage={after}
+                        leftImageCss={{
+                          height: '265px',
+                          objectFit: 'cover',
 
-                backgroundColor: '#EDEDED',
-                padding: '10px 30px',
-                letterSpacing: '2px',
-                fontWeight: 'bold',
-                boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
-              }}>
-              <Link
-                to='https://spiro.media/'
-                target='_blank'
-                style={{textDecoration: 'none', color: 'black', padding: '10px'}}>
-                SCHEDULE NOW
-              </Link>
-            </button>
-          </div>
+                          borderRadius: '15px',
+                        }}
+                        rightImageCss={{
+                          height: '265px',
+                          objectFit: 'cover',
+
+                          borderRadius: '15px',
+                        }}
+                      />
+                    </div>
+                  </div>
+                  <span className='price-tag'>99</span>
+                </div>
+
+                <Card.Body className='text-center'>
+                  <Card.Title
+                    style={{
+                      letterSpacing: '2px',
+                      marginTop: '-35px',
+                      fontWeight: 'bold',
+                    }}>
+                    ENHANCEMENTS
+                  </Card.Title>
+                </Card.Body>
+              </Card>
+            </Col>
+            <div
+              className='text-center d-none d-md-block '
+              style={{marginBottom: '40px', marginTop: '40px'}}>
+              <button
+                className='btn  mx-auto '
+                style={{
+                  borderRadius: '0px',
+                  backgroundColor: '#EDEDED',
+                  padding: '10px 30px',
+                  letterSpacing: '2px',
+                  fontWeight: 'bold',
+                  boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
+                }}>
+                <Link
+                  to='https://spiro.media/'
+                  target='_blank'
+                  style={{textDecoration: 'none', color: 'black', padding: '10px'}}>
+                  SCHEDULE NOW
+                </Link>
+              </button>
+            </div>
+          </Row>
         </div>
 
         <br />
@@ -388,7 +417,7 @@ function Pricings() {
 
             <Row className='text-center mx-auto p-5'>
               <Col md={6}>
-                <Card.Img
+                <video
                   style={{
                     width: '100%',
                     height: '470px',
@@ -396,16 +425,23 @@ function Pricings() {
 
                     borderRadius: '15px',
                   }}
-                  src='../../src/assets/photos/207208 N 129th Dr-90.jpg'
-                />
+                  autoPlay
+                  loop
+                  muted>
+                  <source
+                    src={videography}
+                    type='video/mp4'
+                  />
+                </video>
               </Col>
               <Col md={6}>
                 <table
-                  className='table table-borderless'
+                  className='table table-borderless mx-auto'
                   style={{
                     fontSize: '12px',
-
                     width: '90%',
+                    textAlign: 'center',
+
                     margin: 'auto',
                   }}>
                   <tr style={{borderBottom: '1px solid gray'}}>
@@ -415,8 +451,7 @@ function Pricings() {
                       </h6>
                     </td>
                     <td>
-                      <h6>
-                        {' '}
+                      <h6 style={{paddingRight: '50px'}}>
                         <strong>PRICE</strong>
                       </h6>
                     </td>
@@ -426,7 +461,7 @@ function Pricings() {
                       <h6>500 - 2,500 SQFT</h6>
                     </td>
                     <td>
-                      <h6>$349</h6>
+                      <h6 style={{paddingRight: '50px'}}>$349</h6>
                     </td>
                   </tr>
                   <tr style={{borderBottom: '1px solid gray'}}>
@@ -434,7 +469,7 @@ function Pricings() {
                       <h6>2,501 - 4,000 SQFT</h6>
                     </td>
                     <td>
-                      <h6>$449</h6>
+                      <h6 style={{paddingRight: '50px'}}>$449</h6>
                     </td>
                   </tr>
                   <tr style={{borderBottom: '1px solid gray'}}>
@@ -442,7 +477,7 @@ function Pricings() {
                       <h6>4,001 - 5,500 SQFT</h6>
                     </td>
                     <td>
-                      <h6>$549</h6>
+                      <h6 style={{paddingRight: '50px'}}>$549</h6>
                     </td>
                   </tr>
                   <tr style={{borderBottom: '1px solid gray'}}>
@@ -450,7 +485,7 @@ function Pricings() {
                       <h6>5,501 - 7,000 SQFT</h6>
                     </td>
                     <td>
-                      <h6>$649</h6>
+                      <h6 style={{paddingRight: '50px'}}>$649</h6>
                     </td>
                   </tr>
                   <tr style={{borderBottom: '1px solid gray'}}>
@@ -458,7 +493,7 @@ function Pricings() {
                       <h6>7,001 - 10,000 SQFT</h6>
                     </td>
                     <td>
-                      <h6>$849</h6>
+                      <h6 style={{paddingRight: '50px'}}>$849</h6>
                     </td>
                   </tr>
                   <tr>
@@ -466,7 +501,7 @@ function Pricings() {
                       <h6>10,000+ SQFT</h6>
                     </td>
                     <td>
-                      <h6>$1,049</h6>
+                      <h6 style={{paddingRight: '50px'}}>$1,049</h6>
                     </td>
                   </tr>
                 </table>
@@ -488,139 +523,296 @@ function Pricings() {
                 </button>
               </Col>
             </Row>
-            <Row>
-              <h4>UPGRADE YOUR SHOOTINGS</h4>
-            </Row>
-            <Row>
-              <div className=' d-flex justify-content-center '>
-                <div className='d-none d-md-block'>
-                  <div>
-                    <Row style={{scale: '0.9'}}>
-                      <Col style={{paddingRight: '50px'}}>
-                        <Card
-                          style={{
-                            marginTop: '40px',
-                            borderRadius: '15px',
-                            marginBottom: '80px',
-                            boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
-                          }}>
-                          <Card.Img
-                            variant='top'
-                            src='../../src/assets/photos/27247 N 78th Ln Drone-5.jpg'
-                            style={{
-                              padding: '20px',
+          </Card.Body>
+        </Card>
 
-                              height: '19rem',
-                              objectFit: 'cover',
-                              borderRadius: '30px',
-                            }}
-                          />
-                          <Card.Body className='text-center'>
-                            <Card.Title
-                              style={{
-                                letterSpacing: '2px',
-                                marginTop: '-10px',
-                                fontWeight: 'bold',
-                                marginBottom: '10px',
-                              }}>
-                              DRONE VIDEO
-                            </Card.Title>
-                          </Card.Body>
-                        </Card>
-                      </Col>
-                      <Col style={{paddingRight: '50px'}}>
-                        <Card
-                          style={{
-                            marginTop: '40px',
-                            borderRadius: '15px',
-                            marginBottom: '80px',
-                            boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
-                          }}>
-                          <Card.Img
-                            variant='top'
-                            src='../../src/assets/photos/6822 W Amigo Dr-26.jpg'
-                            style={{
-                              padding: '20px',
-                              height: '19rem',
-                              objectFit: 'cover',
-                              borderRadius: '30px',
-                            }}
-                          />
-                          <Card.Body className='text-center'>
-                            <Card.Title
-                              style={{
-                                letterSpacing: '2px',
-                                marginTop: '-10px',
-                                fontWeight: 'bold',
-                                marginBottom: '10px',
-                              }}>
-                              VIDEO WALKTROUGH
-                            </Card.Title>
-                          </Card.Body>
-                        </Card>
-                      </Col>
-                      <Col>
-                        <Card
-                          style={{
-                            marginTop: '40px',
-                            borderRadius: '15px',
-                            marginBottom: '80px',
-                            boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
-                          }}>
-                          <Card.Img
-                            variant='top'
-                            src='./src/assets/photos/19312 W Puget Ave-29.jpg'
-                            style={{
-                              padding: '20px',
-                              height: '19rem',
-                              objectFit: 'cover',
-                              borderRadius: '30px',
-                            }}
-                          />
-                          <Card.Body className='text-center'>
-                            <Card.Title
-                              style={{
-                                letterSpacing: '2px',
-                                marginTop: '-10px',
-                                fontWeight: 'bold',
-                                marginBottom: '10px',
-                              }}>
-                              PHOTO SLIDESHOW
-                            </Card.Title>
-                          </Card.Body>
-                        </Card>
-                      </Col>
-                    </Row>
-
-                    <div
-                      className='text-center d-none d-md-block '
-                      style={{marginBottom: '60px'}}>
-                      <button
-                        className='btn  mx-auto '
-                        style={{
-                          borderRadius: '0px',
-                          backgroundColor: '#EDEDED',
-                          padding: '10px 30px',
-                          letterSpacing: '2px',
-                          fontWeight: 'bold',
-                          boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
-                        }}>
-                        <Link
-                          to='https://spiro.media/'
-                          target='_blank'
-                          style={{textDecoration: 'none', color: 'black', padding: '10px'}}>
-                          SCHEDULE NOW
-                        </Link>
-                      </button>
-                    </div>
-                  </div>
+        <div className=' bg-light  w-100 '>
+          <Row className='mx-auto mt-5 p-5 w-75'>
+            <h4 className='text-center mb-5'>UPGRADE YOUR SHOOTINGS</h4>
+            <Col>
+              <Card
+                style={{
+                  width: '400px',
+                  marginBottom: '80px',
+                  margin: 'auto',
+                  border: 'none',
+                  display: 'block',
+                  marginLeft: 'auto',
+                  marginRight: 'auto',
+                  boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
+                  borderRadius: '15px',
+                }}
+                className='mx-auto'>
+                <div className='image-container'>
+                  <Card.Img
+                    variant='top'
+                    src={dronevideography}
+                    style={{
+                      padding: '20px',
+                      height: '300px',
+                      objectFit: 'cover',
+                      borderRadius: '30px',
+                    }}
+                  />
+                  <span className='price-tag'>149</span>
                 </div>
-              </div>
+                <Card.Body className='text-center'>
+                  <Card.Title
+                    style={{
+                      letterSpacing: '2px',
+                      marginTop: '-10px',
+                      fontWeight: 'bold',
+                      marginBottom: '10px',
+                    }}>
+                    DRONE VIDEO
+                  </Card.Title>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col>
+              <Card
+                style={{
+                  width: '400px',
+                  marginBottom: '80px',
+                  margin: 'auto',
+                  border: 'none',
+                  display: 'block',
+                  marginLeft: 'auto',
+                  marginRight: 'auto',
+                  boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
+                  borderRadius: '15px',
+                }}
+                className='mx-auto'>
+                <div className='image-container'>
+                  <Card.Img
+                    variant='top'
+                    src={videowalkthrough}
+                    style={{
+                      padding: '20px',
+                      height: '300px',
+                      objectFit: 'cover',
+                      borderRadius: '30px',
+                    }}
+                  />
+                  <span className='price-tag'>149</span>
+                </div>
+                <Card.Body className='text-center'>
+                  <Card.Title
+                    style={{
+                      letterSpacing: '2px',
+                      marginTop: '-10px',
+                      fontWeight: 'bold',
+                      marginBottom: '10px',
+                    }}>
+                    VIDEO WALKTROUGH
+                  </Card.Title>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col>
+              <Card
+                style={{
+                  width: '400px',
+                  marginBottom: '80px',
+                  margin: 'auto',
+                  border: 'none',
+                  display: 'block',
+                  marginLeft: 'auto',
+                  marginRight: 'auto',
+                  boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
+                  borderRadius: '15px',
+                }}
+                className='mx-auto'>
+                <div className='image-container'>
+                  <Card.Img
+                    variant='top'
+                    src={videophotos[currentImage]}
+                    style={{
+                      padding: '20px',
+                      height: '300px',
+                      objectFit: 'cover',
+                      borderRadius: '30px',
+                    }}
+                  />
+                  <span className='price-tag'>99</span>
+                </div>
+                <Card.Body className='text-center'>
+                  <Card.Title
+                    style={{
+                      letterSpacing: '2px',
+                      marginTop: '-10px',
+                      fontWeight: 'bold',
+                      marginBottom: '10px',
+                    }}>
+                    PHOTO SLIDESHOW
+                  </Card.Title>
+                </Card.Body>
+              </Card>
+            </Col>
+            <div
+              className='text-center d-none d-md-block '
+              style={{marginBottom: '40px', marginTop: '40px'}}>
+              <button
+                className='btn  mx-auto '
+                style={{
+                  borderRadius: '0px',
+                  backgroundColor: '#EDEDED',
+                  padding: '10px 30px',
+                  letterSpacing: '2px',
+                  fontWeight: 'bold',
+                  boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
+                }}>
+                <Link
+                  to='https://spiro.media/'
+                  target='_blank'
+                  style={{textDecoration: 'none', color: 'black', padding: '10px'}}>
+                  SCHEDULE NOW
+                </Link>
+              </button>
+            </div>
+          </Row>
+        </div>
+
+        {/* FLOOR PLANS */}
+
+        <Card
+          style={{
+            width: '70%',
+
+            marginBottom: '80px',
+            margin: 'auto',
+            border: 'none',
+          }}>
+          <Card.Body>
+            <Row style={{textAlign: 'center', marginBottom: '20px'}}>
+              <Card.Title
+                style={{
+                  textAlign: 'center',
+                  marginTop: '70px',
+
+                  fontSize: '28px',
+                  letterSpacing: '10px',
+                }}>
+                2D FLOOR PLANS
+              </Card.Title>
+              <hr style={{width: '30%', margin: 'auto', marginBottom: '20px'}} />
+              <h6
+                style={{
+                  textAlign: 'center',
+                  marginBottom: '20px',
+                  fontSize: '12px',
+                }}>
+                MADE WITH XXXX
+              </h6>
+            </Row>
+
+            <Row className='text-center mx-auto p-5'>
+              <Col md={6}>
+                <table
+                  className='table table-borderless mx-auto'
+                  style={{
+                    fontSize: '12px',
+                    width: '90%',
+                    textAlign: 'center',
+
+                    margin: 'auto',
+                  }}>
+                  <tr style={{borderBottom: '1px solid gray'}}>
+                    <td>
+                      <h6>
+                        <strong>PROPERTY SIZE</strong>
+                      </h6>
+                    </td>
+                    <td>
+                      <h6 style={{paddingLeft: '20px', paddingRight: '40px'}}>
+                        <strong>PRICE</strong>
+                      </h6>
+                    </td>
+                  </tr>
+                  <tr style={{borderBottom: '1px solid gray'}}>
+                    <td>
+                      <h6>500 - 2,500 SQFT</h6>
+                    </td>
+                    <td>
+                      <h6 style={{paddingLeft: '20px', paddingRight: '40px'}}>$149</h6>
+                    </td>
+                  </tr>
+                  <tr style={{borderBottom: '1px solid gray'}}>
+                    <td>
+                      <h6>2,501 - 4,000 SQFT</h6>
+                    </td>
+                    <td>
+                      <h6 style={{paddingLeft: '20px', paddingRight: '40px'}}>$199</h6>
+                    </td>
+                  </tr>
+                  <tr style={{borderBottom: '1px solid gray'}}>
+                    <td>
+                      <h6>4,001 - 5,500 SQFT</h6>
+                    </td>
+                    <td>
+                      <h6 style={{paddingLeft: '20px', paddingRight: '40px'}}>$249</h6>
+                    </td>
+                  </tr>
+                  <tr style={{borderBottom: '1px solid gray'}}>
+                    <td>
+                      <h6>5,501 - 7,000 SQFT</h6>
+                    </td>
+                    <td>
+                      <h6 style={{paddingLeft: '20px', paddingRight: '40px'}}>$309</h6>
+                    </td>
+                  </tr>
+                  <tr style={{borderBottom: '1px solid gray'}}>
+                    <td>
+                      <h6>7,001 - 10,000 SQFT</h6>
+                    </td>
+                    <td>
+                      <h6 style={{paddingLeft: '20px', paddingRight: '40px'}}>$409</h6>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h6>10,000+ SQFT</h6>
+                    </td>
+                    <td>
+                      <h6 style={{paddingLeft: '20px', paddingRight: '40px'}}>$509</h6>
+                    </td>
+                  </tr>
+                </table>
+                <span style={{color: 'GRAY', fontSize: '10px'}}>*PRICES DO NOT INCLUDE TAX </span>
+                <button
+                  className='btn btn-light d-none d-md-block mx-auto'
+                  style={{
+                    marginTop: '40px',
+                    borderRadius: '0px',
+                    padding: '10px 30px',
+                    boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
+                  }}>
+                  <Link
+                    to='https://spiro.media/'
+                    target='_blank'
+                    style={{textDecoration: 'none', color: 'black', letterSpacing: '2px'}}>
+                    BOOK NOW
+                  </Link>
+                </button>
+              </Col>
+              <Col md={6}>
+                <Col md={6}>
+                  <Card.Img
+                    style={{
+                      width: '250%',
+                      height: '470px',
+                      objectFit: 'cover',
+                      borderRadius: '15px',
+                    }}
+                    src={floorplans}
+                  />
+                </Col>
+              </Col>
             </Row>
           </Card.Body>
         </Card>
 
-        {/* AERIAL */}
+        {/* AERIAL
         <Card
           style={{
             width: '70%',
@@ -694,7 +886,7 @@ function Pricings() {
               </Col>
             </Row>
           </Card.Body>
-        </Card>
+        </Card> */}
       </div>
       {/* MOBILE */}
       <div

@@ -4,9 +4,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel';
 import {useNavigate} from 'react-router-dom';
-import photographyphoto from '../../assets/photos/6822 W Amigo Dr-26.jpg';
-import aerialphoto from '../../assets/photos/17655 W Model Creek Rd-6.jpg';
-import videographyphoto from '../../assets/photos/42 E Interlacken Dr-36.jpg';
+import photographyphoto from '../../assets/photos/28556 N 124th Dr-4.jpg';
+import aerialphoto from '../../assets/photos/39718 N Bridlewood Way Drone-10.jpg';
+import videographyphoto from '../../assets/photos/19312 W Puget Ave-77.jpg';
 import virtualtourphoto from '../../assets/photos/19312 W Puget Ave-51.jpg';
 import floorplansphoto from '../../assets/photos/floorplan-with-a-garage.png';
 
