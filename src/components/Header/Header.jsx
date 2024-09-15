@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Header.css';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import logo from '../../assets/photos/logo.png';
+import logo from '../../assets/logo.png';
 
 function Header() {
   return (
