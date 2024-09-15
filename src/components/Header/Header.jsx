@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Header.css';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import logo from '../../assets/photos/logo.png';
 
 function Header() {
   return (
@@ -127,7 +128,7 @@ function Header() {
               to='/'
               className='navbar-brand'>
               <img
-                src='https://media.discordapp.net/attachments/1270138186823372920/1270139471370784779/AZ_Listing_Media_Logo_Long.png?ex=66e55ed0&is=66e40d50&hm=969efb722b07b26c11e4b582cd8a14bb87052d17a7da8dff186c62a82efb79e4&=&format=webp&quality=lossless&width=1440&height=219'
+                src={logo}
                 width='250'
                 alt='logo'
                 className='logo'
