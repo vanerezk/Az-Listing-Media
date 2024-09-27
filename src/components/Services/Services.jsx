@@ -37,6 +37,7 @@ function Services() {
                 <Card
                   style={{
                     width: '18rem',
+
                     marginTop: '40px',
                     borderRadius: '15px',
                     marginBottom: '80px',
