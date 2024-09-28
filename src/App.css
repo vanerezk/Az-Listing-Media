@@ -21,7 +21,7 @@
 #lineaservices {
     
     background: rgb(2, 0, 36);
-        background: linear-gradient(90deg, rgba(2, 0, 36, 0) 2%, #0099ff 50%, rgba(9, 121, 90, 0) 98%);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 0) 2%, #000000 50%, rgba(9, 121, 90, 0) 98%);
     
 }
 
@@ -59,12 +59,7 @@ div.before-after-slider img {
 }
 
 
-.cardsservices:hover {
-    border: 1px solid #ffffff;
-}
-.cardsservicesanother:hover {
-    border: 1px solid #ffffff;
-}
+
 
 
 
@@ -145,16 +140,6 @@ div.before-after-slider img {
 
 }
 
-
-
-#portfoliocard {
-transition: width 0.3s ease-in-out, margin 0.3s ease-in-out;
-}
-
-#portfoliocarousel {
-    transition: width 0.3s ease-in-out;
-    
-}
 
 
 

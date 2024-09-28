@@ -4,18 +4,27 @@ import {useState} from 'react';
 import {Link} from 'react-router-dom';
 import Modal from 'react-bootstrap/Modal';
 import CloseButton from 'react-bootstrap/CloseButton';
-import firstphoto from '../../assets/photos/15323 W Campbell Ave-1.jpg';
-import secondphoto from '../../assets/photos/16053 N 159th Ln_Drone-2.png';
+import firstphoto from '../../assets/photos/23555 N 159th Ave-12.jpg';
+import secondphoto from '../../assets/photos/42 E Interlacken Dr-35.jpg';
 import thirdphoto from '../../assets/photos/207208 N 129th Dr-95.jpg';
-import fourthphoto from '../../assets/photos/42 E Interlacken Dr-5.jpg';
-import fifthphoto from '../../assets/photos/28556 N 124th Dr Website-2 2.jpg';
-import sixthphoto from '../../assets/photos/22619 N San Ramon_Drone-1.jpg';
+import sixthphoto from '../../assets/photos/207208 N 129th Dr-89.jpg';
+import seventhphoto from '../../assets/photos/28556 N 124th Dr Website-2 2.jpg';
+import eightphoto from '../../assets/photos/23555 N 159th Ave-17.jpg';
+import ninephoto from '../../assets/photos/23555 N 159th Ave-22.jpg';
 
 function Portfolio() {
   const [modalShow, setModalShow] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const images = [firstphoto, secondphoto, thirdphoto, fourthphoto, fifthphoto, sixthphoto];
+  const images = [
+    secondphoto,
+    seventhphoto,
+    eightphoto,
+    ninephoto,
+    firstphoto,
+    thirdphoto,
+    sixthphoto,
+  ];
 
   const handleImageClick = (image) => {
     setSelectedImage(image);
@@ -46,15 +55,21 @@ function Portfolio() {
         className='
              mx-auto text-center bg-light   '
         style={{marginTop: '100px', height: '100vh', paddingTop: '100px'}}>
+        <h6
+          className='text-center '
+          style={{letterSpacing: '10px'}}>
+          CHECK OUT OUR{' '}
+        </h6>
         <h1
           className='text-center '
           style={{
-            fontSize: '28px',
-            letterSpacing: '10px',
+            letterSpacing: '8px',
+            fontSize: '50px',
+            marginBottom: '50px',
           }}>
           PORTFOLIO
         </h1>
-        <hr
+        {/* <hr
           className=' mx-auto d-none d-md-block '
           id='lineaservices'
           style={{
@@ -67,14 +82,14 @@ function Portfolio() {
         <hr
           className=' mx-auto d-md-none w-25   '
           style={{width: '400px', marginTop: '20px', marginBottom: '20px'}}
-        />
+        /> */}
         <Carousel
           responsive={responsive}
-          interval={5000}
+          interval={4000}
           infinite={true}
           autoPlay={true}
           swipeable={true}
-          draggable={true}
+          arrows={false}
           renderDotsOutside={true}
           customTransition='transform 300ms ease-in-out'
           transitionDuration={300}
@@ -111,26 +126,24 @@ function Portfolio() {
             </div>
           ))}
         </Carousel>
-        <div style={{padding: '50px ', paddingBottom: '100px'}}>
+        <div style={{padding: '50px ', paddingBottom: '100px', marginTop: '50px'}}>
           <button
-            className='btn btn-light  '
+            className='btn btn-dark  '
             style={{
-              backgroundColor: 'lightgray',
-              marginTop: '50px',
               borderRadius: '5px',
               padding: '15px 35px',
+              boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
             }}>
             <Link
               to='https://spiro.media/'
               target='_blank'
               style={{
                 textDecoration: 'none',
-
-                color: 'black',
+                color: 'white',
                 letterSpacing: '1px',
                 fontSize: '18px',
               }}>
-              FULL PORTFOLIO
+              OTHER PROJECTS
             </Link>
           </button>
         </div>
