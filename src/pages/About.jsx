@@ -52,12 +52,20 @@ function About() {
                 paddingLeft: '25px',
                 paddingRight: '25px',
               }}>
-              Eighteen Percent Productions LLC is a real estate marketing agency that provides a
-              full range of services to the real estate industry. We are committed to helping our
-              clients achieve their goals and goals. We offer a variety of services, including
-              marketing, branding, advertising, and social media management. We work with clients to
-              create a unique brand identity that reflects their vision and values. We are here to
-              help you achieve your goals and goals.
+              Welcome to AZ Listing Media, your premier real estate photography company based in the
+              vibrant city of Phoenix, Arizona. Our passion for capturing stunning visuals is
+              matched only by our commitment to quality. We are a small but dedicated team of
+              creatives who believe that every property has a unique story to tell. With a keen eye
+              for detail and a deep understanding of the real estate market, we specialize in
+              creating captivating imagery that showcases each property’s best features. Whether
+              it’s through breathtaking photography, dynamic video tours, or aerial images, our goal
+              is to elevate your listings and help them stand out in a competitive market. At AZ
+              Listing Media, we pride ourselves on our collaborative approach, working closely with
+              real estate agents, homeowners, and developers to bring their visions to life. We
+              understand the importance of first impressions, and we strive to ensure that every
+              photo reflects the true essence of the property. Join us on this creative journey as
+              we transform spaces into extraordinary visual experiences. With quality as our guiding
+              principle, we are here to support your success in the real estate industry.
             </p>
           </div>
 

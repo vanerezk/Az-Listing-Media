@@ -40,12 +40,14 @@ function Aboutmain() {
             <Row className=' mx-auto'>
               <Col className='text-center '>
                 <h5 style={{width: '70%', marginLeft: 'auto', marginRight: 'auto'}}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed similique earum
-                  consectetur nisi corporis nihil eum officiis distinctio odio minus consequuntur
-                  error, dignissimos facilis? Eaque harum impedit incidunt ad ea! Lorem ipsum dolor
-                  sit amet, consectetur adipisicing elit. In omnis reprehenderit fugit ipsam
-                  voluptatibus, adipisci deleniti delectus exercitationem dolor illum veniam sunt?
-                  Ea, assumenda deserunt temporibus autem impedit ratione dolorum?
+                  Our passionate and dedicated team specializes in capturing stunning visuals that
+                  highlight each property’s unique story. We offer breathtaking photography,
+                  engaging video tours, and aerial images to help your listings stand out in a
+                  competitive market. Collaborating closely with real estate agents, homeowners, and
+                  developers, we focus on creating high-quality imagery that reflects the true
+                  essence of each space. Join us in transforming properties into extraordinary
+                  visual experiences, as we strive to support your success in the real estate
+                  industry
                 </h5>
               </Col>
               <Col className='text-center'>
@@ -99,10 +101,14 @@ function Aboutmain() {
                     fontSize: '16px',
                     textAlign: 'justify',
                   }}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed similique earum
-                  consectetur nisi corporis nihil eum officiis distinctio odio minus consequuntur
-                  error, dignissimos facilis? Eaque harum impedit incidunt ad ea! Lorem ipsum dolor
-                  sit amet, consectetur adipisicin elit. In omnis reprehenderit fugit ipsam.
+                  Our passionate and dedicated team specializes in capturing stunning visuals that
+                  highlight each property’s unique story. We offer breathtaking photography,
+                  engaging video tours, and aerial images to help your listings stand out in a
+                  competitive market. Collaborating closely with real estate agents, homeowners, and
+                  developers, we focus on creating high-quality imagery that reflects the true
+                  essence of each space. Join us in transforming properties into extraordinary
+                  visual experiences, as we strive to support your success in the real estate
+                  industry
                 </h5>
               </Col>
               <Col
