@@ -44,12 +44,11 @@ function Portfolio() {
     <>
       <div
         className='
-             mx-auto text-center   '
-        style={{marginTop: '100px'}}>
+             mx-auto text-center bg-light   '
+        style={{marginTop: '100px', height: '100vh', paddingTop: '100px'}}>
         <h1
           className='text-center '
           style={{
-            marginTop: '52px',
             fontSize: '28px',
             letterSpacing: '10px',
           }}>
@@ -57,7 +56,13 @@ function Portfolio() {
         </h1>
         <hr
           className=' mx-auto d-none d-md-block '
-          style={{marginTop: '20px', marginBottom: '20px', width: '300px'}}
+          id='lineaservices'
+          style={{
+            border: 'none',
+            width: '300px',
+            height: '5px',
+            marginBottom: '80px',
+          }}
         />
         <hr
           className=' mx-auto d-md-none w-25   '
@@ -108,17 +113,23 @@ function Portfolio() {
         </Carousel>
         <div style={{padding: '50px ', paddingBottom: '100px'}}>
           <button
-            className='btn mx-auto '
+            className='btn btn-light  '
             style={{
-              borderRadius: '0px',
-              backgroundColor: '#EDEDED',
-
-              padding: '10px 30px',
-              boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
+              backgroundColor: 'lightgray',
+              marginTop: '50px',
+              borderRadius: '5px',
+              padding: '15px 35px',
             }}>
             <Link
-              to='/portfolio'
-              style={{textDecoration: 'none', color: 'black'}}>
+              to='https://spiro.media/'
+              target='_blank'
+              style={{
+                textDecoration: 'none',
+
+                color: 'black',
+                letterSpacing: '1px',
+                fontSize: '18px',
+              }}>
               FULL PORTFOLIO
             </Link>
           </button>

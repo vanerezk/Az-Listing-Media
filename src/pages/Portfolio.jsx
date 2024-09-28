@@ -39,6 +39,9 @@ function Portfolio() {
   }, [location]);
   return (
     <>
+      <h1
+        id='photography'
+        style={{zIndex: '-1', position: 'absolute', marginTop: '500px'}}></h1>
       <video
         id='backgroundvideo'
         style={{
@@ -81,9 +84,6 @@ function Portfolio() {
           style={{letterSpacing: '10px', fontSize: '40px', fontWeight: 'bold'}}>
           PORTFOLIO
         </h1>
-        <h1
-          id='photography'
-          style={{zIndex: '-1', position: 'absolute', marginTop: '200px'}}></h1>
       </div>
       <div className='text-container d-md-none   '>
         <h1
@@ -248,7 +248,7 @@ function Portfolio() {
             </Col>
             <h1
               id='videography'
-              style={{zIndex: '-1', position: 'absolute', marginTop: '250px'}}></h1>
+              style={{zIndex: '-1', position: 'absolute', marginTop: '200px'}}></h1>
             <Col
               xs={4}
               md={4}>
@@ -312,10 +312,11 @@ function Portfolio() {
           />
         </video>
       </Row>
-
+      <h1
+        id='drone'
+        style={{zIndex: '-1', position: 'absolute', marginTop: '-170px'}}></h1>
       <div
         className=' col-lg-12 col-md-6 col-sm-12 mx-auto '
-        id='drone'
         style={{marginTop: '20px', width: '80%'}}>
         <h4
           className='text-center '

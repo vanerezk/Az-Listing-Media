@@ -55,7 +55,7 @@ function Home() {
           <img
             src={firstlogo}
             style={{
-              width: '400px',
+              width: '250px',
               height: '100px',
               padding: '10px',
               marginTop: '12px',
@@ -71,7 +71,7 @@ function Home() {
               width: '400px',
               height: '100px',
               padding: '5px',
-              marginTop: '15px',
+              marginTop: '23px',
               objectFit: 'contain',
               background: 'none',
               border: 'none',

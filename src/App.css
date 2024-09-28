@@ -4,7 +4,8 @@
     box-sizing: border-box;
     font-style: normal;
     font-size: 16px;
-    font-family: "Nexa";
+    font-family: "Arial";
+    letter-spacing: 0.5px;
 }
 
 .firstphoto {
@@ -14,6 +15,14 @@
     object-fit: cover;
     border-radius: 25px;
     background: none;
+}
+
+
+#lineaservices {
+    
+    background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 0) 2%, #0099ff 50%, rgba(9, 121, 90, 0) 98%);
+    
 }
 
 .carousel-control-next-icon {
@@ -99,6 +108,7 @@ div.before-after-slider img {
     top: 30px;
     right: 30px;
     background-color: rgba(255, 255, 255, 0.88);
+   
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 16px;
@@ -107,6 +117,8 @@ div.before-after-slider img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+
+
 .image-container .price-tag::before {
     content: "$";
     font-size: 12px;
@@ -114,17 +126,15 @@ div.before-after-slider img {
 }
 
 @font-face {
-    font-family: "Nexa";
-    src: url("../src/assets/fonts/OpenSans-Regular.ttf") format("truetype");
+    font-family: "Arial";
+    src: url("../src/assets/fonts/ARIAL.TTF") format("truetype");
 }
 
-/* @font-face {
-    font-family: "Nexa Heavy";
-    src: url("../src/assets/fonts/Nexa-Heavy.ttf") format("truetype");
-} */
+
 
 
 @media screen and (max-width: 768px) {
+    
     .react-multiple-carousel__arrow--left {
         display: none !important;
     }
@@ -137,7 +147,14 @@ div.before-after-slider img {
 
 
 
+#portfoliocard {
+transition: width 0.3s ease-in-out, margin 0.3s ease-in-out;
+}
 
+#portfoliocarousel {
+    transition: width 0.3s ease-in-out;
+    
+}
 
 
 

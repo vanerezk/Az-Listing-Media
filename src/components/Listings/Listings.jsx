@@ -46,19 +46,24 @@ function Listings() {
                 <h5>We offer a variety of different services depending on your listing needs.</h5>
                 <div className='text-center'>
                   <button
-                    className='btn btn-light mx-auto'
+                    className='btn btn-light  '
                     style={{
-                      borderRadius: '0px',
-                      backgroundColor: '#EDEDED',
-                      padding: '10px 30px',
-                      marginTop: '35px',
-                      boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
+                      backgroundColor: 'lightgray',
+                      marginTop: '30px',
+                      borderRadius: '5px',
+                      padding: '15px 35px',
                     }}>
                     <Link
                       to='https://spiro.media/'
                       target='_blank'
-                      style={{textDecoration: 'none', color: 'black'}}>
-                      SCHEDULE NOW
+                      style={{
+                        textDecoration: 'none',
+
+                        color: 'black',
+                        letterSpacing: '1px',
+                        fontSize: '18px',
+                      }}>
+                      BOOK NOW
                     </Link>
                   </button>
                 </div>
@@ -69,7 +74,7 @@ function Listings() {
                 md={4}>
                 <Card
                   className='cardsservices'
-                  style={{boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)'}}>
+                  style={{boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)', borderRadius: '15px'}}>
                   <Card.Body className='text-center'>
                     <Card.Title
                       style={{letterSpacing: '2px', fontWeight: 'bold', marginTop: '20px'}}>
@@ -83,7 +88,7 @@ function Listings() {
                     />
                     <Card.Text
                       className='text-center mx-auto w-75'
-                      style={{marginBottom: '10px'}}>
+                      style={{marginBottom: '10px', fontSize: '18px'}}>
                       High-quality photos that showcase properties’ best features.
                     </Card.Text>
                   </Card.Body>
@@ -95,7 +100,7 @@ function Listings() {
                 md={4}>
                 <Card
                   className='cardsservices'
-                  style={{boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)'}}>
+                  style={{boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)', borderRadius: '15px'}}>
                   <Card.Body className='text-center'>
                     <Card.Title
                       style={{letterSpacing: '2px', fontWeight: 'bold', marginTop: '20px'}}>
@@ -109,7 +114,7 @@ function Listings() {
                     />
                     <Card.Text
                       className='text-center mx-auto w-75'
-                      style={{marginBottom: '10px'}}>
+                      style={{marginBottom: '10px', fontSize: '18px'}}>
                       Aerial media to capture unique perspectives of properties.
                     </Card.Text>
                   </Card.Body>
@@ -130,7 +135,7 @@ function Listings() {
                 className='text-center'>
                 <Card
                   className='cardsservices'
-                  style={{boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)'}}
+                  style={{boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)', borderRadius: '15px'}}
                   onClick={navigateToSection}>
                   <Card.Body className='text-center'>
                     <Card.Title
@@ -145,7 +150,7 @@ function Listings() {
                     />
                     <Card.Text
                       className='text-center mx-auto w-75'
-                      style={{marginBottom: '10px'}}>
+                      style={{marginBottom: '10px', fontSize: '18px'}}>
                       Dynamic videos and content that tells a property’s story.
                     </Card.Text>
                   </Card.Body>
@@ -158,7 +163,7 @@ function Listings() {
                 className='text-center'>
                 <Card
                   className='cardsservices'
-                  style={{boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)'}}>
+                  style={{boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)', borderRadius: '15px'}}>
                   <Card.Body className='text-center'>
                     <Card.Title
                       style={{letterSpacing: '2px', fontWeight: 'bold', marginTop: '20px'}}>
@@ -176,7 +181,7 @@ function Listings() {
                     />
                     <Card.Text
                       className='text-center mx-auto w-75 '
-                      style={{marginBottom: '10px'}}>
+                      style={{marginBottom: '10px', fontSize: '18px'}}>
                       Virtual 360-degrees tours that tell a property’s story.
                     </Card.Text>
                   </Card.Body>
@@ -189,7 +194,7 @@ function Listings() {
                 className='text-center'>
                 <Card
                   className='cardsservices'
-                  style={{boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)'}}>
+                  style={{boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)', borderRadius: '15px'}}>
                   <Card.Body className='text-center'>
                     <Card.Title
                       style={{letterSpacing: '2px', fontWeight: 'bold', marginTop: '20px'}}>
@@ -208,7 +213,7 @@ function Listings() {
                     />
                     <Card.Text
                       className='text-center mx-auto w-75'
-                      style={{marginBottom: '10px'}}>
+                      style={{marginBottom: '10px', fontSize: '18px'}}>
                       Clear, visual representations of property layouts and blueprints.
                     </Card.Text>
                   </Card.Body>

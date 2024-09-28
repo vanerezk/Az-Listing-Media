@@ -6,7 +6,7 @@ function Video() {
     <>
       <video
         id='backgroundvideo'
-        style={{width: '100%'}}
+        style={{width: '100%', height: '100vh', objectFit: 'cover'}}
         autoPlay
         muted
         loop>
@@ -20,24 +20,34 @@ function Video() {
         style={{marginTop: '100px'}}>
         <h1
           className=' text-white'
-          style={{letterSpacing: '10px'}}>
-          A REAL ESTATE
+          style={{letterSpacing: '10px', fontSize: '30px'}}>
+          THE VALLEY'S REAL ESTATE
           <br />
-          <b style={{fontSize: '60px'}}>MEDIA COMPANY</b>
+          <b style={{letterSpacing: '8px', fontSize: '78px'}}>MEDIA COMPANY</b>
         </h1>
         <h4
           className=' text-white'
-          style={{fontSize: '18px'}}>
-          THE VALLEY'S PREMIER REAL ESTATE MARKETING SOLUTION
+          style={{letterSpacing: '1px', fontSize: '22px'}}>
+          SERVING THE GREATER PHOENIX AREA
         </h4>
         <button
           className='btn btn-light'
-          style={{marginTop: '100px', borderRadius: '0px', padding: '10px 30px'}}>
+          style={{
+            marginTop: '60px',
+
+            borderRadius: '5px',
+            padding: '15px 35px',
+          }}>
           <Link
             to='https://spiro.media/'
             target='_blank'
-            style={{textDecoration: 'none', color: 'black'}}>
-            SCHEDULE NOW
+            style={{
+              textDecoration: 'none',
+              color: 'black',
+              letterSpacing: '1px',
+              fontSize: '18px',
+            }}>
+            BOOK A SHOOT
           </Link>
         </button>
       </div>
