@@ -132,24 +132,46 @@ function Home() {
             style={{letterSpacing: '10px'}}>
             LET US TAKE CARE OF YOU!
           </h1>
+          <div
+            className='text-center d-none d-md-block '
+            style={{marginTop: '50px'}}>
+            <button
+              className='btn btn-light  '
+              style={{
+                borderRadius: '5px',
+                padding: '15px 35px',
+                boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
+              }}>
+              <Link
+                to='https://spiro.media/'
+                target='_blank'
+                style={{
+                  textDecoration: 'none',
+                  color: 'black',
+                  letterSpacing: '1px',
+                  fontSize: '18px',
+                }}>
+                BOOK NOW
+              </Link>
+            </button>
+          </div>
           <button
-            className='btn btn-light d-none d-md-block mx-auto'
-            style={{marginTop: '20px', borderRadius: '0px', padding: '10px 30px'}}>
+            className='btn btn-light d-block d-md-none mx-auto '
+            style={{
+              borderRadius: '5px',
+              padding: '15px 35px',
+              boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
+            }}>
             <Link
               to='https://spiro.media/'
               target='_blank'
-              style={{textDecoration: 'none', color: 'black'}}>
-              SCHEDULE NOW
-            </Link>
-          </button>
-          <button
-            className='btn btn-light d-md-none'
-            style={{marginTop: '20px', borderRadius: '0px', padding: '10px 20px'}}>
-            <Link
-              to='https://spiro.media/'
-              target='_blank'
-              style={{textDecoration: 'none', color: 'black'}}>
-              SCHEDULE NOW
+              style={{
+                textDecoration: 'none',
+                color: 'black',
+                letterSpacing: '1px',
+                fontSize: '18px',
+              }}>
+              BOOK NOW
             </Link>
           </button>
         </div>

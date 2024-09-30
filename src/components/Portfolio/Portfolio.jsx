@@ -53,7 +53,7 @@ function Portfolio() {
     <>
       <div
         className='
-             mx-auto text-center bg-light   '
+             mx-auto text-center bg-light  w-100 p-5 '
         style={{marginTop: '100px', height: '100vh', paddingTop: '100px'}}>
         <h6
           className='text-center '

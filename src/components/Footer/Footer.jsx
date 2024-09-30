@@ -1,4 +1,5 @@
 import {Container, Row, Col} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 import logofooter from '../../assets/photos/AZ_Listing_Media.png';
 
 function Footer() {
@@ -35,18 +36,23 @@ function Footer() {
                 </span>
                 <br />
                 <button
-                  className='btn btn-light mx-auto'
+                  className='btn btn-dark mt-3  '
                   style={{
-                    borderRadius: '0px',
-                    backgroundColor: '#EDEDED',
-                    padding: '10px 30px',
-                    marginTop: '35px',
-                    boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
-                  }}
-                  onClick={() => {
-                    window.location.href = 'https://spiro.media/';
+                    borderRadius: '5px',
+                    padding: '15px 35px',
+                    boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
                   }}>
-                  SCHEDULE NOW
+                  <Link
+                    to='https://spiro.media/'
+                    target='_blank'
+                    style={{
+                      textDecoration: 'none',
+                      color: 'white',
+                      letterSpacing: '1px',
+                      fontSize: '18px',
+                    }}>
+                    SCHEDULE NOW
+                  </Link>
                 </button>
               </Col>
 

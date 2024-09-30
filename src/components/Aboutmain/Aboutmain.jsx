@@ -6,39 +6,33 @@ function Aboutmain() {
   return (
     <>
       {/* ABOUT US DESKTOP */}
-      <div className='d-none d-md-block'>
+      <div
+        className='mx-auto w-100 p-5 d-none d-md-block  '
+        style={{marginTop: '20px'}}>
+        <h6
+          className='text-center'
+          style={{letterSpacing: '10px'}}>
+          A LITTLTE BIT
+        </h6>
         <h1
-          className='text-center d-none d-md-block '
-          style={{
-            marginTop: '52px',
-            fontSize: '28px',
-            letterSpacing: '10px',
-          }}>
+          className='text-center'
+          style={{letterSpacing: '8px', fontSize: '50px', marginBottom: '50px'}}>
           ABOUT US
         </h1>
-        <hr
-          className=' mx-auto d-none d-md-block '
-          style={{marginTop: '20px', marginBottom: '20px', width: '300px'}}
-        />
 
         <div
-          className='container'
+          className='w-75 d-none d-md-block mx-auto  '
           style={{
+            marginTop: '100px',
             width: '80%',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '100vh',
-            marginTop: '-100px',
           }}>
           <div
-            className='mx-auto d-none d-md-block'
             style={{
               paddingLeft: '60px',
               paddingRight: '60px',
             }}>
             <Row className=' mx-auto'>
-              <Col className='text-center '>
+              <Col className=' justfiy-content-left '>
                 <h5 style={{width: '70%', marginLeft: 'auto', marginRight: 'auto'}}>
                   Our passionate and dedicated team specializes in capturing stunning visuals that
                   highlight each property’s unique story. We offer breathtaking photography,
@@ -71,20 +65,17 @@ function Aboutmain() {
       <div className='d-block d-md-none '>
         <div
           className='bg-light '
-          style={{paddingBottom: '50px', paddingTop: '50px'}}>
+          style={{paddingBottom: '50px'}}>
+          <h6
+            className='text-center'
+            style={{letterSpacing: '10px'}}>
+            A LITTLTE BIT
+          </h6>
           <h1
-            className='text-center '
-            style={{
-              marginTop: '52px',
-              fontSize: '28px',
-              letterSpacing: '10px',
-            }}>
+            className='text-center'
+            style={{letterSpacing: '8px', fontSize: '50px', marginBottom: '50px'}}>
             ABOUT US
           </h1>
-          <hr
-            className=' mx-auto'
-            style={{marginTop: '20px', marginBottom: '20px', width: '200px'}}
-          />
 
           <div
             className='container'

@@ -1,4 +1,4 @@
-import {Card, Col, Row} from 'react-bootstrap';
+import {Card, Col, Row, Carousel} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 
 import listingmedia from '../../assets/photos/28556 N 124th Dr Website-2 2.jpg';
@@ -8,45 +8,214 @@ import agentbranding from '../../assets/photos/Dining Room-1.jpg';
 
 function Services() {
   return (
-    <div className=' mx-auto w-100 p-5 '>
+    <div
+      className='mx-auto w-100 '
+      style={{marginTop: '70px'}}>
       <h6
-        className='text-center '
+        className='text-center'
         style={{letterSpacing: '10px'}}>
         A COMPLETE REAL ESTATE
       </h6>
       <h1
-        className='text-center '
-        style={{
-          letterSpacing: '8px',
-          fontSize: '50px',
-          marginBottom: '50px',
-        }}>
+        className='text-center'
+        style={{letterSpacing: '8px', fontSize: '50px', marginBottom: '50px'}}>
         MEDIA SOLUTION
       </h1>
 
-      {/* <hr
-        className=' mx-auto d-none d-md-block w-25'
-        id='lineaservices'
-        style={{
-          border: 'none',
-          borderRadius: '5px',
-          marginBottom: '40px',
-          height: '5px',
-        }}
-      />
-      <hr
-        className=' mx-auto d-md-none w-25   '
-        style={{width: '400px', marginTop: '20px', marginBottom: '20px'}}
-      /> */}
+      {/* Desktop layout */}
+      <div className='d-none d-md-block  '>
+        <div
+          className=' mx-auto w-75 d-flex  '
+          style={{scale: '0.9'}}>
+          <Row>
+            <Col
+              lg={3}
+              md={3}
+              sm={12}>
+              <Card
+                style={{
+                  width: 'auto',
+                  borderRadius: '15px 15px 15px 15px',
+                  marginBottom: '80px',
+                  boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
+                }}>
+                <Card.Img
+                  variant='top'
+                  src={listingmedia}
+                  style={{
+                    width: 'auto',
+                    padding: '0px',
+                    borderRadius: '15px 15px 0px 0px',
+                    height: '18rem',
+                    objectFit: 'cover',
+                  }}
+                />
+                <Card.Body className='text-center'>
+                  <Card.Title
+                    style={{
+                      letterSpacing: '2px',
+                      marginTop: '10px',
+                      fontWeight: 'bold',
+                      fontSize: '25px',
+                      marginBottom: '20px',
+                    }}>
+                    LISTING MEDIA
+                  </Card.Title>
+                  <Card.Text style={{marginBottom: '20px'}}>
+                    Listing photos, property videos, 3D Tours, Virtual Tours and more.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col
+              lg={3}
+              md={3}
+              sm={12}>
+              <Card
+                style={{
+                  width: 'auto',
+                  borderRadius: '15px 15px 15px 15px',
+                  marginBottom: '80px',
+                  boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
+                }}>
+                <Card.Img
+                  variant='top'
+                  src={marketingvideos}
+                  style={{
+                    width: 'auto',
+                    padding: '0px',
+                    borderRadius: '15px 15px 0px 0px',
+                    height: '18rem',
+                    objectFit: 'cover',
+                  }}
+                />
+                <Card.Body className='text-center'>
+                  <Card.Title
+                    style={{
+                      letterSpacing: '2px',
+                      marginTop: '10px',
+                      fontSize: '25px',
+                      fontWeight: 'bold',
+                      marginBottom: '20px',
+                    }}>
+                    MARKETING VIDEOS
+                  </Card.Title>
+                  <Card.Text style={{marginBottom: '20px'}}>
+                    Cinematic highlights, lifestyle videos, social media content, and much more.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col
+              lg={3}
+              md={3}
+              sm={12}>
+              <Card
+                style={{
+                  width: 'auto',
+                  borderRadius: '15px 15px 15px 15px',
+                  marginBottom: '80px',
+                  boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
+                }}>
+                <Card.Img
+                  variant='top'
+                  src={agentbranding}
+                  style={{
+                    width: 'auto',
+                    padding: '0px',
+                    borderRadius: '15px 15px 0px 0px',
+                    height: '18rem',
+                    objectFit: 'cover',
+                  }}
+                />
+                <Card.Body className='text-center'>
+                  <Card.Title
+                    style={{
+                      letterSpacing: '2px',
+                      marginTop: '10px',
+                      fontWeight: 'bold',
+                      fontSize: '25px',
+                      marginBottom: '20px',
+                    }}>
+                    AGENT BRANDING
+                  </Card.Title>
+                  <Card.Text style={{marginBottom: '20px'}}>
+                    Elevate your brand with our agent-focused media solutions.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col
+              lg={3}
+              md={3}
+              sm={12}>
+              <Card
+                style={{
+                  width: 'auto',
+                  borderRadius: '15px 15px 15px 15px',
+                  marginBottom: '80px',
+                  boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
+                }}>
+                <Card.Img
+                  variant='top'
+                  src={aerialmedia}
+                  style={{
+                    width: 'auto',
+                    padding: '0px',
+                    borderRadius: '15px 15px 0px 0px',
+                    height: '18rem',
+                    objectFit: 'cover',
+                  }}
+                />
+                <Card.Body className='text-center'>
+                  <Card.Title
+                    style={{
+                      letterSpacing: '2px',
+                      marginTop: '10px',
+                      fontSize: '25px',
+                      fontWeight: 'bold',
+                      marginBottom: '20px',
+                    }}>
+                    AERIAL SOLUTIONS
+                  </Card.Title>
+                  <Card.Text style={{marginBottom: '20px'}}>
+                    Get a view from above with our licensed drone pilots.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        </div>
+        <div className='text-center d-none d-md-block '>
+          <button
+            className='btn btn-dark  '
+            style={{
+              borderRadius: '5px',
+              padding: '15px 35px',
+              boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
+            }}>
+            <Link
+              to='https://spiro.media/'
+              target='_blank'
+              style={{
+                textDecoration: 'none',
+                color: 'white',
+                letterSpacing: '1px',
+                fontSize: '18px',
+              }}>
+              BOOK A SHOOT
+            </Link>
+          </button>
+        </div>
+      </div>
 
-      {/*desktop*/}
-
-      <div className=' d-flex justify-content-center d-none d-md-block '>
-        <Row style={{scale: '0.8'}}>
-          <Col style={{paddingRight: '50px'}}>
+      {/* Mobile layout */}
+      <div className='d-block d-md-none w-75 mx-auto'>
+        <Carousel>
+          <Carousel.Item>
             <Card
               style={{
-                width: '23rem',
+                width: '100%',
                 borderRadius: '15px 15px 15px 15px',
                 marginBottom: '80px',
                 boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -55,7 +224,7 @@ function Services() {
                 variant='top'
                 src={listingmedia}
                 style={{
-                  width: '23rem',
+                  width: '100%',
                   padding: '0px',
                   borderRadius: '15px 15px 0px 0px',
                   height: '18rem',
@@ -78,11 +247,11 @@ function Services() {
                 </Card.Text>
               </Card.Body>
             </Card>
-          </Col>
-          <Col style={{paddingRight: '50px'}}>
+          </Carousel.Item>
+          <Carousel.Item>
             <Card
               style={{
-                width: '23rem',
+                width: '100%',
                 borderRadius: '15px 15px 15px 15px',
                 marginBottom: '80px',
                 boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -91,7 +260,7 @@ function Services() {
                 variant='top'
                 src={marketingvideos}
                 style={{
-                  width: '23rem',
+                  width: '100%',
                   padding: '0px',
                   borderRadius: '15px 15px 0px 0px',
                   height: '18rem',
@@ -114,11 +283,11 @@ function Services() {
                 </Card.Text>
               </Card.Body>
             </Card>
-          </Col>
-          <Col style={{paddingRight: '50px'}}>
+          </Carousel.Item>
+          <Carousel.Item>
             <Card
               style={{
-                width: '23rem',
+                width: '100%',
                 borderRadius: '15px 15px 15px 15px',
                 marginBottom: '80px',
                 boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -127,7 +296,7 @@ function Services() {
                 variant='top'
                 src={agentbranding}
                 style={{
-                  width: '23rem',
+                  width: '100%',
                   padding: '0px',
                   borderRadius: '15px 15px 0px 0px',
                   height: '18rem',
@@ -150,11 +319,11 @@ function Services() {
                 </Card.Text>
               </Card.Body>
             </Card>
-          </Col>
-          <Col>
+          </Carousel.Item>
+          <Carousel.Item>
             <Card
               style={{
-                width: '23rem',
+                width: '100%',
                 borderRadius: '15px 15px 15px 15px',
                 marginBottom: '80px',
                 boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -163,7 +332,7 @@ function Services() {
                 variant='top'
                 src={aerialmedia}
                 style={{
-                  width: '23rem',
+                  width: '100%',
                   padding: '0px',
                   borderRadius: '15px 15px 0px 0px',
                   height: '18rem',
@@ -186,30 +355,8 @@ function Services() {
                 </Card.Text>
               </Card.Body>
             </Card>
-          </Col>
-        </Row>
-
-        <div className='text-center d-none d-md-block '>
-          <button
-            className='btn btn-dark  '
-            style={{
-              borderRadius: '5px',
-              padding: '15px 35px',
-              boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
-            }}>
-            <Link
-              to='https://spiro.media/'
-              target='_blank'
-              style={{
-                textDecoration: 'none',
-                color: 'white',
-                letterSpacing: '1px',
-                fontSize: '18px',
-              }}>
-              BOOK A SHOOT
-            </Link>
-          </button>
-        </div>
+          </Carousel.Item>
+        </Carousel>
       </div>
     </div>
   );

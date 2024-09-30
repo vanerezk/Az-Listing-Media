@@ -2,8 +2,7 @@ import {Link} from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Carousel from 'react-bootstrap/Carousel';
-import {useNavigate} from 'react-router-dom';
+
 import photographyphoto from '../../assets/photos/28556 N 124th Dr-4.jpg';
 import aerialphoto from '../../assets/photos/39718 N Bridlewood Way Drone-10.jpg';
 import videographyphoto from '../../assets/photos/19312 W Puget Ave-77.jpg';
@@ -11,400 +10,251 @@ import virtualtourphoto from '../../assets/photos/19312 W Puget Ave-51.jpg';
 import floorplansphoto from '../../assets/photos/floorplan-with-a-garage.png';
 
 function Listings() {
-  const navigate = useNavigate();
-  const navigateToSection = () => {
-    navigate('/pricings');
-    setTimeout(() => {
-      const videographySection = document.getElementById('videography');
-      if (videographySection) {
-        videographySection.scrollIntoView({behavior: 'smooth'});
-      }
-    }, 100);
-  };
-
   return (
     <>
-      <div className='bg-light  mx-auto w-100'>
+      <div className='d-none d-md-block bg-light  '>
         <div
-          className=' w-100 d-none d-md-block '
-          style={{scale: '0.7'}}>
-          <div style={{paddingLeft: '60px', paddingRight: '60px'}}>
-            <Row
-              style={{
-                width: '90%',
-                marginLeft: 'auto',
-                marginRight: 'auto',
-              }}>
-              <Col
-                xs={12}
-                sm={6}
-                md={4}
-                className='text-center p-5'>
-                <h1 style={{marginTop: '70px', letterSpacing: '10px', fontSize: '40px'}}>
-                  LISTING SERVICES
-                </h1>
-                <h5>We offer a variety of different services depending on your listing needs.</h5>
-                <div className='text-center'>
-                  <button
-                    className='btn btn-light  '
+          className=' mx-auto w-75   '
+          style={{scale: '0.9'}}>
+          <Row>
+            <Col
+              xs={12}
+              sm={6}
+              md={4}>
+              <h1
+                className='text-center'
+                style={{letterSpacing: '8px', fontSize: '50px', marginTop: '40px'}}>
+                LISTING SERVICES
+              </h1>
+              <h5 className='text-center w-75 mx-auto  '>
+                We offer a variety of different services depending on your listing needs.
+              </h5>
+              <div
+                className='text-center d-none d-md-block '
+                style={{marginTop: '50px'}}>
+                <button
+                  className='btn btn-dark  '
+                  style={{
+                    borderRadius: '5px',
+                    padding: '15px 35px',
+                    boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
+                  }}>
+                  <Link
+                    to='https://spiro.media/'
+                    target='_blank'
                     style={{
-                      backgroundColor: 'lightgray',
-                      marginTop: '30px',
-                      borderRadius: '5px',
-                      padding: '15px 35px',
+                      textDecoration: 'none',
+                      color: 'white',
+                      letterSpacing: '1px',
+                      fontSize: '18px',
                     }}>
-                    <Link
-                      to='https://spiro.media/'
-                      target='_blank'
-                      style={{
-                        textDecoration: 'none',
-
-                        color: 'black',
-                        letterSpacing: '1px',
-                        fontSize: '18px',
-                      }}>
-                      BOOK NOW
-                    </Link>
-                  </button>
-                </div>
-              </Col>
-              <Col
-                xs={12}
-                sm={6}
-                md={4}>
-                <Card
-                  className='cardsservices'
-                  style={{boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)', borderRadius: '15px'}}>
-                  <Card.Body className='text-center'>
-                    <Card.Title
-                      style={{letterSpacing: '2px', fontWeight: 'bold', marginTop: '20px'}}>
-                      PHOTOGRAPHY
-                    </Card.Title>
-                    <Card.Img
-                      variant='top'
-                      src={photographyphoto}
-                      className='mx-auto'
-                      style={{height: '350px', width: '100%', objectFit: 'cover', padding: '20px'}}
-                    />
-                    <Card.Text
-                      className='text-center mx-auto w-75'
-                      style={{marginBottom: '10px', fontSize: '18px'}}>
-                      High-quality photos that showcase properties’ best features.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col
-                xs={12}
-                sm={6}
-                md={4}>
-                <Card
-                  className='cardsservices'
-                  style={{boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)', borderRadius: '15px'}}>
-                  <Card.Body className='text-center'>
-                    <Card.Title
-                      style={{letterSpacing: '2px', fontWeight: 'bold', marginTop: '20px'}}>
-                      AERIAL
-                    </Card.Title>
-                    <Card.Img
-                      variant='top'
-                      src={aerialphoto}
-                      className='mx-auto'
-                      style={{height: '350px', width: '100%', objectFit: 'cover', padding: '20px'}}
-                    />
-                    <Card.Text
-                      className='text-center mx-auto w-75'
-                      style={{marginBottom: '10px', fontSize: '18px'}}>
-                      Aerial media to capture unique perspectives of properties.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
-            <Row
-              style={{
-                width: '90%',
-                marginLeft: 'auto',
-                marginRight: 'auto',
-                marginTop: '50px',
-              }}>
-              <Col
-                xs={12}
-                sm={6}
-                md={4}
-                className='text-center'>
-                <Card
-                  className='cardsservices'
-                  style={{boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)', borderRadius: '15px'}}
-                  onClick={navigateToSection}>
-                  <Card.Body className='text-center'>
-                    <Card.Title
-                      style={{letterSpacing: '2px', fontWeight: 'bold', marginTop: '20px'}}>
-                      VIDEOGRAPHY
-                    </Card.Title>
-                    <Card.Img
-                      variant='top'
-                      src={videographyphoto}
-                      className='mx-auto'
-                      style={{height: '350px', width: '100%', objectFit: 'cover', padding: '20px'}}
-                    />
-                    <Card.Text
-                      className='text-center mx-auto w-75'
-                      style={{marginBottom: '10px', fontSize: '18px'}}>
-                      Dynamic videos and content that tells a property’s story.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col
-                xs={12}
-                sm={6}
-                md={4}
-                className='text-center'>
-                <Card
-                  className='cardsservices'
-                  style={{boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)', borderRadius: '15px'}}>
-                  <Card.Body className='text-center'>
-                    <Card.Title
-                      style={{letterSpacing: '2px', fontWeight: 'bold', marginTop: '20px'}}>
-                      VIRTUAL TOURS
-                    </Card.Title>
-                    <Card.Img
-                      src={virtualtourphoto}
-                      className='mx-auto'
-                      style={{
-                        height: '350px',
-                        width: '100%',
-                        objectFit: 'cover',
-                        padding: '20px',
-                      }}
-                    />
-                    <Card.Text
-                      className='text-center mx-auto w-75 '
-                      style={{marginBottom: '10px', fontSize: '18px'}}>
-                      Virtual 360-degrees tours that tell a property’s story.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col
-                xs={12}
-                sm={6}
-                md={4}
-                className='text-center'>
-                <Card
-                  className='cardsservices'
-                  style={{boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)', borderRadius: '15px'}}>
-                  <Card.Body className='text-center'>
-                    <Card.Title
-                      style={{letterSpacing: '2px', fontWeight: 'bold', marginTop: '20px'}}>
-                      2D FLOOR PLANS
-                    </Card.Title>
-                    <Card.Img
-                      variant='top'
-                      src={floorplansphoto}
-                      className='mx-auto'
-                      style={{
-                        height: '350px',
-                        width: '100%',
-                        objectFit: 'cover',
-                        padding: '20px',
-                      }}
-                    />
-                    <Card.Text
-                      className='text-center mx-auto w-75'
-                      style={{marginBottom: '10px', fontSize: '18px'}}>
-                      Clear, visual representations of property layouts and blueprints.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
-          </div>
-        </div>
-      </div>
-
-      {/* Services mobile */}
-
-      <div className='d-md-none'>
-        <div className='text-center'>
-          <h1 style={{marginTop: '70px', letterSpacing: '8px', fontSize: '28px'}}>
-            LISTING SERVICES
-          </h1>
-          <hr style={{width: '100px', marginLeft: 'auto', marginRight: 'auto'}} />
-        </div>
-        <div
-          className='d-md-none  d-flex justify-content-center '
-          style={{width: '100%'}}>
-          <Carousel
-            indicators={false}
-            variant='dark'
-            slide={false}
-            style={{width: '90%'}}>
-            <Carousel.Item>
+                    BOOK NOW
+                  </Link>
+                </button>
+              </div>
+            </Col>
+            <Col
+              xs={12}
+              sm={6}
+              md={4}>
               <Card
                 style={{
-                  width: '18rem',
-                  marginTop: '40px',
-                  marginLeft: '50px',
-                  marginBottom: '80px',
+                  width: 'auto',
+                  height: '28rem',
+                  borderRadius: '15px 15px 15px 15px',
+
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
                 }}>
                 <Card.Img
                   variant='top'
                   src={photographyphoto}
-                  style={{padding: '20px', width: '18rem', height: '18rem', objectFit: 'cover'}}
+                  style={{
+                    width: 'auto',
+                    padding: '0px',
+                    borderRadius: '15px 15px 0px 0px',
+                    height: '18rem',
+                    objectFit: 'cover',
+                  }}
                 />
                 <Card.Body className='text-center'>
                   <Card.Title
                     style={{
                       letterSpacing: '2px',
-                      marginTop: '-10px',
+                      marginTop: '10px',
                       fontWeight: 'bold',
-                      marginBottom: '10px',
+                      fontSize: '25px',
+                      marginBottom: '20px',
                     }}>
                     PHOTOGRAPHY
                   </Card.Title>
+                  <Card.Text style={{marginBottom: '20px'}}>
+                    High-quality photos that showcase properties’ best features.
+                  </Card.Text>
                 </Card.Body>
               </Card>
-            </Carousel.Item>
-            <Carousel.Item>
+            </Col>
+            <Col
+              xs={12}
+              sm={6}
+              md={4}>
               <Card
-                className='categorycarousel'
                 style={{
-                  width: '18rem',
-                  marginTop: '40px',
-                  marginBottom: '80px',
-                  marginLeft: '50px',
+                  width: 'auto',
+                  height: '28rem',
+                  borderRadius: '15px 15px 15px 15px',
+
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
                 }}>
                 <Card.Img
                   variant='top'
                   src={aerialphoto}
-                  style={{padding: '20px', width: '18rem', height: '18rem', objectFit: 'cover'}}
+                  style={{
+                    padding: '0px',
+                    borderRadius: '15px 15px 0px 0px',
+                    height: '18rem',
+                    objectFit: 'cover',
+                  }}
                 />
                 <Card.Body className='text-center'>
                   <Card.Title
                     style={{
                       letterSpacing: '2px',
-                      marginTop: '-10px',
+                      marginTop: '10px',
                       fontWeight: 'bold',
-                      marginBottom: '10px',
+                      fontSize: '25px',
+                      marginBottom: '20px',
                     }}>
                     AERIAL
                   </Card.Title>
+                  <Card.Text style={{marginBottom: '20px'}}>
+                    Aerial media for your property to showcase your property’s best features.
+                  </Card.Text>
                 </Card.Body>
               </Card>
-            </Carousel.Item>
-            <Carousel.Item>
+            </Col>
+          </Row>
+          <Row style={{marginTop: '50px'}}>
+            <Col
+              xs={12}
+              sm={6}
+              md={4}
+              className='text-center'>
               <Card
-                className='#categorycarousel'
                 style={{
-                  width: '18rem',
-                  marginTop: '40px',
-                  marginBottom: '80px',
-                  marginLeft: '50px',
+                  width: 'auto',
+                  height: '28rem',
+                  borderRadius: '15px 15px 15px 15px',
+
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
                 }}>
                 <Card.Img
                   variant='top'
                   src={videographyphoto}
-                  style={{padding: '20px', width: '18rem', height: '18rem', objectFit: 'cover'}}
+                  style={{
+                    padding: '0px',
+                    borderRadius: '15px 15px 0px 0px',
+                    height: '18rem',
+                    objectFit: 'cover',
+                  }}
                 />
-                <Card.Body className='text-center '>
+                <Card.Body className='text-center'>
                   <Card.Title
                     style={{
                       letterSpacing: '2px',
-                      marginTop: '-10px',
+                      marginTop: '10px',
                       fontWeight: 'bold',
-                      marginBottom: '10px',
+                      fontSize: '25px',
+                      marginBottom: '20px',
                     }}>
                     VIDEOGRAPHY
                   </Card.Title>
+                  <Card.Text style={{marginBottom: '20px'}}>
+                    Dynamic video content to make your property stand out and be noticed.
+                  </Card.Text>
                 </Card.Body>
               </Card>
-            </Carousel.Item>
-            <Carousel.Item>
+            </Col>
+            <Col
+              xs={12}
+              sm={6}
+              md={4}
+              className='text-center'>
               <Card
-                className='#categorycarousel'
                 style={{
-                  width: '18rem',
-                  marginTop: '40px',
-                  marginBottom: '80px',
-                  marginLeft: '50px',
+                  width: 'auto',
+                  height: '28rem',
+                  borderRadius: '15px 15px 15px 15px',
+
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
                 }}>
                 <Card.Img
                   variant='top'
                   src={virtualtourphoto}
-                  style={{padding: '20px', width: '18rem', height: '18rem', objectFit: 'cover'}}
+                  style={{
+                    padding: '0px',
+                    borderRadius: '15px 15px 0px 0px',
+                    height: '18rem',
+                    objectFit: 'cover',
+                  }}
                 />
-                <Card.Body className='text-center '>
+                <Card.Body className='text-center'>
                   <Card.Title
                     style={{
                       letterSpacing: '2px',
-                      marginTop: '-10px',
+                      marginTop: '10px',
                       fontWeight: 'bold',
-                      marginBottom: '10px',
+                      fontSize: '25px',
+                      marginBottom: '20px',
                     }}>
-                    360 VIRTUAL TOURS
+                    VIRTUAL TOURS
                   </Card.Title>
+                  <Card.Text style={{marginBottom: '20px'}}>
+                    Virtual 360-degrees tours that show and tell a story of your property.
+                  </Card.Text>
                 </Card.Body>
               </Card>
-            </Carousel.Item>
-            <Carousel.Item>
+            </Col>
+            <Col
+              xs={12}
+              sm={6}
+              md={4}
+              className='text-center'>
               <Card
-                className='#categorycarousel'
                 style={{
-                  width: '18rem',
-                  marginTop: '40px',
-                  marginBottom: '80px',
-                  marginLeft: '50px',
+                  width: 'auto',
+                  height: '28rem',
+                  borderRadius: '15px 15px 15px 15px',
+
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
                 }}>
                 <Card.Img
                   variant='top'
                   src={floorplansphoto}
-                  style={{padding: '20px', width: '18rem', height: '18rem', objectFit: 'cover'}}
+                  style={{
+                    padding: '0px',
+                    borderRadius: '15px 15px 0px 0px',
+                    height: '18rem',
+                    objectFit: 'cover',
+                  }}
                 />
-                <Card.Body className='text-center '>
+                <Card.Body className='text-center'>
                   <Card.Title
                     style={{
                       letterSpacing: '2px',
-                      marginTop: '-10px',
+                      marginTop: '10px',
                       fontWeight: 'bold',
-                      marginBottom: '10px',
+                      fontSize: '25px',
+                      marginBottom: '20px',
                     }}>
                     2D FLOOR PLANS
                   </Card.Title>
+                  <Card.Text style={{marginBottom: '20px'}}>
+                    Clear, visual representations of your property layouts and blueprints.
+                  </Card.Text>
                 </Card.Body>
               </Card>
-            </Carousel.Item>
-          </Carousel>
-        </div>
-        <h5
-          className='text-center'
-          style={{marginBottom: '40px', textAlign: 'justify'}}>
-          We offer a variety of different services depending on your listing needs.
-        </h5>
-        <div className='text-center'>
-          <button
-            className='btn btn-light mx-auto'
-            style={{
-              borderRadius: '0px',
-              backgroundColor: '#EDEDED',
-              padding: '10px 30px',
-
-              marginBottom: '100px',
-              boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
-            }}>
-            <Link
-              to='https://spiro.media/'
-              target='_blank'
-              style={{textDecoration: 'none', color: 'black'}}>
-              SCHEDULE NOW
-            </Link>
-          </button>
+            </Col>
+          </Row>
         </div>
       </div>
     </>
