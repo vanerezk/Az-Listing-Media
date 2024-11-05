@@ -3,8 +3,8 @@ import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import photographyphoto from '../../assets/photos/28556 N 124th Dr-4.jpg';
-import aerialphoto from '../../assets/photos/39718 N Bridlewood Way Drone-10.jpg';
+import photographyphoto from '../../assets/photos/23555 N 159th Ave-3.jpg';
+import aerialphoto from '../../assets/photos/21887 N 181st Ave_Drone-8.jpg';
 import videographyphoto from '../../assets/photos/19312 W Puget Ave-77.jpg';
 import virtualtourphoto from '../../assets/photos/19312 W Puget Ave-51.jpg';
 import floorplansphoto from '../../assets/photos/floorplan-with-a-garage.png';
@@ -14,23 +14,39 @@ function Listings() {
     <>
       <div className='d-none d-md-block bg-light  '>
         <div
-          className=' mx-auto w-75   '
-          style={{scale: '0.9'}}>
+          className=' mx-auto    '
+          style={{width: '70%'}}>
           <Row>
             <Col
               xs={12}
               sm={6}
               md={4}>
-              <h1
+              <div className='text-left'>
+                <h6
+                  className='text-left'
+                  style={{letterSpacing: '10px'}}>
+                  EXPLORE OUR
+                </h6>
+                <h1
+                  className='text-left'
+                  style={{letterSpacing: '8px', fontSize: '50px', marginBottom: '50px'}}>
+                  LISTING SERVICES
+                </h1>
+                <h5 style={{width: '95%'}}>
+                  We offer a multi-faceted range of different services depending on your listing
+                  needs from photos to videos to give you the best way to market your property.
+                </h5>
+              </div>
+              {/* <h1
                 className='text-center'
                 style={{letterSpacing: '8px', fontSize: '50px', marginTop: '40px'}}>
                 LISTING SERVICES
               </h1>
               <h5 className='text-center w-75 mx-auto  '>
                 We offer a variety of different services depending on your listing needs.
-              </h5>
+              </h5> */}
               <div
-                className='text-center d-none d-md-block '
+                className='text-left d-none d-md-block '
                 style={{marginTop: '50px'}}>
                 <button
                   className='btn btn-dark  '

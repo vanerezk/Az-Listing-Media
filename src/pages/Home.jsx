@@ -7,32 +7,11 @@ import Services from '../components/Services/Services';
 import Portfolio from '../components/Portfolio/Portfolio';
 import Listings from '../components/Listings/Listings';
 import Aboutmain from '../components/Aboutmain/Aboutmain';
-import firstlogo from '../assets/photos/Pulte_Group_updated_logo.png';
-import secondlogo from '../assets/photos/Realty_ONE_Group_Logo_Black_Text.png';
-import thirdlogo from '../assets/photos/REAX_BIG.png';
-import fourthlogo from '../assets/photos/Noble_Logo_Final_Blk.png';
-import Carousel from 'react-multi-carousel';
+
 import 'react-multi-carousel/lib/styles.css';
 import finalvideo from '../assets/videos/V2_9513 W Atlantis Way.mp4';
+import {Col} from 'react-bootstrap';
 function Home() {
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: {max: 4000, min: 3000},
-      items: 5,
-    },
-    desktop: {
-      breakpoint: {max: 3000, min: 1024},
-      items: 3,
-    },
-    tablet: {
-      breakpoint: {max: 1024, min: 464},
-      items: 2,
-    },
-    mobile: {
-      breakpoint: {max: 464, min: 0},
-      items: 1,
-    },
-  };
   return (
     <>
       <Video />
@@ -41,126 +20,35 @@ function Home() {
       <Aboutmain />
       <Listings />
       <Reviews />
-      {/* brands */}
-      <div
-        className='mx-auto d-none d-md-block bg-light'
-        style={{marginTop: '40px'}}>
-        <Carousel
-          responsive={responsive}
-          interval={20000}
-          arrows={false}
-          infinite={true}
-          autoPlay={true}
-          className=' mx-auto w-75 text-center'>
-          <img
-            src={firstlogo}
-            style={{
-              width: '250px',
-              height: '100px',
-              padding: '10px',
-              marginTop: '12px',
-              objectFit: 'contain',
-              background: 'none',
-              border: 'none',
-            }}
-            alt=' '
-          />
-          <img
-            src={secondlogo}
-            style={{
-              width: '400px',
-              height: '100px',
-              padding: '5px',
-              marginTop: '23px',
-              objectFit: 'contain',
-              background: 'none',
-              border: 'none',
-            }}
-            alt=' '
-          />
-          <img
-            src={thirdlogo}
-            style={{
-              width: '300px',
-              height: '50px',
-              marginTop: '35px',
-              padding: '5px',
 
-              objectFit: 'contain',
-              background: 'none',
-              border: 'none',
-            }}
-            alt=' '
-          />
-          <img
-            src={fourthlogo}
-            style={{
-              width: '500px',
-              height: '120px',
-              padding: '5px',
-              marginTop: '10px',
-              objectFit: 'contain',
-              background: 'none',
-              border: 'none',
-            }}
-            alt=' '
-          />
-        </Carousel>
-      </div>
       {/* Final video */}
       <div style={{textAlign: 'center', position: 'relative'}}>
         <video
           src={finalvideo}
           className='w-100 mx-auto'
           style={{
-            height: '600px',
+            height: '500px',
             objectFit: 'cover',
             filter: 'brightness(70%)',
           }}
           autoPlay
           muted
           loop></video>
-        <div
-          style={{
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-          }}>
+        <Col className='text-container  d-none d-md-block '>
           <h1
-            className=' text-white mx-auto'
-            style={{letterSpacing: '10px'}}>
-            LET US TAKE CARE OF YOU!
+            className=' text-white'
+            style={{letterSpacing: '10px', fontSize: '30px'}}>
+            <br />
+            <b style={{letterSpacing: '8px', fontSize: '78px'}}>HIRE US NOW!!!!!!!!!!!!</b>
           </h1>
-          <div
-            className='text-center d-none d-md-block '
-            style={{marginTop: '50px'}}>
-            <button
-              className='btn btn-light  '
-              style={{
-                borderRadius: '5px',
-                padding: '15px 35px',
-                boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
-              }}>
-              <Link
-                to='https://spiro.media/'
-                target='_blank'
-                style={{
-                  textDecoration: 'none',
-                  color: 'black',
-                  letterSpacing: '1px',
-                  fontSize: '18px',
-                }}>
-                BOOK NOW
-              </Link>
-            </button>
-          </div>
+
           <button
-            className='btn btn-light d-block d-md-none mx-auto '
+            className='btn btn-light'
             style={{
+              marginTop: '60px',
+
               borderRadius: '5px',
               padding: '15px 35px',
-              boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
             }}>
             <Link
               to='https://spiro.media/'
@@ -171,10 +59,11 @@ function Home() {
                 letterSpacing: '1px',
                 fontSize: '18px',
               }}>
-              BOOK NOW
+              BOOK A SHOOT
             </Link>
           </button>
-        </div>
+        </Col>
+        <Col></Col>
       </div>
       <Topbutton />
     </>
