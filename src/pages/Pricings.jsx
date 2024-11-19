@@ -1,39 +1,45 @@
 import Card from 'react-bootstrap/Card';
 import Accordion from 'react-bootstrap/Accordion';
-import ReactCompareImage from 'react-compare-image';
 import {useState, useEffect} from 'react';
-
 import {Col, Row} from 'react-bootstrap';
 import Topbutton from '../components/Top/Topbutton';
 import Videopricings from '../components/Videopricings/Videopricings';
 import {Link} from 'react-router-dom';
-import before from '../assets/photos/2244 W Madre Del Oro Virtual Stage-1 2.jpg';
-import after from '../assets/photos/2244 W Madre Del Oro Virtual Stage-2 2.jpg';
 import firstphoto from '../assets/photos/207208 N 129th Dr-95.jpg';
 import secondphoto from '../assets/photos/28556 N 124th Dr Website-2 2.jpg';
 import thirdphoto from '../assets/photos/23326 N 70th Ln-4.jpg';
 import fourthphoto from '../assets/photos/2842 N Claire Dr-45.jpg';
-import upgradedronephoto from '../assets/photos/42 E Interlacken Dr-36.jpg';
-import upgradedtwilightphoto from '../assets/photos/49903 N 26th Ave_Virtual Twilight-1.jpg';
 import videography from '../assets/videos/2016 W Gloria Ln_V1.mp4';
-import dronevideography from '../assets/photos/27247 N 78th Ln Drone-5.jpg';
-import videowalkthrough from '../assets/photos/6822 W Amigo Dr-26.jpg';
 import photoslideshow from '../assets/photos/207208 N 129th Dr-95.jpg';
 import photoslideshowtwo from '../assets/photos/28556 N 124th Dr Website-2 2.jpg';
 import photoslideshowthree from '../assets/photos/Dining Room-1.jpg';
 import photosslideshowfour from '../assets/photos/2842 N Claire Dr-45.jpg';
 import floorplans from '../assets/photos/floorplan-with-a-garage.png';
 import videopricings from '../assets/videos/V1_15323 W Campbell Ave.mp4';
+import aerialtrial from '../assets/photos/aerialttrial.jpg';
+
+// import upgradedronephoto from '../assets/photos/42 E Interlacken Dr-36.jpg';
+// import upgradedtwilightphoto from '../assets/photos/49903 N 26th Ave_Virtual Twilight-1.jpg';
+// import before from '../assets/photos/2244 W Madre Del Oro Virtual Stage-1 2.jpg';
+// import after from '../assets/photos/2244 W Madre Del Oro Virtual Stage-2 2.jpg';
+// import ReactCompareImage from 'react-compare-image';
+// import dronevideography from '../assets/photos/27247 N 78th Ln Drone-5.jpg';
+// import videowalkthrough from '../assets/photos/6822 W Amigo Dr-26.jpg';
 function Pricings() {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [firstphoto, secondphoto, thirdphoto, fourthphoto];
   const videophotos = [photoslideshow, photoslideshowtwo, photoslideshowthree, photosslideshowfour];
+  const [activeTable, setActiveTable] = useState('table1');
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((currentImage + 1) % images.length);
     }, 3000);
     return () => clearInterval(interval);
   }, [currentImage, images.length, videophotos.length]);
+
+  const handleTableToggle = (tableId) => {
+    setActiveTable(tableId);
+  };
 
   return (
     <>
@@ -87,7 +93,7 @@ function Pricings() {
                   fontSize: '28px',
                   letterSpacing: '10px',
                 }}>
-                LISTING PHOTOS
+                PHOTOGRAPHY
               </Card.Title>
               <hr style={{width: '30%', margin: 'auto', marginBottom: '20px'}} />
               <h6
@@ -96,7 +102,7 @@ function Pricings() {
                   marginBottom: '20px',
                   fontSize: '12px',
                 }}>
-                SHOT WITH A CAMERA, THIS IS BEST USED TO PORTRAY THE SPACE AND DETAILS OF THE HOME.
+                <b style={{fontSize: '12px'}}>ALL PHOTOS PACKAGES </b> INCLUDE SKY REPLACEMENT.
               </h6>
             </Row>
 
@@ -122,86 +128,52 @@ function Pricings() {
                         <strong>PRICE</strong>
                       </h6>
                     </td>
+                  </tr>
+
+                  <tr style={{borderBottom: '1px solid gray'}}>
                     <td>
-                      <h6>
-                        {' '}
-                        <strong>PHOTOS</strong>
-                      </h6>
+                      <h6>1,501 - 2,500 SQFT</h6>
+                    </td>
+                    <td>
+                      <h6>$230</h6>
                     </td>
                   </tr>
                   <tr style={{borderBottom: '1px solid gray'}}>
                     <td>
-                      <h6>500 - 2,500 SQFT</h6>
+                      <h6>2,501 - 3,500 SQFT</h6>
                     </td>
                     <td>
-                      <h6>$199</h6>
-                    </td>
-                    <td>
-                      <h6>15-29 IMAGES</h6>
+                      <h6>$270</h6>
                     </td>
                   </tr>
                   <tr style={{borderBottom: '1px solid gray'}}>
                     <td>
-                      <h6>2,501 - 4,000 SQFT</h6>
+                      <h6>3,501 - 4,500 SQFT</h6>
                     </td>
                     <td>
-                      <h6>$299</h6>
-                    </td>
-                    <td>
-                      <h6>30-40 IMAGES</h6>
-                    </td>
-                  </tr>
-                  <tr style={{borderBottom: '1px solid gray'}}>
-                    <td>
-                      <h6>4,001 - 5,500 SQFT</h6>
-                    </td>
-                    <td>
-                      <h6>$399</h6>
-                    </td>
-                    <td>
-                      <h6>45-55 IMAGES</h6>
-                    </td>
-                  </tr>
-                  <tr style={{borderBottom: '1px solid gray'}}>
-                    <td>
-                      <h6>5,501 - 7,000 SQFT</h6>
-                    </td>
-                    <td>
-                      <h6>$499</h6>
-                    </td>
-                    <td>
-                      <h6>60-70 IMAGES</h6>
-                    </td>
-                  </tr>
-                  <tr style={{borderBottom: '1px solid gray'}}>
-                    <td>
-                      <h6>7,001 - 10,000 SQFT</h6>
-                    </td>
-                    <td>
-                      <h6>$599</h6>
-                    </td>
-                    <td>
-                      <h6>75-90 IMAGES</h6>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <h6>10,000+ SQFT</h6>
-                    </td>
-                    <td>
-                      <h6>$699</h6>
-                    </td>
-                    <td>
-                      <h6>100+ IMAGES</h6>
+                      <h6>$320</h6>
                     </td>
                   </tr>
                 </table>
+                <p
+                  style={{
+                    color: 'GRAY',
+                    fontSize: '12px',
+                    marginTop: '20px',
+                    width: '80%',
+                    margin: 'auto',
+                  }}>
+                  {' '}
+                  UP TO 1,500 SQFT ($000), 4,501 - 6,000 SQFT ($000), AND 6,001-8,000 SQFT ($000)
+                  PACKAGES ARE ALSO AVAILABLE .
+                </p>
+
                 <span style={{color: 'GRAY', fontSize: '10px'}}>*PRICES DO NOT INCLUDE TAX </span>
                 <button
                   className='btn btn-dark d-block mx-auto '
                   style={{
                     borderRadius: '5px',
-                    marginTop: '20px',
+                    marginTop: '40px',
                     padding: '15px 35px',
                     boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
                   }}>
@@ -222,8 +194,8 @@ function Pricings() {
                 <Col md={6}>
                   <Card.Img
                     style={{
-                      width: '250%',
-                      height: '470px',
+                      width: '200%',
+                      height: '370px',
                       objectFit: 'cover',
                       borderRadius: '15px',
                     }}
@@ -234,7 +206,7 @@ function Pricings() {
             </Row>
           </Card.Body>
         </Card>
-        <div className=' bg-white  w-100 '>
+        {/* <div className=' bg-white  w-100 '>
           <Row className='mx-auto mt-5 p-5 w-75'>
             <h4
               style={{
@@ -395,7 +367,7 @@ function Pricings() {
               </button>
             </div>
           </Row>
-        </div>
+        </div> */}
 
         <br />
         {/* VIDEOGRAPHY */}
@@ -416,7 +388,7 @@ function Pricings() {
                   fontSize: '28px',
                   letterSpacing: '10px',
                 }}>
-                VIDEOGRAPHY
+                CINEMATIC VIDEO TOURS
               </Card.Title>
               <hr style={{width: '30%', margin: 'auto', marginBottom: '20px'}} />
               <h6
@@ -425,7 +397,8 @@ function Pricings() {
                   marginBottom: '20px',
                   fontSize: '12px',
                 }}>
-                SHOT WITH A CAMERA, THIS IS BEST USED TO PORTRAY THE SPACE AND DETAILS OF THE HOME.
+                WE WANT TO<b style={{fontSize: '12px'}}> SHOW OFF </b> EVERY LITTLE DETAIL AND
+                NUANCE OF YOUR LISTING.
               </h6>
             </Row>
 
@@ -434,9 +407,8 @@ function Pricings() {
                 <video
                   style={{
                     width: '100%',
-                    height: '470px',
+                    height: '370px',
                     objectFit: 'cover',
-
                     borderRadius: '15px',
                   }}
                   autoPlay
@@ -450,12 +422,11 @@ function Pricings() {
               </Col>
               <Col md={6}>
                 <table
-                  className='table table-borderless mx-auto'
+                  className='table table-borderless'
                   style={{
                     fontSize: '12px',
-                    width: '90%',
-                    textAlign: 'center',
 
+                    width: '90%',
                     margin: 'auto',
                   }}>
                   <tr style={{borderBottom: '1px solid gray'}}>
@@ -465,73 +436,69 @@ function Pricings() {
                       </h6>
                     </td>
                     <td>
-                      <h6 style={{paddingRight: '50px'}}>
+                      <h6>
+                        {' '}
                         <strong>PRICE</strong>
                       </h6>
                     </td>
                   </tr>
+
                   <tr style={{borderBottom: '1px solid gray'}}>
                     <td>
-                      <h6>500 - 2,500 SQFT</h6>
+                      <h6>1,501 - 2,500 SQFT</h6>
                     </td>
                     <td>
-                      <h6 style={{paddingRight: '50px'}}>$349</h6>
+                      <h6>$XXX</h6>
                     </td>
                   </tr>
                   <tr style={{borderBottom: '1px solid gray'}}>
                     <td>
-                      <h6>2,501 - 4,000 SQFT</h6>
+                      <h6>2,501 - 3,500 SQFT</h6>
                     </td>
                     <td>
-                      <h6 style={{paddingRight: '50px'}}>$449</h6>
-                    </td>
-                  </tr>
-                  <tr style={{borderBottom: '1px solid gray'}}>
-                    <td>
-                      <h6>4,001 - 5,500 SQFT</h6>
-                    </td>
-                    <td>
-                      <h6 style={{paddingRight: '50px'}}>$549</h6>
+                      <h6>$XXX</h6>
                     </td>
                   </tr>
                   <tr style={{borderBottom: '1px solid gray'}}>
                     <td>
-                      <h6>5,501 - 7,000 SQFT</h6>
+                      <h6>3,501 - 4,500 SQFT</h6>
                     </td>
                     <td>
-                      <h6 style={{paddingRight: '50px'}}>$649</h6>
-                    </td>
-                  </tr>
-                  <tr style={{borderBottom: '1px solid gray'}}>
-                    <td>
-                      <h6>7,001 - 10,000 SQFT</h6>
-                    </td>
-                    <td>
-                      <h6 style={{paddingRight: '50px'}}>$849</h6>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <h6>10,000+ SQFT</h6>
-                    </td>
-                    <td>
-                      <h6 style={{paddingRight: '50px'}}>$1,049</h6>
+                      <h6>$XXX</h6>
                     </td>
                   </tr>
                 </table>
+                <p
+                  style={{
+                    color: 'GRAY',
+                    fontSize: '12px',
+                    marginTop: '20px',
+                    width: '80%',
+                    margin: 'auto',
+                  }}>
+                  {' '}
+                  UP TO 1,500 SQFT ($000), 4,501 - 6,000 SQFT ($000), AND 6,001-8,000 SQFT ($000)
+                  PACKAGES ARE ALSO AVAILABLE .
+                </p>
+
                 <span style={{color: 'GRAY', fontSize: '10px'}}>*PRICES DO NOT INCLUDE TAX </span>
                 <button
-                  className='btn btn-light d-none d-md-block mx-auto'
+                  className='btn btn-dark d-block mx-auto '
                   style={{
+                    borderRadius: '5px',
                     marginTop: '40px',
-                    borderRadius: '0px',
-                    padding: '10px 30px',
-                    boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
+                    padding: '15px 35px',
+                    boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
                   }}>
                   <Link
                     to='https://spiro.media/'
                     target='_blank'
-                    style={{textDecoration: 'none', color: 'black', letterSpacing: '2px'}}>
+                    style={{
+                      textDecoration: 'none',
+                      color: 'white',
+                      letterSpacing: '1px',
+                      fontSize: '18px',
+                    }}>
                     BOOK NOW
                   </Link>
                 </button>
@@ -540,7 +507,7 @@ function Pricings() {
           </Card.Body>
         </Card>
 
-        <div className=' bg-light  w-100 '>
+        {/* <div className=' bg-light  w-100 '>
           <Row className='mx-auto mt-5 p-5 w-75'>
             <h4 className='text-center mb-5'>UPGRADE YOUR SHOOTINGS</h4>
             <Col>
@@ -685,7 +652,232 @@ function Pricings() {
               </button>
             </div>
           </Row>
-        </div>
+        </div> */}
+
+        {/* AERIAL ONLY */}
+
+        <Card
+          style={{
+            width: '70%',
+
+            marginBottom: '80px',
+            margin: 'auto',
+            border: 'none',
+          }}>
+          <Card.Body>
+            <Row style={{textAlign: 'center', marginBottom: '20px'}}>
+              <Card.Title
+                style={{
+                  textAlign: 'center',
+                  marginTop: '70px',
+
+                  fontSize: '28px',
+                  letterSpacing: '10px',
+                }}>
+                AERIAL ONLY
+              </Card.Title>
+              <hr style={{width: '30%', margin: 'auto', marginBottom: '20px'}} />
+              <h6
+                style={{
+                  textAlign: 'center',
+                  marginBottom: '20px',
+                  fontSize: '12px',
+                }}>
+                <b style={{fontSize: '12px'}}>ALL PHOTOS PACKAGES </b> INCLUDE SKY REPLACEMENT.
+              </h6>
+            </Row>
+            <button
+              className='btn btn-dark  '
+              style={{
+                padding: '10px 30px',
+                letterSpacing: '2px',
+                marginRight: '10px',
+                boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
+              }}
+              data-table='table1'
+              onClick={() => handleTableToggle('table1')}>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='20'
+                height='20'
+                fill='white'
+                viewBox='0 0 16 16'>
+                <path d='M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z' />
+                <path d='M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0' />
+              </svg>
+            </button>
+            <button
+              className='btn btn-dark '
+              style={{
+                padding: '10px 30px',
+                letterSpacing: '2px',
+
+                boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
+              }}
+              data-table='table2'
+              onClick={() => handleTableToggle('table2')}>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='20'
+                height='20'
+                fill='white'
+                viewBox='0 0 16 16'>
+                <path d='M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0M1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0' />
+                <path d='M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm6 8.73V7.27l-3.5 1.555v4.35zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1' />
+                <path d='M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6M7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0' />
+              </svg>
+            </button>
+            <Row className='text-center mx-auto p-5'>
+              <Col
+                md={6}
+                id='table1'
+                style={{display: activeTable === 'table1' ? 'block' : 'none'}}>
+                <h4 className='text-center'> DRONE PHOTOS</h4>
+                <table
+                  className='table table-borderless'
+                  style={{
+                    fontSize: '12px',
+
+                    width: '90%',
+                    margin: 'auto',
+                  }}>
+                  <tr style={{borderBottom: '1px solid gray'}}>
+                    <td>
+                      <h6>
+                        <strong>PHOTOS</strong>
+                      </h6>
+                    </td>
+                    <td>
+                      <h6>
+                        {' '}
+                        <strong>PRICE</strong>
+                      </h6>
+                    </td>
+                  </tr>
+
+                  <tr style={{borderBottom: '1px solid gray'}}>
+                    <td>
+                      <h6>12 IMAGES</h6>
+                    </td>
+                    <td>
+                      <h6>$195</h6>
+                    </td>
+                  </tr>
+                  <tr style={{borderBottom: '1px solid gray'}}>
+                    <td>
+                      <h6>24 IMAGES</h6>
+                    </td>
+                    <td>
+                      <h6>$250</h6>
+                    </td>
+                  </tr>
+                </table>
+
+                <span style={{color: 'GRAY', fontSize: '10px'}}>*PRICES DO NOT INCLUDE TAX </span>
+                <button
+                  className='btn btn-dark d-block mx-auto '
+                  style={{
+                    borderRadius: '5px',
+                    marginTop: '40px',
+                    padding: '15px 35px',
+                    boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
+                  }}>
+                  <Link
+                    to='https://spiro.media/'
+                    target='_blank'
+                    style={{
+                      textDecoration: 'none',
+                      color: 'white',
+                      letterSpacing: '1px',
+                      fontSize: '18px',
+                    }}>
+                    BOOK NOW
+                  </Link>
+                </button>
+              </Col>
+              <Col
+                md={6}
+                id='table2'
+                style={{display: activeTable === 'table2' ? 'block' : 'none'}}>
+                <h4 className='text-center'> DRONE VIDEOS</h4>
+                <table
+                  className='table table-borderless'
+                  style={{
+                    fontSize: '12px',
+
+                    width: '90%',
+                    margin: 'auto',
+                  }}>
+                  <tr style={{borderBottom: '1px solid gray'}}>
+                    <td>
+                      <h6>
+                        <strong>VIDEOS</strong>
+                      </h6>
+                    </td>
+                    <td>
+                      <h6>
+                        {' '}
+                        <strong>PRICE</strong>
+                      </h6>
+                    </td>
+                  </tr>
+
+                  <tr style={{borderBottom: '1px solid gray'}}>
+                    <td>
+                      <h6>12 IMAGES</h6>
+                    </td>
+                    <td>
+                      <h6>$195</h6>
+                    </td>
+                  </tr>
+                  <tr style={{borderBottom: '1px solid gray'}}>
+                    <td>
+                      <h6>24 IMAGES</h6>
+                    </td>
+                    <td>
+                      <h6>$250</h6>
+                    </td>
+                  </tr>
+                </table>
+
+                <span style={{color: 'GRAY', fontSize: '10px'}}>*PRICES DO NOT INCLUDE TAX </span>
+                <button
+                  className='btn btn-dark d-block mx-auto '
+                  style={{
+                    borderRadius: '5px',
+                    marginTop: '40px',
+                    padding: '15px 35px',
+                    boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
+                  }}>
+                  <Link
+                    to='https://spiro.media/'
+                    target='_blank'
+                    style={{
+                      textDecoration: 'none',
+                      color: 'white',
+                      letterSpacing: '1px',
+                      fontSize: '18px',
+                    }}>
+                    BOOK NOW
+                  </Link>
+                </button>
+              </Col>
+              <Col md={6}>
+                <Col md={6}>
+                  <Card.Img
+                    style={{
+                      width: '200%',
+                      height: '370px',
+                      objectFit: 'cover',
+                      borderRadius: '15px',
+                    }}
+                    src={aerialtrial}
+                  />
+                </Col>
+              </Col>
+            </Row>
+          </Card.Body>
+        </Card>
 
         {/* FLOOR PLANS */}
 
