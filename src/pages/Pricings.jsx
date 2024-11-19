@@ -39,28 +39,27 @@ function Pricings() {
     <>
       <video
         id='backgroundvideo'
-        style={{
-          width: '100%',
-          height: '75vh',
-          objectFit: 'cover',
-          zIndex: '-1',
-          marginTop: '100px',
-        }}
+        style={{width: '100%', height: '100vh', objectFit: 'cover'}}
         autoPlay
         muted
-        loop
-        className='d-none d-md-block'>
+        loop>
         <source
           src={videopricings}
           type='video/mp4'
         />
       </video>
-
-      <div className='text-container d-none d-md-block'>
+      <div
+        className='text-container d-none d-md-block '
+        style={{marginTop: '100px'}}>
+        <h6
+          className='text-center text-white'
+          style={{letterSpacing: '10px'}}>
+          A COMPLETE REAL ESTATE
+        </h6>
         <h1
-          className=' text-white'
-          style={{letterSpacing: '10px', fontSize: '40px', fontWeight: 'bold'}}>
-          LISTING SERVICES
+          className='text-center text-white'
+          style={{letterSpacing: '8px', fontSize: '50px', marginBottom: '50px'}}>
+          MEDIA SOLUTION
         </h1>
       </div>
 
@@ -230,9 +229,18 @@ function Pricings() {
             </Row>
           </Card.Body>
         </Card>
-        <div className=' bg-light  w-100 '>
+        <div className=' bg-white  w-100 '>
           <Row className='mx-auto mt-5 p-5 w-75'>
-            <h4 className='text-center mb-5'>UPGRADE YOUR SHOOTINGS</h4>
+            <h4
+              style={{
+                textAlign: 'center',
+                marginTop: '-40px',
+                marginBottom: '40px',
+                fontSize: '28px',
+                letterSpacing: '10px',
+              }}>
+              UPGRADE YOUR SHOOTS
+            </h4>
             <Col>
               <Card
                 style={{

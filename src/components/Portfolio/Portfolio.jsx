@@ -54,7 +54,7 @@ function Portfolio() {
       <div
         className='
              mx-auto text-center bg-light  w-100 p-5 '
-        style={{marginTop: '100px', height: '100vh', paddingTop: '100px'}}>
+        style={{marginTop: '100px', height: '85vh', paddingTop: '100px'}}>
         <h6
           className='text-center '
           style={{letterSpacing: '10px'}}>
@@ -69,20 +69,7 @@ function Portfolio() {
           }}>
           PORTFOLIO
         </h1>
-        {/* <hr
-          className=' mx-auto d-none d-md-block '
-          id='lineaservices'
-          style={{
-            border: 'none',
-            width: '300px',
-            height: '5px',
-            marginBottom: '80px',
-          }}
-        />
-        <hr
-          className=' mx-auto d-md-none w-25   '
-          style={{width: '400px', marginTop: '20px', marginBottom: '20px'}}
-        /> */}
+
         <Carousel
           responsive={responsive}
           interval={4000}

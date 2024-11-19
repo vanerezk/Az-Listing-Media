@@ -27,14 +27,16 @@ function Services() {
         <div
           className=' mx-auto w-75 d-flex  '
           style={{scale: '0.9'}}>
-          <Row>
+          <Row className='d-flex justify-content-center'>
             <Col
               lg={3}
               md={3}
-              sm={12}>
+              sm={12}
+              className='flex-grow-1 flex-shrink-0'>
               <Card
                 style={{
-                  width: 'auto',
+                  width: '100%',
+                  height: '450px',
                   borderRadius: '15px 15px 15px 15px',
                   marginBottom: '80px',
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -70,10 +72,12 @@ function Services() {
             <Col
               lg={3}
               md={3}
-              sm={12}>
+              sm={12}
+              className='flex-grow-1 flex-shrink-0'>
               <Card
                 style={{
-                  width: 'auto',
+                  width: '100%',
+                  height: '450px',
                   borderRadius: '15px 15px 15px 15px',
                   marginBottom: '80px',
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -109,10 +113,12 @@ function Services() {
             <Col
               lg={3}
               md={3}
-              sm={12}>
+              sm={12}
+              className='flex-grow-1 flex-shrink-0'>
               <Card
                 style={{
-                  width: 'auto',
+                  width: '100%',
+                  height: '450px',
                   borderRadius: '15px 15px 15px 15px',
                   marginBottom: '80px',
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -148,10 +154,12 @@ function Services() {
             <Col
               lg={3}
               md={3}
-              sm={12}>
+              sm={12}
+              className='flex-grow-1 flex-shrink-0'>
               <Card
                 style={{
-                  width: 'auto',
+                  width: '100%',
+                  height: '450px',
                   borderRadius: '15px 15px 15px 15px',
                   marginBottom: '80px',
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -210,7 +218,7 @@ function Services() {
       </div>
 
       {/* Mobile layout */}
-      <div className='d-block d-md-none w-75 mx-auto'>
+      <div className='d-block d-lg-none w-75 mx-auto'>
         <Carousel>
           <Carousel.Item>
             <Card

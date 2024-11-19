@@ -14,8 +14,8 @@ function Listings() {
     <>
       <div className='d-none d-md-block bg-light  '>
         <div
-          className=' mx-auto    '
-          style={{width: '70%'}}>
+          className=' mx-auto p-5   '
+          style={{width: '70%', scale: '0.9'}}>
           <Row>
             <Col
               xs={12}
@@ -37,14 +37,7 @@ function Listings() {
                   needs from photos to videos to give you the best way to market your property.
                 </h5>
               </div>
-              {/* <h1
-                className='text-center'
-                style={{letterSpacing: '8px', fontSize: '50px', marginTop: '40px'}}>
-                LISTING SERVICES
-              </h1>
-              <h5 className='text-center w-75 mx-auto  '>
-                We offer a variety of different services depending on your listing needs.
-              </h5> */}
+
               <div
                 className='text-left d-none d-md-block '
                 style={{marginTop: '50px'}}>

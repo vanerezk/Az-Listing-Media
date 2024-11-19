@@ -9,9 +9,9 @@ function Aboutmain() {
       {/* ABOUT US DESKTOP */}
       <div
         className='mx-auto  p-5 d-none d-md-block   '
-        style={{marginTop: '20px', width: '72%'}}>
-        <Row>
-          <Col style={{marginTop: '30px'}}>
+        style={{marginTop: '20px', height: '90vh', width: '70%'}}>
+        <Row style={{marginTop: '50px'}}>
+          <Col style={{marginTop: '50px'}}>
             <h6
               className='text-center'
               style={{letterSpacing: '10px'}}>
