@@ -198,17 +198,22 @@ function Pricings() {
                 </table>
                 <span style={{color: 'GRAY', fontSize: '10px'}}>*PRICES DO NOT INCLUDE TAX </span>
                 <button
-                  className='btn btn-light d-none d-md-block mx-auto'
+                  className='btn btn-dark d-block mx-auto '
                   style={{
-                    marginTop: '40px',
-                    borderRadius: '0px',
-                    padding: '10px 30px',
-                    boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
+                    borderRadius: '5px',
+                    marginTop: '20px',
+                    padding: '15px 35px',
+                    boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
                   }}>
                   <Link
                     to='https://spiro.media/'
                     target='_blank'
-                    style={{textDecoration: 'none', color: 'black', letterSpacing: '2px'}}>
+                    style={{
+                      textDecoration: 'none',
+                      color: 'white',
+                      letterSpacing: '1px',
+                      fontSize: '18px',
+                    }}>
                     BOOK NOW
                   </Link>
                 </button>

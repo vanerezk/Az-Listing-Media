@@ -25,51 +25,49 @@ function Reviews() {
     <>
       <div
         className=' p-5 mt-5 '
-        style={{height: '600px'}}>
-        <div style={{marginTop: '150px'}}>
-          <h6
-            className='text-center '
-            style={{letterSpacing: '10px'}}>
-            HEAR FROM OUR CLIENTS
-          </h6>
-          <h1
-            className='text-center '
-            style={{
-              letterSpacing: '8px',
-              fontSize: '50px',
-              marginBottom: '50px',
-            }}>
-            TESTIMONIALS
-          </h1>
+        style={{height: '400px'}}>
+        <h6
+          className='text-center '
+          style={{letterSpacing: '10px'}}>
+          HEAR FROM OUR CLIENTS
+        </h6>
+        <h1
+          className='text-center '
+          style={{
+            letterSpacing: '8px',
+            fontSize: '50px',
+            marginBottom: '50px',
+          }}>
+          TESTIMONIALS
+        </h1>
 
-          <Carousel
-            interval={4000}
-            variant='dark'
-            autoPlay
-            infiniteLoop
-            controls={false}
-            indicators={false}
-            style={{
-              height: 'auto',
-              margin: '0 auto',
-              maxHeight: '300px',
-              marginBottom: '50px',
-              width: '80%',
-            }}>
-            {testimonial.map((item, index) => (
-              <Carousel.Item key={index}>
-                <blockquote className='blockquote  text-center'>
-                  <p
-                    className='mb-0'
-                    style={{width: '80%', margin: '0 auto'}}>
-                    {item.content}
-                  </p>
-                  <footer className='blockquote-footer text-center mt-3'>{item.author}</footer>
-                </blockquote>
-              </Carousel.Item>
-            ))}
-          </Carousel>
-        </div>
+        <Carousel
+          interval={4000}
+          variant='dark'
+          autoPlay
+          infiniteLoop
+          controls={false}
+          indicators={false}
+          style={{
+            height: 'auto',
+            margin: '0 auto',
+            maxHeight: '300px',
+            marginBottom: '50px',
+            width: '80%',
+          }}>
+          {testimonial.map((item, index) => (
+            <Carousel.Item key={index}>
+              <blockquote className='blockquote  text-center'>
+                <p
+                  className='mb-0'
+                  style={{width: '80%', margin: '0 auto'}}>
+                  {item.content}
+                </p>
+                <footer className='blockquote-footer text-center mt-3'>{item.author}</footer>
+              </blockquote>
+            </Carousel.Item>
+          ))}
+        </Carousel>
       </div>
     </>
   );

@@ -39,7 +39,7 @@ function Home() {
             className=' text-white'
             style={{letterSpacing: '10px', fontSize: '30px'}}>
             <br />
-            <b style={{letterSpacing: '8px', fontSize: '78px'}}>HIRE US NOW!!!!!!!!!!!!</b>
+            <b style={{letterSpacing: '8px', fontSize: '78px'}}>READY TO BOOK?</b>
           </h1>
 
           <button
