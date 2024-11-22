@@ -23,20 +23,20 @@ function Services() {
       </h1>
 
       {/* Desktop layout */}
-      <div className='d-none d-md-block  '>
+      <div className='d-none d-sm-block'>
         <div
-          className=' mx-auto w-75 d-flex  '
+          className=' mx-auto  w-75 d-flex justify-content-center  '
           style={{scale: '0.9'}}>
           <Row className='d-flex justify-content-center'>
             <Col
               lg={3}
               md={3}
-              sm={12}
-              className='flex-grow-1 flex-shrink-0'>
+              sm={12}>
               <Card
                 style={{
                   width: '100%',
                   height: '450px',
+                  maxHeight: '500px',
                   borderRadius: '15px 15px 15px 15px',
                   marginBottom: '80px',
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -78,6 +78,7 @@ function Services() {
                 style={{
                   width: '100%',
                   height: '450px',
+                  maxHeight: '500px',
                   borderRadius: '15px 15px 15px 15px',
                   marginBottom: '80px',
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -119,6 +120,7 @@ function Services() {
                 style={{
                   width: '100%',
                   height: '450px',
+                  maxHeight: '500px',
                   borderRadius: '15px 15px 15px 15px',
                   marginBottom: '80px',
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -160,6 +162,7 @@ function Services() {
                 style={{
                   width: '100%',
                   height: '450px',
+                  maxHeight: '500px',
                   borderRadius: '15px 15px 15px 15px',
                   marginBottom: '80px',
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',

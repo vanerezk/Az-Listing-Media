@@ -1,7 +1,20 @@
 import './Video.css';
 import {Link} from 'react-router-dom';
 import video from '../../assets/videos/2016 W Gloria Ln_V1.mp4';
+import {useState, useEffect} from 'react';
 function Video() {
+  const [currentText, setCurrentText] = useState('MEDIA COMPANY');
+  const texts = ['DRONE MEDIA', 'PHOTOGRAPHY', 'VIDEOGRAPHY', 'VIRTUAL TOURS', 'FLOORS PLANS'];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const currentIndex = texts.indexOf(currentText);
+      const nextIndex = (currentIndex + 1) % texts.length;
+      setCurrentText(texts[nextIndex]);
+    }, 1500);
+    return () => clearInterval(interval);
+  }, [currentText, texts]);
+
   return (
     <>
       <video
@@ -23,7 +36,11 @@ function Video() {
           style={{letterSpacing: '10px', fontSize: '30px'}}>
           THE VALLEY'S REAL ESTATE
           <br />
-          <b style={{letterSpacing: '8px', fontSize: '78px'}}>MEDIA COMPANY</b>
+          <b
+            style={{letterSpacing: '8px', fontSize: '78px'}}
+            className='animated-text'>
+            {currentText}
+          </b>
         </h1>
         <h4
           className=' text-white'

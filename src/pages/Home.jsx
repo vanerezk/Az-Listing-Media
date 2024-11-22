@@ -20,7 +20,6 @@ function Home() {
       <Aboutmain />
       <Listings />
       <Reviews />
-
       {/* Final video */}
       <div style={{textAlign: 'center', position: 'relative'}}>
         <video
@@ -64,7 +63,7 @@ function Home() {
           </button>
         </Col>
         <Col></Col>
-      </div>
+      </div>{' '}
       <Topbutton />
     </>
   );

@@ -104,12 +104,6 @@ function Portfolio() {
         <div
           className=' col-lg-12 col-md-6 col-sm-12 mx-auto '
           style={{marginTop: '20px', width: '80%'}}>
-          <h4
-            className='text-center '
-            style={{marginTop: '40px', fontSize: '30px'}}>
-            PHOTOGRAPHY
-          </h4>
-          <hr style={{width: '10%', margin: 'auto', marginBottom: '20px'}} />
           <Row>
             <Col
               xs={4}
@@ -262,17 +256,6 @@ function Portfolio() {
         </div>
       </section>
 
-      <div
-        className=' col-lg-12 col-md-6 col-sm-12 mx-auto '
-        style={{marginTop: '20px', width: '80%'}}>
-        <h4
-          className='text-center '
-          style={{marginTop: '40px', fontSize: '30px'}}>
-          VIDEOGRAPHY
-        </h4>
-        <hr style={{width: '10%', margin: 'auto', marginBottom: '20px'}} />
-      </div>
-
       {/* Video  PUGGET AVE */}
       <Row
         style={{marginTop: '20px', width: '80%'}}
@@ -318,12 +301,6 @@ function Portfolio() {
       <div
         className=' col-lg-12 col-md-6 col-sm-12 mx-auto '
         style={{marginTop: '20px', width: '80%'}}>
-        <h4
-          className='text-center '
-          style={{marginTop: '40px', fontSize: '30px'}}>
-          DRONE
-        </h4>
-        <hr style={{width: '10%', margin: 'auto', marginBottom: '20px'}} />
         <Row>
           <Col
             xs={4}

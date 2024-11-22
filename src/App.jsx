@@ -36,7 +36,7 @@ function App() {
             element={<About />}
           />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </main>
     </>
   );

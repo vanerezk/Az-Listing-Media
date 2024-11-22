@@ -13,10 +13,10 @@ function Header() {
   const location = useLocation();
   return (
     <>
-      <div style={{position: 'fixed', top: '0', width: '100%', zIndex: '999'}}>
-        <Navbar style={{backgroundColor: 'black', height: '60px'}}>
+      <div style={{position: 'fixed', top: '0', width: '100%', zIndex: '1'}}>
+        <Navbar style={{backgroundColor: 'black', height: '50px'}}>
           <Container>
-            <Row className=' align-items-center w-100 d-none d-lg-flex'>
+            <Row className=' align-items-center w-100 d-none d-lg-flex '>
               <Col style={{marginLeft: '7px'}}>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -112,6 +112,7 @@ function Header() {
             </Row>
           </Container>
         </Navbar>
+        {/* Navbar AZ */}
         <Navbar
           expand='lg'
           className='bg-light shadow p-3'
@@ -122,7 +123,7 @@ function Header() {
               className='navbar-brand'>
               <img
                 src={logo}
-                width='250'
+                width='230'
                 alt='logo'
                 className='logo'
               />
@@ -132,8 +133,7 @@ function Header() {
               id='navbarScroll'
               className='justify-content-end'>
               <Nav
-                className='me-2 my-2 my-lg-0'
-                style={{maxHeight: '200px '}}
+                className='my-2 my-lg-0'
                 navbarScroll>
                 <b>
                   <Link

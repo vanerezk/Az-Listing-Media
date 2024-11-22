@@ -32,10 +32,19 @@ function Reviews() {
           HEAR FROM OUR CLIENTS
         </h6>
         <h1
-          className='text-center '
+          className='text-center  d-none d-md-block '
           style={{
             letterSpacing: '8px',
             fontSize: '50px',
+            marginBottom: '50px',
+          }}>
+          TESTIMONIALS
+        </h1>
+        <h1
+          className='text-center  d-md-none '
+          style={{
+            letterSpacing: '8px',
+            fontSize: '30px',
             marginBottom: '50px',
           }}>
           TESTIMONIALS
