@@ -85,12 +85,22 @@ function Video() {
         </h4>
         <button
           className='btn btn-light'
-          style={{marginTop: '100px', borderRadius: '0px', padding: '9px 20px'}}>
+          style={{
+            marginTop: '60px',
+            scale: '0.8',
+            borderRadius: '5px',
+            padding: '15px 35px',
+          }}>
           <Link
             to='https://spiro.media/'
             target='_blank'
-            style={{textDecoration: 'none', color: 'black'}}>
-            SCHEDULE NOW
+            style={{
+              textDecoration: 'none',
+              color: 'black',
+              letterSpacing: '1px',
+              fontSize: '18px',
+            }}>
+            BOOK A SHOOT
           </Link>
         </button>
       </div>
