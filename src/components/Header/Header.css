@@ -8,6 +8,23 @@
     cursor: pointer;
 }
 
+#navbarScrolltwo{
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    padding-left:25px;
+}
+
+#navnegra {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    padding-left:25px;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -20,4 +37,30 @@
         padding-left:25px;
         
     }
+
+
+    
 }
+
+
+@media screen and (max-width: 1400px) {
+  
+
+        #navbarScrolltwo {
+            position: fixed;
+            top: 0; 
+            left: 0;
+            width: 100%;
+            z-index: 99;
+            padding-left:25px;
+        }
+
+                #navnegra {
+                    display: none;
+        
+        
+        
+                }
+    
+}
+

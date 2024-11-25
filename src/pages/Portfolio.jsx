@@ -41,61 +41,40 @@ function Portfolio() {
     <>
       <h1
         id='photography'
-        style={{zIndex: '-1', position: 'absolute', marginTop: '500px'}}></h1>
+        style={{zIndex: '-1', position: 'absolute', marginTop: '900px'}}></h1>
       <video
         id='backgroundvideo'
-        style={{
-          width: '100%',
-          height: '75vh',
-          objectFit: 'cover',
-          zIndex: '-1',
-          marginTop: '100px',
-        }}
+        style={{width: '100%', height: '90vh', objectFit: 'cover'}}
         autoPlay
         muted
-        loop
-        className='d-none d-md-block'>
+        loop>
         <source
           src={firstvideo}
           type='video/mp4'
         />
       </video>
-      <video
-        id='backgroundvideo'
-        style={{
-          width: '100%',
-          height: '25vh',
-          objectFit: 'cover',
-          zIndex: '-1',
-          marginTop: '100px',
-        }}
-        autoPlay
-        muted
-        loop
-        className='d-md-none'>
-        <source
-          src={firstvideo}
-          type='video/mp4'
-        />
-      </video>
-      <div className='text-container d-none d-md-block  '>
+      <div className='text-container d-none d-md-block '>
+        <h6
+          className='text-center text-white'
+          style={{letterSpacing: '10px'}}>
+          TAKE A LOOK AT
+        </h6>
         <h1
-          className=' text-white'
-          style={{letterSpacing: '10px', fontSize: '40px', fontWeight: 'bold'}}>
-          PORTFOLIO
+          className='text-center text-white'
+          style={{letterSpacing: '8px', fontSize: '50px', marginBottom: '50px'}}>
+          OUR PORTFOLIO
         </h1>
       </div>
-      <div className='text-container d-md-none   '>
+      <div className='text-container d-block d-md-none '>
+        <h6
+          className='text-center text-white'
+          style={{letterSpacing: '10px'}}>
+          TAKE A LOOK AT
+        </h6>
         <h1
-          className=' text-white'
-          style={{
-            letterSpacing: '10px',
-            fontSize: '30px',
-            fontWeight: 'bold',
-            marginBottom: '470px',
-            marginLeft: '20px',
-          }}>
-          PORTFOLIO
+          className='text-center text-white'
+          style={{letterSpacing: '8px', fontSize: '50px', marginBottom: '50px'}}>
+          OUR PORTFOLIO
         </h1>
       </div>
 

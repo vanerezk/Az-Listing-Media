@@ -2,14 +2,15 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import aboutphoto from '../../assets/photos/42 E Interlacken Dr-43.jpg';
 import {Link} from 'react-router-dom';
+import './Aboutmain.css';
 
 function Aboutmain() {
   return (
     <>
-      {/* ABOUT US DESKTOP */}
       <div
-        className='mx-auto  p-5 d-none d-md-block   '
-        style={{marginTop: '20px', height: '90vh', width: '70%'}}>
+        id='aboutmain'
+        className='mx-auto '
+        style={{marginTop: '20px', width: '80%', marginBottom: '100px', scale: '0.9'}}>
         <Row style={{marginTop: '50px'}}>
           <Col style={{marginTop: '50px'}}>
             <h6
@@ -23,9 +24,12 @@ function Aboutmain() {
               ABOUT US
             </h1>
             <h5
+              className='text-justify w-75 mx-auto'
               style={{
                 marginTop: '45px',
                 letterSpacing: '2px',
+                fontSize: '18px',
+                lineHeight: '30px',
               }}>
               Our passionate and dedicated team specializes in capturing stunning visuals that
               highlight each property’s unique story. We offer breathtaking photography, engaging
@@ -38,10 +42,10 @@ function Aboutmain() {
               to support your success in the real estate industry.
             </h5>
             <div
-              className='text-center'
+              className='text-center mx-auto d-flex justify-content-center'
               style={{marginTop: '50px'}}>
               <button
-                className='btn btn-dark  '
+                className='btn btn-dark d-md-block d-none'
                 style={{
                   borderRadius: '5px',
                   padding: '15px 35px',
@@ -61,79 +65,24 @@ function Aboutmain() {
               </button>
             </div>
           </Col>
-
-          <img
-            src={aboutphoto}
-            alt='NO PHOTO YET'
-            style={{
-              width: '40%',
-              height: '600px',
-              objectFit: 'cover',
-              borderRadius: '30px',
-            }}
-          />
+          <Col
+            xl={6}
+            lg={6}
+            md={6}
+            sm={12}>
+            <img
+              src={aboutphoto}
+              id='aboutphoto'
+              alt='NO PHOTO YET'
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                borderRadius: '30px 0 30px 0px',
+              }}
+            />
+          </Col>
         </Row>
-      </div>
-
-      {/* ABOUT US MOBILE */}
-      <div className='d-block d-md-none '>
-        <div
-          className='bg-light '
-          style={{paddingBottom: '50px'}}>
-          <h6
-            className='text-center'
-            style={{letterSpacing: '10px'}}>
-            A LITTLE BIT
-          </h6>
-          <h1
-            className='text-center'
-            style={{letterSpacing: '8px', fontSize: '50px', marginBottom: '50px'}}>
-            ABOUT US
-          </h1>
-
-          <div
-            className='container'
-            style={{
-              width: '80%',
-            }}>
-            <Row>
-              <Col md={6}>
-                <h5
-                  style={{
-                    width: '100%',
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                    fontSize: '16px',
-                    textAlign: 'justify',
-                  }}>
-                  Our passionate and dedicated team specializes in capturing stunning visuals that
-                  highlight each property’s unique story. We offer breathtaking photography,
-                  engaging video tours, and aerial images to help your listings stand out in a
-                  competitive market. Collaborating closely with real estate agents, homeowners, and
-                  developers, we focus on creating high-quality imagery that reflects the true
-                  essence of each space. Join us in transforming properties into extraordinary
-                  visual experiences, as we strive to support your success in the real estate
-                  industry
-                </h5>
-              </Col>
-              <Col
-                md={6}
-                className='text-center'>
-                <img
-                  src={aboutphoto}
-                  alt='NO PHOTO YET'
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    marginTop: '20px',
-                    objectFit: 'cover',
-                    borderRadius: '10px',
-                  }}
-                />
-              </Col>
-            </Row>
-          </div>
-        </div>
       </div>
     </>
   );

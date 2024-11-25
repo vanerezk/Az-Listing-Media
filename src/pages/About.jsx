@@ -135,7 +135,7 @@ function About() {
           </div>
         </div>
 
-        <div
+        {/* <div
           className='mx-auto d-none d-md-block bg-light'
           style={{marginTop: '40px'}}>
           <Carousel
@@ -199,7 +199,7 @@ function About() {
               alt=' '
             />
           </Carousel>
-        </div>
+        </div> */}
 
         {/* <div
           className='mx-auto d-none d-md-block mt-5  bg-light'

@@ -60,17 +60,24 @@ function Pricings() {
         <h6
           className='text-center text-white'
           style={{letterSpacing: '10px'}}>
-          A COMPLETE REAL ESTATE
+          CHOOSE A PLAN
         </h6>
         <h1
           className='text-center text-white'
           style={{letterSpacing: '8px', fontSize: '50px', marginBottom: '50px'}}>
-          MEDIA SOLUTION
+          PRICING
+        </h1>
+      </div>
+      <div
+        className='text-container d-block d-md-none '
+        style={{marginTop: '100px'}}>
+        <h1
+          className='text-center text-white'
+          style={{letterSpacing: '8px', fontSize: '50px', marginBottom: '50px'}}>
+          PRICINGS
         </h1>
       </div>
 
-      {/*mobile view*/}
-      <Videopricings />
       {/*desktop view*/}
 
       <div className='mx-auto w-100  text-center d-none d-md-block'>

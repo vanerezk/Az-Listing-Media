@@ -1,16 +1,41 @@
 import contactphoto from '../assets/photos/19312 W Puget Ave-77.jpg';
 import {Link} from 'react-router-dom';
+import Faq from '../components/Faq/Faq';
+import firstlogo from '../assets/photos/Pulte_Group_updated_logo.png';
+import secondlogo from '../assets/photos/Realty_ONE_Group_Logo_Black_Text.png';
+import thirdlogo from '../assets/photos/REAX_BIG.png';
+import fourthlogo from '../assets/photos/Noble_Logo_Final_Blk.png';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 function Contact() {
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: {max: 4000, min: 3000},
+      items: 5,
+    },
+    desktop: {
+      breakpoint: {max: 3000, min: 1024},
+      items: 3,
+    },
+    tablet: {
+      breakpoint: {max: 1024, min: 464},
+      items: 2,
+    },
+    mobile: {
+      breakpoint: {max: 464, min: 0},
+      items: 1,
+    },
+  };
   return (
     <>
       <div
         className=' text-center'
         style={{marginTop: '200px', marginBottom: '100px'}}>
         <div
-          className='row container text-center mx-auto'
+          className='row container text-center mx-auto '
           style={{marginTop: '100px'}}>
-          <div className='col-lg-6 col-md-6 col-sm-12'>
+          <div className='col-lg-6 col-md-6 col-sm-12 pt-5'>
             <h1
               className='text-black'
               style={{fontSize: '24px', marginBottom: '20px'}}>
@@ -61,21 +86,27 @@ function Contact() {
                 <b>Weekends:</b> upon request{' '}
               </p>
             </div>
-            <button
-              className='btn btn-light d-none d-md-block mx-auto'
-              style={{
-                marginTop: '40px',
-                borderRadius: '0px',
-                padding: '10px 30px',
-                boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
-              }}>
-              <Link
-                to='https://spiro.media/'
-                target='_blank'
-                style={{textDecoration: 'none', color: 'black', letterSpacing: '2px'}}>
-                SCHEDULE NOW
-              </Link>
-            </button>
+            <div style={{padding: '50px ', marginTop: '50px'}}>
+              <button
+                className='btn btn-dark  '
+                style={{
+                  borderRadius: '5px',
+                  padding: '15px 35px',
+                  boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
+                }}>
+                <Link
+                  to='https://spiro.media/'
+                  target='_blank'
+                  style={{
+                    textDecoration: 'none',
+                    color: 'white',
+                    letterSpacing: '1px',
+                    fontSize: '18px',
+                  }}>
+                  SCHEDULE NOW
+                </Link>
+              </button>
+            </div>
           </div>
 
           <div className='col-lg-6 col-md-6 col-sm-12'>
@@ -84,7 +115,7 @@ function Contact() {
               alt='about'
               style={{
                 width: '90%',
-                height: '110%',
+                height: '100%',
                 objectFit: 'cover',
                 borderRadius: '15px',
                 boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
@@ -93,7 +124,73 @@ function Contact() {
           </div>
         </div>
 
-        {/* <Faq /> */}
+        <div
+          className='mx-auto d-none d-md-block bg-light'
+          style={{marginTop: '100px'}}>
+          <Carousel
+            responsive={responsive}
+            interval={20000}
+            arrows={false}
+            infinite={true}
+            autoPlay={true}
+            className=' mx-auto w-75 text-center'>
+            <img
+              src={firstlogo}
+              style={{
+                width: '400px',
+                height: '100px',
+                padding: '10px',
+                marginTop: '12px',
+                objectFit: 'contain',
+                background: 'none',
+                border: 'none',
+              }}
+              alt=' '
+            />
+            <img
+              src={secondlogo}
+              style={{
+                width: '400px',
+                height: '100px',
+                padding: '5px',
+                marginTop: '15px',
+                objectFit: 'contain',
+                background: 'none',
+                border: 'none',
+              }}
+              alt=' '
+            />
+            <img
+              src={thirdlogo}
+              style={{
+                width: '300px',
+                height: '50px',
+                marginTop: '35px',
+                padding: '5px',
+
+                objectFit: 'contain',
+                background: 'none',
+                border: 'none',
+              }}
+              alt=' '
+            />
+            <img
+              src={fourthlogo}
+              style={{
+                width: '500px',
+                height: '120px',
+                padding: '5px',
+                marginTop: '10px',
+                objectFit: 'contain',
+                background: 'none',
+                border: 'none',
+              }}
+              alt=' '
+            />
+          </Carousel>
+        </div>
+
+        <Faq />
       </div>
     </>
   );

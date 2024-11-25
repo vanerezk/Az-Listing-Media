@@ -1,0 +1,21 @@
+@media screen and (max-width: 1400px) {
+    #listings {
+        display: none !important;
+    }
+
+    #listingsmobile {
+        display: block !important;
+    }
+    
+}
+
+@media screen and (min-width: 1400px) {
+    #listings {
+        display: block !important;
+    }
+
+    #listingsmobile {
+        display: none !important;
+    }
+    
+}

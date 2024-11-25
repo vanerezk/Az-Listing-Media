@@ -54,7 +54,7 @@ function Portfolio() {
       <div
         className='
              mx-auto text-center bg-light  w-100 p-5 '
-        style={{marginTop: '100px', height: '85vh', paddingTop: '100px'}}>
+        style={{marginTop: '100px', paddingTop: '100px'}}>
         <h6
           className='text-center '
           style={{letterSpacing: '10px'}}>
@@ -113,7 +113,7 @@ function Portfolio() {
             </div>
           ))}
         </Carousel>
-        <div style={{padding: '50px ', paddingBottom: '100px', marginTop: '50px'}}>
+        <div style={{padding: '50px ', marginTop: '50px'}}>
           <button
             className='btn btn-dark  '
             style={{
@@ -130,7 +130,7 @@ function Portfolio() {
                 letterSpacing: '1px',
                 fontSize: '18px',
               }}>
-              OTHER PROJECTS
+              VIEW MORE!
             </Link>
           </button>
         </div>

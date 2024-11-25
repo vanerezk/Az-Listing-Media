@@ -10,10 +10,14 @@ import virtualtourphoto from '../../assets/photos/19312 W Puget Ave-51.jpg';
 import floorplansphoto from '../../assets/photos/floorplan-with-a-garage.png';
 import Carousel from 'react-bootstrap/Carousel';
 
+import './Listings.css';
+
 function Listings() {
   return (
     <>
-      <div className='d-none d-md-block bg-light  '>
+      <div
+        id='listings'
+        className='bg-light  '>
         <div
           className=' mx-auto p-5   '
           style={{width: '75%', scale: '0.95'}}>
@@ -70,7 +74,7 @@ function Listings() {
               <Card
                 style={{
                   width: 'auto',
-                  height: '23.5rem',
+                  height: '24rem',
                   borderRadius: '15px 15px 15px 15px',
 
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -108,7 +112,7 @@ function Listings() {
               <Card
                 style={{
                   width: 'auto',
-                  height: '23.5rem',
+                  height: '24rem',
                   borderRadius: '15px 15px 15px 15px',
 
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -148,7 +152,7 @@ function Listings() {
               <Card
                 style={{
                   width: 'auto',
-                  height: '23.5rem',
+                  height: '24rem',
                   borderRadius: '15px 15px 15px 15px',
 
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -186,7 +190,7 @@ function Listings() {
               <Card
                 style={{
                   width: 'auto',
-                  height: '23.5rem',
+                  height: '24rem',
                   borderRadius: '15px 15px 15px 15px',
 
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -224,7 +228,7 @@ function Listings() {
               <Card
                 style={{
                   width: 'auto',
-                  height: '23.5rem',
+                  height: '24rem',
                   borderRadius: '15px 15px 15px 15px',
 
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -259,7 +263,7 @@ function Listings() {
       </div>
 
       {/* Mobile layout */}
-      <div className='d-block d-lg-none'>
+      <div id='listingsmobile'>
         <div className='mt-5'>
           <h6
             className='text-center'
@@ -277,6 +281,7 @@ function Listings() {
           ssr={true}
           infinite={true}
           autoPlay={false}
+          fade={true}
           autoPlaySpeed={5000}
           keyBoardControl={true}
           customTransition='all .5'

@@ -13,9 +13,11 @@ function Header() {
   const location = useLocation();
   return (
     <>
-      {/* <Navbar style={{backgroundColor: 'black', height: '50px'}}>
+      <Navbar
+        style={{backgroundColor: 'black', height: '50px'}}
+        id='navnegra'>
         <Container>
-          <Row className=' align-items-center w-100 d-none d-lg-flex '>
+          <Row className=' align-items-center w-100 d-none d-lg-flex'>
             <Col style={{marginLeft: '7px'}}>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -52,6 +54,7 @@ function Header() {
                 xmlns='http://www.w3.org/2000/svg'
                 width='20'
                 height='19'
+                id='location-icon-svg'
                 fill='white'
                 style={{marginLeft: '10px'}}
                 viewBox='0 0 16 16'>
@@ -59,6 +62,7 @@ function Header() {
               </svg>
               <a
                 target='_blank'
+                id='location-icon-svg'
                 className='text-white mx-3'
                 style={{cursor: 'pointer', textDecoration: 'none'}}>
                 Phoenix, Arizona
@@ -110,11 +114,12 @@ function Header() {
             </Col>
           </Row>
         </Container>
-      </Navbar> */}
+      </Navbar>
       {/* Navbar AZ */}
       <Navbar
         expand='lg'
-        className='bg-light shadow'
+        id='navbarScrolltwo'
+        className='bg-light shadow  '
         style={{height: '90px'}}>
         <Container>
           <Link
@@ -155,15 +160,7 @@ function Header() {
                   Portfolio
                 </Link>
               </b>
-              <b>
-                <Link
-                  style={{marginRight: '25px', fontSize: '17px'}}
-                  reloadDocument
-                  to='/about'
-                  className='nav-link'>
-                  About
-                </Link>
-              </b>
+
               <b>
                 <Link
                   reloadDocument

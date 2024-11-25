@@ -73,15 +73,19 @@ function Video() {
         style={{marginTop: '100px'}}>
         <h1
           className=' text-white'
-          style={{letterSpacing: '10px'}}>
-          A REAL ESTATE
+          style={{letterSpacing: '10px', fontSize: '15px'}}>
+          THE VALLEY'S REAL ESTATE
           <br />
-          <b style={{fontSize: '30px'}}>MEDIA COMPANY</b>
+          <b
+            style={{letterSpacing: '8px', fontSize: '30px'}}
+            className='animated-text'>
+            {currentText}
+          </b>
         </h1>
         <h4
           className=' text-white'
-          style={{fontSize: '13px'}}>
-          THE VALLEY'S PREMIER REAL ESTATE MARKETING SOLUTION
+          style={{letterSpacing: '1px', fontSize: '15px'}}>
+          SERVING THE GREATER PHOENIX AREA
         </h4>
         <button
           className='btn btn-light'
@@ -100,7 +104,7 @@ function Video() {
               letterSpacing: '1px',
               fontSize: '18px',
             }}>
-            BOOK A SHOOT
+            BOOK NOW
           </Link>
         </button>
       </div>

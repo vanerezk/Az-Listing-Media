@@ -20,6 +20,10 @@ function Home() {
       <Aboutmain />
       <Listings />
       <Reviews />
+      <br />
+      <br />
+      <br />
+      <br />
       {/* Final video */}
       <div style={{textAlign: 'center', position: 'relative'}}>
         <video
@@ -33,7 +37,7 @@ function Home() {
           autoPlay
           muted
           loop></video>
-        <Col className='text-container  d-none d-md-block '>
+        <Col className='text-container  '>
           <h1
             className=' text-white'
             style={{letterSpacing: '10px', fontSize: '30px'}}>
@@ -62,7 +66,6 @@ function Home() {
             </Link>
           </button>
         </Col>
-        <Col></Col>
       </div>{' '}
       <Topbutton />
     </>
