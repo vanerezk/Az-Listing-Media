@@ -3,7 +3,7 @@ import Accordion from 'react-bootstrap/Accordion';
 function Faq() {
   return (
     <>
-      <div className=' mx-auto w-100 p-5 '>
+      <div className=' mx-auto w-100 p-5 mt-5'>
         <h1
           style={{
             letterSpacing: '5px',

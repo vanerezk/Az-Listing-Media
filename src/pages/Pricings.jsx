@@ -696,7 +696,7 @@ function Pricings() {
             <button
               className='btn btn-dark  '
               style={{
-                padding: '10px 30px',
+                padding: '10px 15px',
                 letterSpacing: '2px',
                 marginRight: '10px',
                 boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
@@ -716,7 +716,7 @@ function Pricings() {
             <button
               className='btn btn-dark '
               style={{
-                padding: '10px 30px',
+                padding: '10px 15px',
                 letterSpacing: '2px',
 
                 boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',

@@ -1,32 +1,32 @@
 import contactphoto from '../assets/photos/19312 W Puget Ave-77.jpg';
 import {Link} from 'react-router-dom';
 import Faq from '../components/Faq/Faq';
-import firstlogo from '../assets/photos/Pulte_Group_updated_logo.png';
-import secondlogo from '../assets/photos/Realty_ONE_Group_Logo_Black_Text.png';
-import thirdlogo from '../assets/photos/REAX_BIG.png';
-import fourthlogo from '../assets/photos/Noble_Logo_Final_Blk.png';
-import Carousel from 'react-multi-carousel';
+// import firstlogo from '../assets/photos/Pulte_Group_updated_logo.png';
+// import secondlogo from '../assets/photos/Realty_ONE_Group_Logo_Black_Text.png';
+// import thirdlogo from '../assets/photos/REAX_BIG.png';
+// import fourthlogo from '../assets/photos/Noble_Logo_Final_Blk.png';
+// import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 function Contact() {
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: {max: 4000, min: 3000},
-      items: 5,
-    },
-    desktop: {
-      breakpoint: {max: 3000, min: 1024},
-      items: 3,
-    },
-    tablet: {
-      breakpoint: {max: 1024, min: 464},
-      items: 2,
-    },
-    mobile: {
-      breakpoint: {max: 464, min: 0},
-      items: 1,
-    },
-  };
+  // const responsive = {
+  //   superLargeDesktop: {
+  //     breakpoint: {max: 4000, min: 3000},
+  //     items: 5,
+  //   },
+  //   desktop: {
+  //     breakpoint: {max: 3000, min: 1024},
+  //     items: 3,
+  //   },
+  //   tablet: {
+  //     breakpoint: {max: 1024, min: 464},
+  //     items: 2,
+  //   },
+  //   mobile: {
+  //     breakpoint: {max: 464, min: 0},
+  //     items: 1,
+  //   },
+  // };
   return (
     <>
       <div
@@ -39,53 +39,43 @@ function Contact() {
             <h1
               className='text-black'
               style={{fontSize: '24px', marginBottom: '20px'}}>
-              CONTACT INFO
-            </h1>
-            <hr style={{width: '30%', margin: 'auto', marginBottom: '20px'}} />
-            <div
-              className='text-black text-justify '
-              style={{
-                fontSize: '16px',
-                paddingLeft: '25px',
-                paddingRight: '25px',
-                marginBottom: '40px',
-              }}>
-              <p>
-                <b>Phone:</b> 623-640-8909
-              </p>
-              <p>
-                <b>Email:</b> azlistingmedia@gmail
-              </p>
-            </div>{' '}
-            <h1
-              className='text-black'
-              style={{fontSize: '24px', marginBottom: '20px'}}>
               HOURS OF OPERATION
             </h1>
-            <hr style={{width: '30%', margin: 'auto', marginBottom: '20px'}} />
+            <hr style={{width: '30%', margin: 'auto'}} />
             <div
               className='text-black text-justify mt-5 '
               style={{
                 fontSize: '16px',
                 paddingLeft: '25px',
                 paddingRight: '25px',
+              }}>
+              <p
+                className='text-center'
+                style={{fontSize: '20px', marginTop: '-30px'}}>
+                {' '}
+                Monday - Friday: 10am - 5pm
+              </p>
+              <p className='text-center'> Sunrise/Sunset/Weekends: Upon request.</p>
+            </div>
+            <h1
+              className='text-black'
+              style={{fontSize: '24px', marginBottom: '20px', marginTop: '50px'}}>
+              CONTACT INFO
+            </h1>
+            <hr style={{width: '30%', margin: 'auto', marginBottom: '20px'}} />
+            <div
+              className='text-black '
+              style={{
+                fontSize: '16px',
                 marginBottom: '40px',
               }}>
               <p>
-                <b>Phone and Email requests:</b> Monday - Friday: 10am - 5pm
+                <b>Phone:</b> 623-640-8909
               </p>
               <p>
-                {' '}
-                <b>Photography requests:</b> Monday - Friday: 10am - 5pm
+                <b>Email:</b> azlistingmedia@gmail.com
               </p>
-              <p>
-                {' '}
-                <b>Sunrise/Sunset shootings:</b> upon request
-              </p>
-              <p>
-                <b>Weekends:</b> upon request{' '}
-              </p>
-            </div>
+            </div>{' '}
             <div style={{padding: '50px ', marginTop: '50px'}}>
               <button
                 className='btn btn-dark  '
@@ -124,7 +114,7 @@ function Contact() {
           </div>
         </div>
 
-        <div
+        {/* <div
           className='mx-auto d-none d-md-block bg-light'
           style={{marginTop: '100px'}}>
           <Carousel
@@ -188,7 +178,7 @@ function Contact() {
               alt=' '
             />
           </Carousel>
-        </div>
+        </div> */}
 
         <Faq />
       </div>
