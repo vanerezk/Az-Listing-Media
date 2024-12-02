@@ -147,7 +147,7 @@ function Header() {
                   reloadDocument
                   style={{marginRight: '25px', fontSize: '17px'}}
                   className='nav-link'>
-                  Pricings
+                  Pricing
                 </Link>
               </b>
               <b>
