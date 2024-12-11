@@ -3,7 +3,6 @@ import Accordion from 'react-bootstrap/Accordion';
 import {useState, useEffect} from 'react';
 import {Col, Row} from 'react-bootstrap';
 import Topbutton from '../components/Top/Topbutton';
-import Videopricings from '../components/Videopricings/Videopricings';
 import {Link} from 'react-router-dom';
 import firstphoto from '../assets/photos/207208 N 129th Dr-95.jpg';
 import secondphoto from '../assets/photos/28556 N 124th Dr Website-2 2.jpg';
@@ -18,13 +17,12 @@ import floorplans from '../assets/photos/floorplan-with-a-garage.png';
 import videopricings from '../assets/videos/V1_15323 W Campbell Ave.mp4';
 import aerialtrial from '../assets/photos/aerialttrial.jpg';
 
-// import upgradedronephoto from '../assets/photos/42 E Interlacken Dr-36.jpg';
+import upgradedronephoto from '../assets/photos/42 E Interlacken Dr-36.jpg';
 import upgradedtwilightphoto from '../assets/photos/49903 N 26th Ave_Virtual Twilight-1.jpg';
-// import before from '../assets/photos/2244 W Madre Del Oro Virtual Stage-1 2.jpg';
-// import after from '../assets/photos/2244 W Madre Del Oro Virtual Stage-2 2.jpg';
-// import ReactCompareImage from 'react-compare-image';
-// import dronevideography from '../assets/photos/27247 N 78th Ln Drone-5.jpg';
-// import videowalkthrough from '../assets/photos/6822 W Amigo Dr-26.jpg';
+import before from '../assets/photos/2244 W Madre Del Oro Virtual Stage-1 2.jpg';
+import after from '../assets/photos/2244 W Madre Del Oro Virtual Stage-2 2.jpg';
+import ReactCompareImage from 'react-compare-image';
+
 function Pricings() {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [firstphoto, secondphoto, thirdphoto, fourthphoto];
@@ -211,7 +209,7 @@ function Pricings() {
             </Row>
           </Card.Body>
         </Card>
-        {/* <div className=' bg-white  w-100 '>
+        <div className=' bg-white  w-100 '>
           <Row className='mx-auto mt-5 p-5 w-75'>
             <h4
               style={{
@@ -372,7 +370,7 @@ function Pricings() {
               </button>
             </div>
           </Row>
-        </div> */}
+        </div>
         <br />
 
         {/* VIDEO WALKTHROUGHS */}
@@ -782,153 +780,6 @@ function Pricings() {
         </Card>
 
         <br />
-
-        {/* <div className=' bg-light  w-100 '>
-          <Row className='mx-auto mt-5 p-5 w-75'>
-            <h4 className='text-center mb-5'>UPGRADE YOUR SHOOTINGS</h4>
-            <Col>
-              <Card
-                style={{
-                  width: '400px',
-                  marginBottom: '80px',
-                  margin: 'auto',
-                  border: 'none',
-                  display: 'block',
-                  marginLeft: 'auto',
-                  marginRight: 'auto',
-                  boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
-                  borderRadius: '15px',
-                }}
-                className='mx-auto'>
-                <div className='image-container'>
-                  <Card.Img
-                    variant='top'
-                    src={dronevideography}
-                    style={{
-                      padding: '20px',
-                      height: '300px',
-                      objectFit: 'cover',
-                      borderRadius: '30px',
-                    }}
-                  />
-                  <span className='price-tag'>149</span>
-                </div>
-                <Card.Body className='text-center'>
-                  <Card.Title
-                    style={{
-                      letterSpacing: '2px',
-                      marginTop: '-10px',
-                      fontWeight: 'bold',
-                      marginBottom: '10px',
-                    }}>
-                    DRONE VIDEO
-                  </Card.Title>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col>
-              <Card
-                style={{
-                  width: '400px',
-                  marginBottom: '80px',
-                  margin: 'auto',
-                  border: 'none',
-                  display: 'block',
-                  marginLeft: 'auto',
-                  marginRight: 'auto',
-                  boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
-                  borderRadius: '15px',
-                }}
-                className='mx-auto'>
-                <div className='image-container'>
-                  <Card.Img
-                    variant='top'
-                    src={videowalkthrough}
-                    style={{
-                      padding: '20px',
-                      height: '300px',
-                      objectFit: 'cover',
-                      borderRadius: '30px',
-                    }}
-                  />
-                  <span className='price-tag'>149</span>
-                </div>
-                <Card.Body className='text-center'>
-                  <Card.Title
-                    style={{
-                      letterSpacing: '2px',
-                      marginTop: '-10px',
-                      fontWeight: 'bold',
-                      marginBottom: '10px',
-                    }}>
-                    VIDEO WALKTROUGH
-                  </Card.Title>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col>
-              <Card
-                style={{
-                  width: '400px',
-                  marginBottom: '80px',
-                  margin: 'auto',
-                  border: 'none',
-                  display: 'block',
-                  marginLeft: 'auto',
-                  marginRight: 'auto',
-                  boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
-                  borderRadius: '15px',
-                }}
-                className='mx-auto'>
-                <div className='image-container'>
-                  <Card.Img
-                    variant='top'
-                    src={videophotos[currentImage]}
-                    style={{
-                      padding: '20px',
-                      height: '300px',
-                      objectFit: 'cover',
-                      borderRadius: '30px',
-                    }}
-                  />
-                  <span className='price-tag'>99</span>
-                </div>
-                <Card.Body className='text-center'>
-                  <Card.Title
-                    style={{
-                      letterSpacing: '2px',
-                      marginTop: '-10px',
-                      fontWeight: 'bold',
-                      marginBottom: '10px',
-                    }}>
-                    PHOTO SLIDESHOW
-                  </Card.Title>
-                </Card.Body>
-              </Card>
-            </Col>
-            <div
-              className='text-center d-none d-md-block '
-              style={{marginBottom: '40px', marginTop: '40px'}}>
-              <button
-                className='btn  mx-auto '
-                style={{
-                  borderRadius: '0px',
-                  backgroundColor: '#EDEDED',
-                  padding: '10px 30px',
-                  letterSpacing: '2px',
-                  fontWeight: 'bold',
-                  boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
-                }}>
-                <Link
-                  to='https://spiro.media/'
-                  target='_blank'
-                  style={{textDecoration: 'none', color: 'black', padding: '10px'}}>
-                  SCHEDULE NOW
-                </Link>
-              </button>
-            </div>
-          </Row>
-        </div> */}
 
         {/* AERIAL ONLY */}
 
@@ -1429,82 +1280,6 @@ function Pricings() {
             </Row>
           </Card.Body>
         </Card>
-
-        {/* AERIAL
-        <Card
-          style={{
-            width: '70%',
-            marginBottom: '80px',
-            margin: 'auto',
-            border: 'none',
-          }}>
-          <Card.Body>
-            <Row>
-              <Col md={6}>
-                <Card.Img
-                  variant='top'
-                  style={{maxHeight: '400px', objectFit: 'cover', maxWidth: '600px'}}
-                  src={images[currentImageIndex].src}
-                  alt={images[currentImageIndex].alt}
-                />
-              </Col>
-              <Col md={6}>
-                <Card.Title style={{textAlign: 'center', marginBottom: '40px'}}>ADD ONS</Card.Title>
-                <Accordion
-                  style={{width: '80%', margin: 'auto', maxWidth: '100%'}}
-                  flush>
-                  <Accordion.Item
-                    eventKey='0'
-                    onClick={() => setCurrentImageIndex(0)}>
-                    <Accordion.Header>DRONE PHOTOGRAPHY</Accordion.Header>
-                    <Accordion.Body style={{textAlign: 'left'}}>
-                      {' '}
-                      - BUNDLE WITH ANY PACKAGE $99 | 10 IMAGES <br /> - WITHOUT PACKAGE $199 | 10
-                      IMAGES
-                    </Accordion.Body>
-                  </Accordion.Item>
-                  <Accordion.Item
-                    eventKey='1'
-                    onClick={() => setCurrentImageIndex(1)}>
-                    <Accordion.Header>TWILIGHT EXTERIOR PHOTOGRAPHY</Accordion.Header>
-                    <Accordion.Body> $199 | 7-10 TWILIGHT PHOTOS </Accordion.Body>
-                  </Accordion.Item>
-                  <Accordion.Item
-                    eventKey='2'
-                    onClick={() => setCurrentImageIndex(2)}>
-                    <Accordion.Header>VIDEO WALKTHROUGH</Accordion.Header>
-                    <Accordion.Body style={{textAlign: 'left'}}>
-                      {' '}
-                      A complete, seamless, one take video walktrough of the property. Shot on a
-                      phone, this is best used for grabbing attention/vertical social media reels. |
-                      $149
-                    </Accordion.Body>
-                  </Accordion.Item>
-                  <Accordion.Item
-                    eventKey='3'
-                    onClick={() => setCurrentImageIndex(3)}>
-                    <Accordion.Header>DRONE VIDEO</Accordion.Header>
-                    <Accordion.Body style={{textAlign: 'left'}}>
-                      {' '}
-                      - BUNDLE WITH ANY PACKAGE $149 <br />- WITHOUT PACKAGE $299
-                    </Accordion.Body>
-                  </Accordion.Item>
-                  <Accordion.Item
-                    eventKey='4'
-                    onClick={() => setCurrentImageIndex(4)}>
-                    <Accordion.Header>PHOTO SLIDESHOW </Accordion.Header>
-                    <Accordion.Body>
-                      {' '}
-                      A slideshow with photos of the property, including music + simple transitions
-                      between each photo. | $99
-                    </Accordion.Body>
-                  </Accordion.Item>
-                </Accordion>
-                <span style={{color: 'GRAY', fontSize: '10px'}}>*PRICES DO NOT INCLUDE TAX </span>
-              </Col>
-            </Row>
-          </Card.Body>
-        </Card> */}
       </div>
       {/* MOBILE */}
       <div
