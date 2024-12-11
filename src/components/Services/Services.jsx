@@ -104,7 +104,7 @@ function Services() {
                 AERIAL MEDIA
               </Card.Title>
               <Card.Text style={{marginBottom: '20px'}}>
-                Get a view from above with our licensed drone pilots and aerial media services.
+                Get a view from above with our licensed drone pilots.
               </Card.Text>
             </Card.Body>
           </Card>
@@ -142,7 +142,7 @@ function Services() {
                 MARKETING VIDEOS
               </Card.Title>
               <Card.Text style={{marginBottom: '20px'}}>
-                Cinematic highlights, lifestyle videos and social media content
+                Cinematic highlights, lifestyle videos and social media content.
               </Card.Text>
             </Card.Body>
           </Card>
