@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 import './Header.css';
 import {useLocation} from 'react-router-dom';
 
-import logo from '../../assets/logo.png';
+import logo from '../../assets/photos/AZ_Listing_Media_Logo_Test-01.png';
 
 function Header() {
   const location = useLocation();
@@ -128,7 +128,7 @@ function Header() {
             <img
               src={logo}
               style={{paddingLeft: '20px'}}
-              width='230'
+              width='280'
               alt='logo'
               className='logo'
             />

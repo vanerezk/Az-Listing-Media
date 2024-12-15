@@ -1,6 +1,6 @@
 import {Container, Row, Col} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import logofooter from '../../assets/photos/AZ_Listing_Media.png';
+import logofooter from '../../assets/photos/AZ_Listing_Media_Logo_Test-02.png';
 
 function Footer() {
   return (
@@ -57,7 +57,7 @@ function Footer() {
                 style={{marginTop: '60px'}}>
                 <img
                   src={logofooter}
-                  style={{width: '100px', height: '100px'}}
+                  style={{width: 'auto', height: '50px', marginBottom: '20px', marginTop: '20px'}}
                   alt='logo'
                 />
                 <Row style={{marginTop: '20px'}}>
