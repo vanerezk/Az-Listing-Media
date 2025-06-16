@@ -7,7 +7,6 @@ Welcome to my Az Listing Media cutting-edge web application that empowers real e
 - Home page
 - Pricings
 - Portfolio
-- About
 - Contact
 
 ## Features:

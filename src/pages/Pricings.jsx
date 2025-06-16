@@ -13,7 +13,7 @@ import photoslideshow from '../assets/photos/207208 N 129th Dr-95.jpg';
 import photoslideshowtwo from '../assets/photos/28556 N 124th Dr Website-2 2.jpg';
 import photoslideshowthree from '../assets/photos/Dining Room-1.jpg';
 import photosslideshowfour from '../assets/photos/2842 N Claire Dr-45.jpg';
-import floorplans from '../assets/photos/floorplan-with-a-garage.png';
+import floorplans from '../assets/photos/9637_E_Gold_Dust_Ave.jpg';
 import photoFondo from '../assets/photos/4131_E_Maya_Way_VT-2.jpg';
 import aerialtrial from '../assets/photos/aerialttrial.jpg';
 
@@ -220,8 +220,7 @@ function Pricings() {
             boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
           }}
           className='btn btn-warning d-block mx-auto '>
-          {' '}
-          BOOST YOUR LISTING{' '}
+          BOOST YOUR LISTING
         </button>
 
         {showSection && (
@@ -801,7 +800,7 @@ function Pricings() {
               </h6>
             </Row>
             <button
-              className='btn btn-dark  '
+              className='btn btn-warning'
               style={{
                 padding: '10px 15px',
                 letterSpacing: '2px',
@@ -814,14 +813,14 @@ function Pricings() {
                 xmlns='http://www.w3.org/2000/svg'
                 width='20'
                 height='20'
-                fill='white'
+                fill='black'
                 viewBox='0 0 16 16'>
                 <path d='M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z' />
                 <path d='M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0' />
               </svg>
             </button>
             <button
-              className='btn btn-dark '
+              className='btn btn-warning '
               style={{
                 padding: '10px 15px',
                 letterSpacing: '2px',
@@ -834,7 +833,7 @@ function Pricings() {
                 xmlns='http://www.w3.org/2000/svg'
                 width='20'
                 height='20'
-                fill='white'
+                fill='black'
                 viewBox='0 0 16 16'>
                 <path d='M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0M1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0' />
                 <path d='M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm6 8.73V7.27l-3.5 1.555v4.35zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1' />
@@ -1149,7 +1148,7 @@ function Pricings() {
                   fontSize: '28px',
                   letterSpacing: '10px',
                 }}>
-                FLOOR PLANS
+                2D & 3D FLOOR PLANS
               </Card.Title>
               <hr style={{width: '30%', margin: 'auto', marginBottom: '20px'}} />
               <h6

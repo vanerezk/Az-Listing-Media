@@ -11,6 +11,9 @@ import logo from '../../assets/photos/AZ_Listing_Media.png';
 
 function Header() {
   const location = useLocation();
+  const navigate = (path) => {
+    window.location.href = path;
+  };
   return (
     <>
       <Navbar
@@ -169,6 +172,20 @@ function Header() {
                   className='nav-link'>
                   Contact
                 </Link>
+              </b>
+
+              <b>
+                <button
+                  className='btn btn-dark'
+                  style={{
+                    marginRight: '25px',
+                    marginLeft: '25px',
+                    fontSize: '17px',
+                    borderRadius: '5px',
+                  }}
+                  onClick={() => navigate('/contact')}>
+                  Schedule now
+                </button>
               </b>
             </Nav>
           </Navbar.Collapse>

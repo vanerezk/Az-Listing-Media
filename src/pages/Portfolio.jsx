@@ -24,6 +24,7 @@ import dronefourth from '../assets/photos/22619 N San Ramon_Drone-3.jpg';
 import dronefifth from '../assets/photos/39718 N Bridlewood Way Drone-10.jpg';
 import {useLocation} from 'react-router-dom';
 import {useEffect} from 'react';
+import photoFondo from '../assets/photos/1836_E_Turquoise_Ave-45.jpg';
 
 function Portfolio() {
   const location = useLocation();
@@ -38,30 +39,24 @@ function Portfolio() {
   }, [location]);
   return (
     <>
-      <h1
-        id='photography'
-        style={{zIndex: '-1', position: 'absolute', marginTop: '900px'}}></h1>
-      <video
-        id='backgroundvideo'
-        style={{width: '100%', height: '90vh', objectFit: 'cover'}}
-        autoPlay
-        muted
-        loop>
-        <source
-          src={firstvideo}
-          type='video/mp4'
-        />
-      </video>
-      <div className='text-container d-none d-md-block '>
+      <img
+        src={photoFondo}
+        id='backgroundphoto'
+        className='w-100 mx-auto '
+        alt='Community Ground Photo Example'
+      />
+      <div
+        className='text-container d-none d-md-block'
+        style={{marginTop: '100px'}}>
         <h6
           className='text-center text-white'
-          style={{letterSpacing: '10px'}}>
+          style={{letterSpacing: '10px', fontSize: '30px'}}>
           TAKE A LOOK AT
         </h6>
         <h1
           className='text-center text-white'
-          style={{letterSpacing: '8px', fontSize: '50px', marginBottom: '50px'}}>
-          OUR PORTFOLIO
+          style={{letterSpacing: '8px', fontSize: '78px', marginBottom: '50px'}}>
+          OUR POTFOLIO
         </h1>
       </div>
       <div className='text-container d-block d-md-none '>

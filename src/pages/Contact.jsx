@@ -36,7 +36,7 @@ function Contact() {
     <>
       <div
         className=' text-center'
-        style={{marginTop: '200px', marginBottom: '100px'}}>
+        style={{marginTop: '250px', marginBottom: '100px'}}>
         <div
           className='row container text-center mx-auto '
           style={{marginTop: '100px'}}>
