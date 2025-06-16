@@ -7,7 +7,7 @@ import photographyphoto from '../../assets/photos/23555 N 159th Ave-3.jpg';
 import aerialphoto from '../../assets/photos/21887 N 181st Ave_Drone-8.jpg';
 import videographyphoto from '../../assets/photos/19312 W Puget Ave-77.jpg';
 import virtualtourphoto from '../../assets/photos/19312 W Puget Ave-51.jpg';
-import floorplansphoto from '../../assets/photos/floorplan-with-a-garage.png';
+import floorplansphoto from '../../assets/photos/9637_E_Gold_Dust_Ave.jpg';
 import Carousel from 'react-bootstrap/Carousel';
 
 import './Listings.css';
@@ -134,7 +134,7 @@ function Listings() {
                       fontWeight: 'bold',
                       fontSize: '23px',
                     }}>
-                    AERIAL
+                    AERIAL MEDIA
                   </Card.Title>
                   <Card.Text style={{marginBottom: '20px'}}>
                     Aerial media for your property to showcase your property’s best features.
@@ -174,7 +174,7 @@ function Listings() {
                       fontWeight: 'bold',
                       fontSize: '23px',
                     }}>
-                    VIDEOGRAPHY
+                    VIDEO PRODUCTION
                   </Card.Title>
                   <Card.Text style={{marginBottom: '20px'}}>
                     Dynamic video content to make your property stand out and be noticed.
@@ -212,7 +212,7 @@ function Listings() {
                       fontWeight: 'bold',
                       fontSize: '23px',
                     }}>
-                    VIRTUAL TOURS
+                    ZILLOW 3D TOURS
                   </Card.Title>
                   <Card.Text style={{marginBottom: '20px'}}>
                     Virtual 360-degrees tours that show and tell a story of your property.
@@ -240,7 +240,7 @@ function Listings() {
                     padding: '0px',
                     borderRadius: '15px 15px 0px 0px',
                     height: '16rem',
-                    objectFit: 'cover',
+                    objectFit: 'contain',
                   }}
                 />
                 <Card.Body className='text-center'>
@@ -250,7 +250,7 @@ function Listings() {
                       fontWeight: 'bold',
                       fontSize: '23px',
                     }}>
-                    2D FLOOR PLANS
+                    2D & 3D FLOOR PLANS
                   </Card.Title>
                   <Card.Text style={{marginBottom: '20px'}}>
                     Clear, visual representations of your property layouts and blueprints.
@@ -384,7 +384,7 @@ function Listings() {
                     fontWeight: 'bold',
                     fontSize: '23px',
                   }}>
-                  VIDEOGRAPHY
+                  VIDEO PRODUCTION
                 </Card.Title>
                 <Card.Text style={{marginBottom: '20px'}}>
                   Dynamic video content to make your property stand out and be noticed.
@@ -418,7 +418,7 @@ function Listings() {
                     fontWeight: 'bold',
                     fontSize: '23px',
                   }}>
-                  VIRTUAL TOURS
+                  ZILLOW 3D TOURS
                 </Card.Title>
                 <Card.Text style={{marginBottom: '20px'}}>
                   Virtual 360-degrees tours that show and tell a story of your property.
@@ -452,7 +452,7 @@ function Listings() {
                     fontWeight: 'bold',
                     fontSize: '23px',
                   }}>
-                  2D FLOOR PLANS
+                  2D & 3D FLOOR PLANS
                 </Card.Title>
                 <Card.Text style={{marginBottom: '20px'}}>
                   Clear, visual representations of your property layouts and blueprints.

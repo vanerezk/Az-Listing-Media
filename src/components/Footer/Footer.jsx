@@ -1,6 +1,6 @@
 import {Container, Row, Col} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import logofooter from '../../assets/photos/AZ_Listing_Media_Logo_Test-02.png';
+import logofooter from '../../assets/photos/AZ_Listing_Media.png';
 
 function Footer() {
   return (
@@ -15,7 +15,7 @@ function Footer() {
           <Container>
             <Row
               className=' text-black justify-content-between   '
-              style={{display: 'fixed', marginLeft: '80px'}}>
+              style={{display: 'fixed', marginLeft: '50px'}}>
               <Col style={{fontSize: '14px', marginTop: '70px'}}>
                 <span>
                   PHONE: <br /> 623-640-8909{' '}
@@ -29,7 +29,7 @@ function Footer() {
               <Col
                 className='d-none d-md-block text-center'
                 style={{marginTop: '72px', marginRight: '50px'}}>
-                <span style={{fontSize: '26px'}}> ELEVATE YOUR LISTINGS. </span>
+                <span style={{fontSize: '26px'}}> ELEVATE YOUR LISTING </span>
                 <br />
                 <button
                   className='btn btn-dark mt-3  '
@@ -52,20 +52,17 @@ function Footer() {
                 </button>
               </Col>
 
-              <Col
-                className='d-flex flex-column align-items-center '
-                style={{marginTop: '60px'}}>
+              <Col className='d-flex flex-column align-items-center '>
                 <img
                   src={logofooter}
-                  style={{width: 'auto', height: '50px', marginBottom: '20px', marginTop: '20px'}}
+                  style={{width: 'auto', height: '100px', marginBottom: '20px', marginTop: '50px'}}
                   alt='logo'
                 />
                 <Row style={{marginTop: '20px'}}>
                   <button
-                    className='btn btn-light mx-3 d-flex justify-content-center align-items-center'
+                    className='btn mx-3 d-flex justify-content-center align-items-center'
                     style={{
                       border: 'none',
-
                       padding: '10px',
                       width: '40px',
                       height: '40px',
@@ -84,7 +81,7 @@ function Footer() {
                     </a>
                   </button>
                   <button
-                    className='btn btn-light mx-3 d-flex justify-content-center align-items-center'
+                    className='btn  mx-3 d-flex justify-content-center align-items-center'
                     style={{
                       border: 'none',
 
@@ -106,7 +103,7 @@ function Footer() {
                     </a>
                   </button>
                   <button
-                    className='btn btn-light mx-3 d-flex justify-content-center align-items-center'
+                    className='btn mx-3 d-flex justify-content-center align-items-center'
                     style={{
                       border: 'none',
 

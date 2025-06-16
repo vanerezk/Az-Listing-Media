@@ -19,7 +19,6 @@ import puggeteight from '../assets/photos/19312 W Puget Ave_Twilight-2.jpg';
 import drfirst from '../assets/photos/207208 N 129th Dr-89.jpg';
 import drsecond from '../assets/photos/207208 N 129th Dr-90.jpg';
 import drthird from '../assets/photos/207208 N 129th Dr-95.jpg';
-
 import dronethird from '../assets/photos/207208 N 129th Dr-145.jpg';
 import dronefourth from '../assets/photos/22619 N San Ramon_Drone-3.jpg';
 import dronefifth from '../assets/photos/39718 N Bridlewood Way Drone-10.jpg';

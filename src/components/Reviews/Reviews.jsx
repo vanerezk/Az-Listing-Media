@@ -6,17 +6,17 @@ function Reviews() {
   const testimonial = [
     {
       content:
-        'Over all though it was a great experience and we hpromoting our next event and I have been approached by 4 oto use it for their own events.I cannot tell you how much we loved s seamless…from set up, to bidding, to payment. We will absolutely use AZ Listing Media for next year',
+        'BETO U SUCK AT TFT. and we hpromoting our next event and I have been approached by 4 oto use it for their own events.I cannot tell you how much we loved s seamless…from set up, to bidding, to payment. We will absolutely use AZ Listing Media for next year',
       author: 'Sarah M., Director of Events',
     },
     {
       content:
-        'I cannot tell you how much we loved s seamless…from set up, to bidding, to payment. We will absolutely use AZ Listing Media for next year. I cannot tell you how much we loved s seamless…from set up, to bidding, to payment. We will absolutely use AZ Listing Media for next year',
+        'BETO U SUCK AT TFT.I cannot tell you how much we loved s seamless…from set up, to bidding, to payment. We will absolutely use AZ Listing Media for next year. I cannot tell you how much we loved s seamless…from set up, to bidding, to payment. We will absolutely use AZ Listing Media for next year',
       author: 'Sarah M., CCHS Foundation',
     },
     {
       content:
-        "I tried Az listing media instead of typ and people who couldn't attend the event were still able to enter the raffle, which was HUGE bump in revenue. I cannot tell you how much we loved s seamless…from set up, to bidding, to payment. We will absolutely use AZ Listing Media for next year",
+        "BETO U SUCK AT TFT.I tried Az listing media instead of typ and people who couldn't attend the event were still able to enter the raffle, which was HUGE bump in revenue. I cannot tell you how much we loved s seamless…from set up, to bidding, to payment. We will absolutely use AZ Listing Media for next year",
       author: 'Alexander B., Pan-Mass Challenge',
     },
   ];

@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 import './Header.css';
 import {useLocation} from 'react-router-dom';
 
-import logo from '../../assets/photos/AZ_Listing_Media_Logo_Test-01.png';
+import logo from '../../assets/photos/AZ_Listing_Media.png';
 
 function Header() {
   const location = useLocation();
@@ -119,7 +119,7 @@ function Header() {
       <Navbar
         expand='lg'
         id='navbarScrolltwo'
-        className='bg-light shadow  '
+        className='bg-light shadow   '
         style={{height: '90px'}}>
         <Container>
           <Link
@@ -127,8 +127,8 @@ function Header() {
             className='navbar-brand'>
             <img
               src={logo}
-              style={{paddingLeft: '20px'}}
-              width='280'
+              style={{paddingLeft: '20px', marginLeft: '-35px'}}
+              width='150px'
               alt='logo'
               className='logo'
             />

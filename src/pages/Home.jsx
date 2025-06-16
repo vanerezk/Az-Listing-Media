@@ -1,7 +1,7 @@
 import Video from '../components/Video/Video';
 import {Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Reviews from '../components/Reviews/Reviews';
+
 import Topbutton from '../components/Top/Topbutton';
 import Services from '../components/Services/Services';
 import Portfolio from '../components/Portfolio/Portfolio';
@@ -9,8 +9,9 @@ import Listings from '../components/Listings/Listings';
 import Aboutmain from '../components/Aboutmain/Aboutmain';
 
 import 'react-multi-carousel/lib/styles.css';
-import finalvideo from '../assets/videos/V2_9513 W Atlantis Way.mp4';
+import finalImage from '../assets/photos/1836_E_Turquoise_Ave-63.jpg';
 import {Col} from 'react-bootstrap';
+
 function Home() {
   return (
     <>
@@ -19,30 +20,25 @@ function Home() {
       <Portfolio />
       <Aboutmain />
       <Listings />
-      <Reviews />
-      <br />
-      <br />
-      <br />
-      <br />
+      {/* <Reviews /> */}
+      {/* <Brands /> */}
       {/* Final video */}
       <div style={{textAlign: 'center', position: 'relative'}}>
-        <video
-          src={finalvideo}
+        <img
+          src={finalImage}
           className='w-100 mx-auto'
           style={{
-            height: '500px',
+            height: '700px',
             objectFit: 'cover',
             filter: 'brightness(70%)',
           }}
-          autoPlay
-          muted
-          loop></video>
+        />
         <Col className='text-container  '>
           <h1
             className=' text-white'
             style={{letterSpacing: '10px', fontSize: '30px'}}>
             <br />
-            <b style={{letterSpacing: '8px', fontSize: '78px'}}>READY TO BOOK?</b>
+            <p style={{letterSpacing: '8px', fontSize: '78px'}}>ELEVATE YOUR LISTING </p>
           </h1>
 
           <button

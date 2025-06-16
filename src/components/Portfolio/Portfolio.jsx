@@ -53,7 +53,7 @@ function Portfolio() {
     <>
       <div
         className='
-             mx-auto text-center bg-light  w-100 p-5 '
+             mx-auto text-center bg-light  w-100 '
         style={{marginTop: '100px', paddingTop: '100px'}}>
         <h6
           className='text-center '
@@ -130,7 +130,7 @@ function Portfolio() {
                 letterSpacing: '1px',
                 fontSize: '18px',
               }}>
-              VIEW MORE!
+              VIEW MORE
             </Link>
           </button>
         </div>

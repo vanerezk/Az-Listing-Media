@@ -1,4 +1,3 @@
-import contactphoto from '../assets/photos/19312 W Puget Ave-77.jpg';
 import {Link} from 'react-router-dom';
 import Faq from '../components/Faq/Faq';
 // import firstlogo from '../assets/photos/Pulte_Group_updated_logo.png';
@@ -6,27 +5,33 @@ import Faq from '../components/Faq/Faq';
 // import thirdlogo from '../assets/photos/REAX_BIG.png';
 // import fourthlogo from '../assets/photos/Noble_Logo_Final_Blk.png';
 // import Carousel from 'react-multi-carousel';
+import firstphoto from '../assets/photos/9451 W Ross Ave Website-1.jpg';
+import secondphoto from '../assets/photos/10851 N Black Canyon HWY-3.jpg';
+import thirdphoto from '../assets/photos/22619 N San Ramon_Drone-3.jpg';
+import fourthphoto from '../assets/photos/19312 W Puget Ave-77.jpg';
+
 import 'react-multi-carousel/lib/styles.css';
+import Carousel from 'react-multi-carousel';
 
 function Contact() {
-  // const responsive = {
-  //   superLargeDesktop: {
-  //     breakpoint: {max: 4000, min: 3000},
-  //     items: 5,
-  //   },
-  //   desktop: {
-  //     breakpoint: {max: 3000, min: 1024},
-  //     items: 3,
-  //   },
-  //   tablet: {
-  //     breakpoint: {max: 1024, min: 464},
-  //     items: 2,
-  //   },
-  //   mobile: {
-  //     breakpoint: {max: 464, min: 0},
-  //     items: 1,
-  //   },
-  // };
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: {max: 4000, min: 3000},
+      items: 5,
+    },
+    desktop: {
+      breakpoint: {max: 3000, min: 1024},
+      items: 3,
+    },
+    tablet: {
+      breakpoint: {max: 1024, min: 464},
+      items: 2,
+    },
+    mobile: {
+      breakpoint: {max: 464, min: 0},
+      items: 1,
+    },
+  };
   return (
     <>
       <div
@@ -55,7 +60,7 @@ function Contact() {
                 {' '}
                 Monday - Friday: 10am - 5pm
               </p>
-              <p className='text-center'> Sunrise/Sunset/Weekends: Upon request.</p>
+              <p className='text-center'> Sunrise / Sunset / Weekends: Upon request.</p>
             </div>
             <h1
               className='text-black'
@@ -99,86 +104,71 @@ function Contact() {
             </div>
           </div>
 
-          <div className='col-lg-6 col-md-6 col-sm-12'>
-            <img
-              src={contactphoto}
-              alt='about'
-              style={{
-                width: '90%',
-                height: '100%',
-                objectFit: 'cover',
-                borderRadius: '15px',
-                boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
-              }}
-            />
+          <div className='col-lg-6 col-md-6 col-sm-12 mb-5 '>
+            <Carousel
+              responsive={responsive}
+              arrows={false}
+              interval={10000}
+              infinite={true}
+              autoPlay={true}
+              swipeable={true}
+              draggable={true}
+              renderDotsOutside={true}
+              customTransition='transform 300ms ease-in-out'
+              transitionDuration={300}
+              containerClass='carousel-container'
+              className=' mx-auto w-100 h-100 '>
+              <img
+                src={firstphoto}
+                style={{
+                  width: '100%',
+                  height: '550px',
+                  objectFit: 'cover',
+                  background: 'none',
+                  padding: '2%',
+                  borderRadius: '15px',
+                }}
+                alt='about'
+              />
+              <img
+                src={secondphoto}
+                style={{
+                  width: '100%',
+                  height: '550px',
+                  objectFit: 'cover',
+                  background: 'none',
+                  padding: '2%',
+                  borderRadius: '15px',
+                }}
+                alt='about'
+              />
+              <img
+                style={{
+                  borderRadius: '15px',
+                  width: '100%',
+                  height: '550px',
+                  objectFit: 'cover',
+                  background: 'none',
+                  padding: '2%',
+                }}
+                src={thirdphoto}
+                alt='about'
+              />
+              <img
+                style={{
+                  borderRadius: '15px',
+                  width: '100%',
+                  height: '550px',
+                  objectFit: 'cover',
+                  background: 'none',
+                  padding: '2%',
+                }}
+                src={fourthphoto}
+                alt='about'
+              />
+            </Carousel>
           </div>
         </div>
-
-        {/* <div
-          className='mx-auto d-none d-md-block bg-light'
-          style={{marginTop: '100px'}}>
-          <Carousel
-            responsive={responsive}
-            interval={20000}
-            arrows={false}
-            infinite={true}
-            autoPlay={true}
-            className=' mx-auto w-75 text-center'>
-            <img
-              src={firstlogo}
-              style={{
-                width: '400px',
-                height: '100px',
-                padding: '10px',
-                marginTop: '12px',
-                objectFit: 'contain',
-                background: 'none',
-                border: 'none',
-              }}
-              alt=' '
-            />
-            <img
-              src={secondlogo}
-              style={{
-                width: '400px',
-                height: '100px',
-                padding: '5px',
-                marginTop: '15px',
-                objectFit: 'contain',
-                background: 'none',
-                border: 'none',
-              }}
-              alt=' '
-            />
-            <img
-              src={thirdlogo}
-              style={{
-                width: '300px',
-                height: '50px',
-                marginTop: '35px',
-                padding: '5px',
-
-                objectFit: 'contain',
-                background: 'none',
-                border: 'none',
-              }}
-              alt=' '
-            />
-            <img
-              src={fourthlogo}
-              style={{
-                width: '500px',
-                height: '120px',
-                padding: '5px',
-                marginTop: '10px',
-                objectFit: 'contain',
-                background: 'none',
-                border: 'none',
-              }}
-              alt=' '
-            />
-          </Carousel>
-        </div> */}
 
         <Faq />
       </div>

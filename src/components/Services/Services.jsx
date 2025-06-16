@@ -3,7 +3,7 @@ import {Card, Col, Row, Carousel} from 'react-bootstrap';
 import './Services.css';
 
 import listingmedia from '../../assets/photos/28556 N 124th Dr Website-2 2.jpg';
-import aerialmedia from '../../assets/photos/2842 N Claire Dr-40.jpg';
+import aerialmedia from '../../assets/photos/4323_W_Ardmore_Rd-55.jpg';
 import marketingvideos from '../../assets/photos/Marketing_Video-1.jpg';
 import agentbranding from '../../assets/photos/Dining Room-1.jpg';
 

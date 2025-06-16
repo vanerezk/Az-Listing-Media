@@ -14,7 +14,7 @@ import photoslideshowtwo from '../assets/photos/28556 N 124th Dr Website-2 2.jpg
 import photoslideshowthree from '../assets/photos/Dining Room-1.jpg';
 import photosslideshowfour from '../assets/photos/2842 N Claire Dr-45.jpg';
 import floorplans from '../assets/photos/floorplan-with-a-garage.png';
-import videopricings from '../assets/videos/V1_15323 W Campbell Ave.mp4';
+import photoFondo from '../assets/photos/4131_E_Maya_Way_VT-2.jpg';
 import aerialtrial from '../assets/photos/aerialttrial.jpg';
 
 import upgradedronephoto from '../assets/photos/42 E Interlacken Dr-36.jpg';
@@ -46,28 +46,24 @@ function Pricings() {
 
   return (
     <>
-      <video
-        id='backgroundvideo'
-        style={{width: '100%', height: '100vh', objectFit: 'cover'}}
-        autoPlay
-        muted
-        loop>
-        <source
-          src={videopricings}
-          type='video/mp4'
-        />
-      </video>
+      <img
+        src={photoFondo}
+        style={{marginTop: '85px'}}
+        id='backgroundphoto'
+        className='w-100 mx-auto '
+        alt='Community Ground Photo Example'
+      />
       <div
-        className='text-container d-none d-md-block '
+        className='text-container d-none d-md-block'
         style={{marginTop: '100px'}}>
         <h6
           className='text-center text-white'
-          style={{letterSpacing: '10px'}}>
+          style={{letterSpacing: '10px', fontSize: '30px'}}>
           CHOOSE A PLAN
         </h6>
         <h1
           className='text-center text-white'
-          style={{letterSpacing: '8px', fontSize: '50px', marginBottom: '50px'}}>
+          style={{letterSpacing: '8px', fontSize: '78px', marginBottom: '50px'}}>
           PRICING
         </h1>
       </div>
@@ -223,9 +219,9 @@ function Pricings() {
             padding: '15px 35px',
             boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
           }}
-          className='btn btn-dark d-block mx-auto '>
+          className='btn btn-warning d-block mx-auto '>
           {' '}
-          UPGRADE YOUR SHOOTS{' '}
+          BOOST YOUR LISTING{' '}
         </button>
 
         {showSection && (
