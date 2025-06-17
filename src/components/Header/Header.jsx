@@ -122,22 +122,20 @@ function Header() {
       <Navbar
         expand='lg'
         id='navbarScrolltwo'
-        className='bg-light shadow   '
-        style={{height: '90px'}}>
+        className='bg-light shadow w-100  '>
         <Container>
           <Link
             to='/'
             className='navbar-brand'>
             <img
               src={logo}
-              style={{paddingLeft: '20px', marginLeft: '-35px'}}
               width='150px'
               alt='logo'
               className='logo'
             />
           </Link>
           <Navbar.Toggle
-            style={{marginRight: '20px'}}
+            style={{marginRight: '30px'}}
             aria-controls='navbarScroll'
           />
           <Navbar.Collapse
@@ -166,8 +164,8 @@ function Header() {
 
               <b>
                 <Link
+                  style={{marginRight: '25px', fontSize: '17px'}}
                   reloadDocument
-                  style={{fontSize: '17px'}}
                   to='/contact'
                   className='nav-link'>
                   Contact
@@ -177,12 +175,7 @@ function Header() {
               <b>
                 <button
                   className='btn btn-dark'
-                  style={{
-                    marginRight: '25px',
-                    marginLeft: '25px',
-                    fontSize: '17px',
-                    borderRadius: '5px',
-                  }}
+                  id='scheduleButton'
                   onClick={() => navigate('/contact')}>
                   Schedule now
                 </button>
@@ -191,50 +184,6 @@ function Header() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
-      {location.pathname === '/portfolio' && (
-        <Navbar
-          id='subnav'
-          className='shadow  d-none d-md-block '
-          style={{backgroundColor: 'rgba(180, 180, 180) '}}>
-          <Container>
-            <Navbar.Toggle aria-controls='navbarScroll' />
-            <Navbar.Collapse
-              id='navbarScroll'
-              className='justify-content-center   '>
-              <Nav
-                className='me-2  my-lg-0 '
-                navbarScroll>
-                <b>
-                  <Link
-                    to='/portfolio#photography'
-                    as={Link}
-                    className='nav-link text-black px-3 '>
-                    Photography
-                  </Link>
-                </b>
-                <b>
-                  <Link
-                    to='/portfolio#videography'
-                    as={Link}
-                    className='nav-link text-black px-3 '>
-                    Videography
-                  </Link>
-                </b>
-                <b>
-                  <Link
-                    to='/portfolio#drone'
-                    as={Link}
-                    className='nav-link text-black px-3 '>
-                    {' '}
-                    Drone
-                  </Link>
-                </b>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-      )}
     </>
   );
 }

@@ -20,9 +20,6 @@ function Home() {
       <Portfolio />
       <Aboutmain />
       <Listings />
-      {/* <Reviews /> */}
-      {/* <Brands /> */}
-      {/* Final video */}
       <div style={{textAlign: 'center', position: 'relative'}}>
         <img
           src={finalImage}
@@ -38,7 +35,7 @@ function Home() {
             className=' text-white'
             style={{letterSpacing: '10px', fontSize: '30px'}}>
             <br />
-            <p style={{letterSpacing: '8px', fontSize: '78px'}}>ELEVATE YOUR LISTING </p>
+            <p style={{letterSpacing: '8px', fontSize: '78px'}}>LET'S GET STARTED </p>
           </h1>
 
           <button

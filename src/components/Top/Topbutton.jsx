@@ -34,6 +34,7 @@ function Topbutton() {
           bottom: '80px',
           right: '20px',
           display: 'none',
+          zIndex: '99',
         }}
         className='btn-floating'
         color='dark'

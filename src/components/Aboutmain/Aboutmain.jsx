@@ -31,15 +31,18 @@ function Aboutmain() {
                 fontSize: '18px',
                 lineHeight: '30px',
               }}>
-              Our passionate and dedicated team specializes in capturing stunning visuals that
-              highlight each property’s unique story. We offer breathtaking photography, engaging
-              video tours, and aerial images to help your listings stand out in a competitive
-              market. Collaborating closely with real estate agents, homeowners, and developers, we
-              focus on creating high-quality imagery that reflects the true essence of each space.
+              At AZ Listing Media, we don’t just deliver visuals, we become your marketing partner.
+              Our passionate and dedicated team specializes in showcasing properties through
+              strategic, high-impact media designed to elevate your brand and drive results. From
+              captivating photography and dynamic video tours to compelling aerial imagery, we help
+              your listings stand out in a competitive market. We work hand-in-hand with real estate
+              agents, brokerages, and developers to craft visuals that don’t just show a space, but
+              sell a lifestyle.
               <br />
               <br />
-              Join us in transforming properties into extraordinary visual experiences, as we strive
-              to support your success in the real estate industry.
+              Our goal is simple: to be an extension of your team, providing powerful marketing
+              tools that reflect the true essence of each property and strengthen your position as a
+              top-tier real estate professional.
             </h5>
             <div
               className='text-center mx-auto d-flex justify-content-center'

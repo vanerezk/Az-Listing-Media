@@ -20,31 +20,21 @@ function Listings() {
         className='bg-light  '>
         <div
           className=' mx-auto p-5   '
-          style={{width: '75%', scale: '0.95'}}>
+          style={{width: '85%', scale: '0.85'}}>
           <Row>
             <Col
               xs={12}
               sm={6}
               md={4}>
-              <div className='text-left '>
-                <h6
-                  className='text-left'
-                  style={{letterSpacing: '10px'}}>
-                  EXPLORE OUR
-                </h6>
-                <h1
-                  className='text-left'
-                  style={{letterSpacing: '8px', fontSize: '50px'}}>
-                  LISTING SERVICES
-                </h1>
-                <h5 style={{width: '95%'}}>
-                  We offer a multi-faceted range of different services depending on your listing
-                  needs.
-                </h5>
+              <div
+                className='text-center'
+                style={{marginTop: '100px'}}>
+                <h6 style={{letterSpacing: '10px'}}>EXPLORE OUR</h6>
+                <h1 style={{letterSpacing: '8px', fontSize: '50px'}}>SERVICES</h1>
               </div>
 
               <div
-                className='text-left d-none d-md-block '
+                className=' text-center d-none d-md-block '
                 style={{marginTop: '50px'}}>
                 <button
                   className='btn btn-dark  '
@@ -74,7 +64,7 @@ function Listings() {
               <Card
                 style={{
                   width: 'auto',
-                  height: '24rem',
+                  height: '26rem',
                   borderRadius: '15px 15px 15px 15px',
 
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -86,11 +76,11 @@ function Listings() {
                     width: 'auto',
                     padding: '0px',
                     borderRadius: '15px 15px 0px 0px',
-                    height: '16rem',
+                    height: '15rem',
                     objectFit: 'cover',
                   }}
                 />
-                <Card.Body className='text-center'>
+                <Card.Body className='text-center my-auto mt-3 '>
                   <Card.Title
                     style={{
                       letterSpacing: '2px',
@@ -100,7 +90,8 @@ function Listings() {
                     PHOTOGRAPHY
                   </Card.Title>
                   <Card.Text style={{marginBottom: '20px'}}>
-                    High-quality photos that showcase properties’ best features.
+                    Crisp, professionally composed images that highlight your property’s best
+                    details.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -112,7 +103,7 @@ function Listings() {
               <Card
                 style={{
                   width: 'auto',
-                  height: '24rem',
+                  height: '26rem',
                   borderRadius: '15px 15px 15px 15px',
 
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -123,21 +114,23 @@ function Listings() {
                   style={{
                     padding: '0px',
                     borderRadius: '15px 15px 0px 0px',
-                    height: '16rem',
+                    height: '15rem',
                     objectFit: 'cover',
                   }}
                 />
-                <Card.Body className='text-center'>
+                <Card.Body className='text-center my-auto mt-3 '>
                   <Card.Title
                     style={{
                       letterSpacing: '2px',
                       fontWeight: 'bold',
                       fontSize: '23px',
                     }}>
-                    AERIAL MEDIA
+                    AERIAL SOLUTIONS
                   </Card.Title>
                   <Card.Text style={{marginBottom: '20px'}}>
-                    Aerial media for your property to showcase your property’s best features.
+                    A bird’s-eye perspective that highlights not just the property, but its stunning
+                    surroundings. Perfect for showcasing landscapes, location, and curb appeal in
+                    one shot.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -152,7 +145,7 @@ function Listings() {
               <Card
                 style={{
                   width: 'auto',
-                  height: '24rem',
+                  height: '25rem',
                   borderRadius: '15px 15px 15px 15px',
 
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -163,11 +156,11 @@ function Listings() {
                   style={{
                     padding: '0px',
                     borderRadius: '15px 15px 0px 0px',
-                    height: '16rem',
+                    height: '15rem',
                     objectFit: 'cover',
                   }}
                 />
-                <Card.Body className='text-center'>
+                <Card.Body className='text-center my-auto mt-3 '>
                   <Card.Title
                     style={{
                       letterSpacing: '2px',
@@ -177,7 +170,8 @@ function Listings() {
                     VIDEO PRODUCTION
                   </Card.Title>
                   <Card.Text style={{marginBottom: '20px'}}>
-                    Dynamic video content to make your property stand out and be noticed.
+                    Bring your listing to life with cinematic visuals that tell a story and leave a
+                    lasting impression.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -190,7 +184,7 @@ function Listings() {
               <Card
                 style={{
                   width: 'auto',
-                  height: '24rem',
+                  height: '25rem',
                   borderRadius: '15px 15px 15px 15px',
 
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -201,21 +195,22 @@ function Listings() {
                   style={{
                     padding: '0px',
                     borderRadius: '15px 15px 0px 0px',
-                    height: '16rem',
+                    height: '15rem',
                     objectFit: 'cover',
                   }}
                 />
-                <Card.Body className='text-center'>
+                <Card.Body className='text-center my-auto mt-3 '>
                   <Card.Title
                     style={{
                       letterSpacing: '2px',
                       fontWeight: 'bold',
                       fontSize: '23px',
                     }}>
-                    ZILLOW 3D TOURS
+                    AGENT BRANDING
                   </Card.Title>
                   <Card.Text style={{marginBottom: '20px'}}>
-                    Virtual 360-degrees tours that show and tell a story of your property.
+                    Custom media tailored to you — highlight your personality, process, and
+                    professionalism to stand out in the market.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -228,7 +223,7 @@ function Listings() {
               <Card
                 style={{
                   width: 'auto',
-                  height: '24rem',
+                  height: '25rem',
                   borderRadius: '15px 15px 15px 15px',
 
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -239,21 +234,22 @@ function Listings() {
                   style={{
                     padding: '0px',
                     borderRadius: '15px 15px 0px 0px',
-                    height: '16rem',
+                    height: '15rem',
                     objectFit: 'contain',
                   }}
                 />
-                <Card.Body className='text-center'>
+                <Card.Body className='text-center my-auto mt-3 '>
                   <Card.Title
                     style={{
                       letterSpacing: '2px',
                       fontWeight: 'bold',
                       fontSize: '23px',
                     }}>
-                    2D & 3D FLOOR PLANS
+                    FLOOR PLANS
                   </Card.Title>
                   <Card.Text style={{marginBottom: '20px'}}>
-                    Clear, visual representations of your property layouts and blueprints.
+                    Clean, easy-to-read layouts that give buyers a clear understanding of the home’s
+                    flow and dimensions.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -263,19 +259,19 @@ function Listings() {
       </div>
 
       {/* Mobile layout */}
-      <div id='listingsmobile'>
-        <div className='mt-5'>
-          <h6
-            className='text-center'
-            style={{letterSpacing: '10px'}}>
-            EXPLORE OUR
-          </h6>
-          <h1
-            className='text-center'
-            style={{letterSpacing: '8px', fontSize: '50px'}}>
-            LISTING SERVICES
-          </h1>
-        </div>
+      <div
+        id='listingsmobile'
+        className='bg-light   pt-5 pb-5 '>
+        <h6
+          className='text-center '
+          style={{letterSpacing: '10px'}}>
+          EXPLORE OUR
+        </h6>
+        <h1
+          className='text-center'
+          style={{letterSpacing: '8px', fontSize: '50px'}}>
+          SERVICES
+        </h1>
 
         <Carousel
           ssr={true}
@@ -288,15 +284,13 @@ function Listings() {
           transitionDuration={500}
           removeArrowOnDeviceType={['tablet', 'mobile']}
           indicators={false}
-          className='w-75 mx-auto mt-5'>
+          className='w-75 mx-auto mt-5 mb-5'>
           <Carousel.Item>
             <Card
               style={{
                 width: 'auto',
-                height: '23.5rem',
+                height: '25rem',
                 borderRadius: '15px 15px 15px 15px',
-
-                boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
               }}>
               <Card.Img
                 variant='top'
@@ -305,7 +299,7 @@ function Listings() {
                   width: 'auto',
                   padding: '0px',
                   borderRadius: '15px 15px 0px 0px',
-                  height: '16rem',
+                  height: '15rem',
                   objectFit: 'cover',
                 }}
               />
@@ -319,7 +313,7 @@ function Listings() {
                   PHOTOGRAPHY
                 </Card.Title>
                 <Card.Text style={{marginBottom: '20px'}}>
-                  High-quality photos that showcase properties’ best features.
+                  Crisp, professionally composed images that highlight your property’s best details.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -328,10 +322,8 @@ function Listings() {
             <Card
               style={{
                 width: 'auto',
-                height: '23.5rem',
+                height: '25rem',
                 borderRadius: '15px 15px 15px 15px',
-
-                boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
               }}>
               <Card.Img
                 variant='top'
@@ -339,7 +331,7 @@ function Listings() {
                 style={{
                   padding: '0px',
                   borderRadius: '15px 15px 0px 0px',
-                  height: '16rem',
+                  height: '15rem',
                   objectFit: 'cover',
                 }}
               />
@@ -350,10 +342,11 @@ function Listings() {
                     fontWeight: 'bold',
                     fontSize: '23px',
                   }}>
-                  AERIAL
+                  AERIAL SOLUTIONS
                 </Card.Title>
                 <Card.Text style={{marginBottom: '20px'}}>
-                  Aerial media for your property to showcase your property’s best features.
+                  A bird’s-eye perspective that highlights not just the property, but its stunning
+                  surroundings.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -362,10 +355,8 @@ function Listings() {
             <Card
               style={{
                 width: 'auto',
-                height: '23.5rem',
+                height: '25rem',
                 borderRadius: '15px 15px 15px 15px',
-
-                boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
               }}>
               <Card.Img
                 variant='top'
@@ -373,7 +364,7 @@ function Listings() {
                 style={{
                   padding: '0px',
                   borderRadius: '15px 15px 0px 0px',
-                  height: '16rem',
+                  height: '15rem',
                   objectFit: 'cover',
                 }}
               />
@@ -387,7 +378,8 @@ function Listings() {
                   VIDEO PRODUCTION
                 </Card.Title>
                 <Card.Text style={{marginBottom: '20px'}}>
-                  Dynamic video content to make your property stand out and be noticed.
+                  Bring your listing to life with cinematic visuals that tell a story and leave a
+                  lasting impression.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -396,10 +388,8 @@ function Listings() {
             <Card
               style={{
                 width: 'auto',
-                height: '23.5rem',
+                height: '25rem',
                 borderRadius: '15px 15px 15px 15px',
-
-                boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
               }}>
               <Card.Img
                 variant='top'
@@ -407,7 +397,7 @@ function Listings() {
                 style={{
                   padding: '0px',
                   borderRadius: '15px 15px 0px 0px',
-                  height: '16rem',
+                  height: '15rem',
                   objectFit: 'cover',
                 }}
               />
@@ -418,10 +408,11 @@ function Listings() {
                     fontWeight: 'bold',
                     fontSize: '23px',
                   }}>
-                  ZILLOW 3D TOURS
+                  AGENT BRANDING
                 </Card.Title>
                 <Card.Text style={{marginBottom: '20px'}}>
-                  Virtual 360-degrees tours that show and tell a story of your property.
+                  Custom media tailored to you — highlight your personality, process, and
+                  professionalism to stand out in the market.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -430,10 +421,9 @@ function Listings() {
             <Card
               style={{
                 width: 'auto',
-                height: '23.5rem',
-                borderRadius: '15px 15px 15px 15px',
 
-                boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
+                height: '25rem',
+                borderRadius: '15px 15px 15px 15px',
               }}>
               <Card.Img
                 variant='top'
@@ -441,7 +431,7 @@ function Listings() {
                 style={{
                   padding: '0px',
                   borderRadius: '15px 15px 0px 0px',
-                  height: '16rem',
+                  height: '15rem',
                   objectFit: 'cover',
                 }}
               />
@@ -452,10 +442,11 @@ function Listings() {
                     fontWeight: 'bold',
                     fontSize: '23px',
                   }}>
-                  2D & 3D FLOOR PLANS
+                  FLOOR PLANS
                 </Card.Title>
                 <Card.Text style={{marginBottom: '20px'}}>
-                  Clear, visual representations of your property layouts and blueprints.
+                  Clean, easy-to-read layouts that give buyers a clear understanding of the home’s
+                  flow and dimensions.
                 </Card.Text>
               </Card.Body>
             </Card>

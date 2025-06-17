@@ -3,7 +3,9 @@ import Accordion from 'react-bootstrap/Accordion';
 function Faq() {
   return (
     <>
-      <div className=' mx-auto w-100 p-5 mt-5'>
+      <div
+        className=' mx-auto w-100 p-5'
+        style={{marginTop: '100px'}}>
         <h1
           style={{
             letterSpacing: '5px',
@@ -31,8 +33,15 @@ function Faq() {
             style={{
               maxWidth: '70%',
               margin: '0 auto',
-
               marginBottom: '50px',
+              '--bs-accordion-color': ' #ffa804',
+              '--bs-accordion-bg': 'rgb(255, 255, 255)',
+              '--bs-accordion-border-color': ' #ffa804',
+              '--bs-accordion-btn-focus-border-color': ' #ffa804',
+              '--bs-accordion-btn-focus-box-shadow': 'none',
+              '--bs-accordion-active-color': '#ffa804',
+              '--bs-accordion-active-bg': 'rgb(255, 255, 255)',
+              '--bs-accordion-active-border-color': '#ffa804',
             }}>
             <Accordion.Item eventKey='0'>
               <Accordion.Header>

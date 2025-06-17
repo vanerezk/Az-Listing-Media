@@ -71,44 +71,7 @@ function Services() {
             </Card.Body>
           </Card>
         </Col>
-        <Col className='text-center'>
-          <Card
-            style={{
-              width: '100%',
-              height: '100%',
-              maxHeight: '500px',
-              borderRadius: '15px 15px 15px 15px',
-              marginBottom: '80px',
-              boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
-            }}>
-            <Card.Img
-              variant='top'
-              src={aerialmedia}
-              style={{
-                width: '100%',
-                padding: '0px',
-                borderRadius: '15px 15px 0px 0px',
-                height: '18rem',
-                objectFit: 'cover',
-              }}
-            />
-            <Card.Body className='text-center'>
-              <Card.Title
-                style={{
-                  letterSpacing: '2px',
-                  marginTop: '10px',
-                  fontWeight: 'bold',
-                  fontSize: '25px',
-                  marginBottom: '20px',
-                }}>
-                AERIAL MEDIA
-              </Card.Title>
-              <Card.Text style={{marginBottom: '20px'}}>
-                Get a view from above with our licensed drone pilots.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
+
         <Col className='text-center'>
           <Card
             style={{
@@ -159,6 +122,44 @@ function Services() {
             }}>
             <Card.Img
               variant='top'
+              src={aerialmedia}
+              style={{
+                width: '100%',
+                padding: '0px',
+                borderRadius: '15px 15px 0px 0px',
+                height: '18rem',
+                objectFit: 'cover',
+              }}
+            />
+            <Card.Body className='text-center'>
+              <Card.Title
+                style={{
+                  letterSpacing: '2px',
+                  marginTop: '10px',
+                  fontWeight: 'bold',
+                  fontSize: '25px',
+                  marginBottom: '20px',
+                }}>
+                AERIAL SERVICES
+              </Card.Title>
+              <Card.Text style={{marginBottom: '20px'}}>
+                Get a view from above with our licensed drone pilots.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col className='text-center'>
+          <Card
+            style={{
+              width: '100%',
+              height: '100%',
+              maxHeight: '500px',
+              borderRadius: '15px 15px 15px 15px',
+              marginBottom: '80px',
+              boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
+            }}>
+            <Card.Img
+              variant='top'
               src={agentbranding}
               style={{
                 width: '100%',
@@ -187,7 +188,7 @@ function Services() {
         </Col>
       </Row>
 
-      <div style={{width: '80%', height: '100%', margin: 'auto'}}>
+      <div style={{width: '80%', height: '100%', margin: 'auto', marginBottom: '-100px'}}>
         <Carousel
           fade
           className='carouselCards'>
@@ -327,7 +328,7 @@ function Services() {
                     fontWeight: 'bold',
                     marginBottom: '20px',
                   }}>
-                  AERIAL SOLUTIONS
+                  AERIAL SERVICES
                 </Card.Title>
                 <Card.Text style={{marginBottom: '20px'}}>
                   Get a view from above with our licensed drone pilots.

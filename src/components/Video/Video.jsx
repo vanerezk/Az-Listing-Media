@@ -20,7 +20,7 @@ function Video() {
     <>
       <img
         src={photo}
-        style={{marginTop: '130px'}}
+        style={{marginTop: '100px'}}
         id='backgroundphoto'
         className='w-100 mx-auto '
         alt='Community Ground Photo Example'
@@ -32,7 +32,7 @@ function Video() {
         <h1
           className=' text-white'
           style={{letterSpacing: '10px', fontSize: '30px'}}>
-          THE VALLEY'S PREMIUM REAL ESTATE
+          THE VALLEY'S PREMIUM
           <br />
           <b
             style={{letterSpacing: '8px', fontSize: '78px'}}

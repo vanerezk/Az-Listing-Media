@@ -106,7 +106,7 @@ function Pricings() {
                   marginBottom: '20px',
                   fontSize: '12px',
                 }}>
-                <b style={{fontSize: '12px'}}>ALL PHOTOS PACKAGES </b> INCLUDE SKY REPLACEMENT.
+                <b style={{fontSize: '12px'}}>ALL PHOTO PACKAGES </b> INCLUDE SKY REPLACEMENT.
               </h6>
             </Row>
 
