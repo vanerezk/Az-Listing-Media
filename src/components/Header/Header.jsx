@@ -148,7 +148,7 @@ function Header() {
                   reloadDocument
                   style={{marginRight: '25px', fontSize: '17px'}}
                   className='nav-link'>
-                  Pricing
+                  PRICING
                 </Link>
               </b>
               <b>
@@ -158,7 +158,7 @@ function Header() {
                   to='/portfolio'
                   className='nav-link'>
                   {' '}
-                  Portfolio
+                  PORTFOLIO
                 </Link>
               </b>
 
@@ -168,7 +168,7 @@ function Header() {
                   reloadDocument
                   to='/contact'
                   className='nav-link'>
-                  Contact
+                  CONTACT
                 </Link>
               </b>
 
@@ -177,7 +177,7 @@ function Header() {
                   className='btn btn-dark'
                   id='scheduleButton'
                   onClick={() => navigate('/contact')}>
-                  Schedule now
+                  SCHEDULE NOW
                 </button>
               </b>
             </Nav>

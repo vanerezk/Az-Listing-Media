@@ -34,7 +34,7 @@ function Faq() {
               maxWidth: '70%',
               margin: '0 auto',
               marginBottom: '50px',
-              '--bs-accordion-color': ' #ffa804',
+
               '--bs-accordion-bg': 'rgb(255, 255, 255)',
               '--bs-accordion-border-color': ' #ffa804',
               '--bs-accordion-btn-focus-border-color': ' #ffa804',
@@ -46,51 +46,32 @@ function Faq() {
             <Accordion.Item eventKey='0'>
               <Accordion.Header>
                 {' '}
-                <b>WHEN IS THE BEST TIME OF DAY FOR REAL ESTATE PHOTOGRAPHY?</b>
+                <b>What types of properties do you photograph?</b>
               </Accordion.Header>
               <Accordion.Body
                 style={{color: 'black'}}
                 className='text-justify'>
-                When it comes to real estate photography, the orientation of a property matters.
-                Different compass directions—whether a property faces east, west, north, or
-                south—determine the best time of day for capturing exterior photos.
-                <br />
-                <br /> Here’s a quick guide:
-                <br />
-                <br /> - East-facing properties: Morning is the optimal time for shooting. The sun
-                rises in the east, so you’ll get lovely light on the front of the house during those
-                early hours.
-                <br /> - West-facing properties: Afternoons work well. The sun sets in the west,
-                casting warm, golden light on the front of the home.
-                <br /> - North-facing properties: Anytime between 10:00 AM and 2:00 PM is ideal.
-                This avoids harsh shadows and ensures even lighting.
-                <br /> - South-facing properties: Aim for early morning or late afternoon. The sun
-                will be behind you, illuminating the front of the house without creating strong
-                contrasts.
-                <br />
-                <br /> Remember, not every property fits neatly into these categories. If you’re
-                unsure, consider using the LightTrac app (available for iOS and Android) to track
-                the sun’s position throughout the day for each property you’re selling. It’ll help
-                you plan your photoshoots effectively!
+                We photograph all types — from residential homes and luxury estates to commercial
+                buildings and new developments.
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey='1'>
               <Accordion.Header>
-                <b>DO I NEED TO BE AT THE PROPERTY AT THE TIME OF THE SHOOTING? </b>
+                <b>How long does a typical photoshoot take?</b>
               </Accordion.Header>
               <Accordion.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                Most shoots take between 1 to 2 hours depending on the property size and services
+                requested.
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey='2'>
               <Accordion.Header>
-                <b>WHAT SHOULD I DO TO GET MY PROPERTY READY FOR THE SHOOTING?</b>
+                <b>What kind of photos do you deliver?</b>
               </Accordion.Header>
               <Accordion.Body>
                 {' '}
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In impedit sed id itaque,
-                laborum sunt corrupti reiciendis dolores harum. Id voluptatibus harum a dolores quam
-                laborum aliquid tenetur, culpa officiis.
+                We provide high-resolution HDR, professionally edited images optimized for all of
+                your marketing needs.
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
