@@ -5,15 +5,10 @@ import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Header.css';
-import {useLocation} from 'react-router-dom';
 
 import logo from '../../assets/photos/AZ_Listing_Media.png';
 
 function Header() {
-  const location = useLocation();
-  const navigate = (path) => {
-    window.location.href = path;
-  };
   return (
     <>
       <Navbar
@@ -176,7 +171,9 @@ function Header() {
                 <button
                   className='btn btn-dark'
                   id='scheduleButton'
-                  onClick={() => navigate('/contact')}>
+                  onClick={() =>
+                    window.open('https://azlistingmedia.portal.realestatemediahero.com/', '_blank')
+                  }>
                   SCHEDULE NOW
                 </button>
               </b>

@@ -139,7 +139,7 @@ function Pricings() {
                       <h6>1,501 - 2,500 SQFT</h6>
                     </td>
                     <td>
-                      <h6>$230</h6>
+                      <h6>$249</h6>
                     </td>
                   </tr>
                   <tr style={{borderBottom: '1px solid gray'}}>
@@ -147,7 +147,7 @@ function Pricings() {
                       <h6>2,501 - 3,500 SQFT</h6>
                     </td>
                     <td>
-                      <h6>$270</h6>
+                      <h6>$299</h6>
                     </td>
                   </tr>
                   <tr style={{borderBottom: '1px solid gray'}}>
@@ -155,7 +155,7 @@ function Pricings() {
                       <h6>3,501 - 4,500 SQFT</h6>
                     </td>
                     <td>
-                      <h6>$320</h6>
+                      <h6>$349</h6>
                     </td>
                   </tr>
                 </table>
@@ -168,7 +168,7 @@ function Pricings() {
                     margin: 'auto',
                   }}>
                   {' '}
-                  UP TO 1,500 SQFT ($000), 4,501 - 6,000 SQFT ($000), AND 6,001-8,000 SQFT ($000)
+                  UP TO 1,500 SQFT ($199), 4,501 - 6,000 SQFT ($399), AND 6,001-8,000 SQFT ($499)
                   PACKAGES ARE ALSO AVAILABLE .
                 </p>
 
@@ -251,7 +251,7 @@ function Pricings() {
                         borderRadius: '30px',
                       }}
                     />
-                    <span className='price-tag'>99</span>
+                    <span className='price-tag'>99 (6-12 IMAGES)</span>
                   </div>
                   <Card.Body className='text-center'>
                     <Card.Title
@@ -291,7 +291,7 @@ function Pricings() {
                         borderRadius: '30px',
                       }}
                     />
-                    <span className='price-tag'>99</span>
+                    <span className='price-tag'>299</span>
                   </div>
                   <Card.Body className='text-center'>
                     <Card.Title
@@ -338,7 +338,7 @@ function Pricings() {
                         />
                       </div>
                     </div>
-                    <span className='price-tag'>99</span>
+                    <span className='price-tag'>49/each</span>
                   </div>
 
                   <Card.Body className='text-center'>
@@ -706,7 +706,7 @@ function Pricings() {
                       <h6>1,501 - 2,500 SQFT</h6>
                     </td>
                     <td>
-                      <h6>$XXX</h6>
+                      <h6>$499</h6>
                     </td>
                   </tr>
                   <tr style={{borderBottom: '1px solid gray'}}>
@@ -714,7 +714,7 @@ function Pricings() {
                       <h6>2,501 - 3,500 SQFT</h6>
                     </td>
                     <td>
-                      <h6>$XXX</h6>
+                      <h6>$599</h6>
                     </td>
                   </tr>
                   <tr style={{borderBottom: '1px solid gray'}}>
@@ -722,7 +722,7 @@ function Pricings() {
                       <h6>3,501 - 4,500 SQFT</h6>
                     </td>
                     <td>
-                      <h6>$XXX</h6>
+                      <h6>$699</h6>
                     </td>
                   </tr>
                 </table>
@@ -735,7 +735,7 @@ function Pricings() {
                     margin: 'auto',
                   }}>
                   {' '}
-                  UP TO 1,500 SQFT ($000), 4,501 - 6,000 SQFT ($000), AND 6,001-8,000 SQFT ($000)
+                  UP TO 1,500 SQFT ($499), 4,501 - 6,000 SQFT ($799), AND 6,001-8,000 SQFT ($899)
                   PACKAGES ARE ALSO AVAILABLE .
                 </p>
 
@@ -873,7 +873,7 @@ function Pricings() {
                       <h6>12 IMAGES</h6>
                     </td>
                     <td>
-                      <h6>$195</h6>
+                      <h6>$199</h6>
                     </td>
                   </tr>
                   <tr style={{borderBottom: '1px solid gray'}}>
@@ -881,7 +881,7 @@ function Pricings() {
                       <h6>24 IMAGES</h6>
                     </td>
                     <td>
-                      <h6>$250</h6>
+                      <h6>$249</h6>
                     </td>
                   </tr>
                 </table>
@@ -912,7 +912,7 @@ function Pricings() {
                 md={6}
                 id='table2'
                 style={{display: activeTable === 'table2' ? 'block' : 'none'}}>
-                <h4 className='text-center'> DRONE VIDEOS</h4>
+                <h4 className='text-center'> AERIAL VIDEO</h4>
                 <table
                   className='table table-borderless'
                   style={{
@@ -937,18 +937,18 @@ function Pricings() {
 
                   <tr style={{borderBottom: '1px solid gray'}}>
                     <td>
-                      <h6>12 IMAGES</h6>
+                      <h6>VIDEO ONLY</h6>
                     </td>
                     <td>
-                      <h6>$195</h6>
+                      <h6>$199</h6>
                     </td>
                   </tr>
                   <tr style={{borderBottom: '1px solid gray'}}>
                     <td>
-                      <h6>24 IMAGES</h6>
+                      <h6>WITH LOT LINES + MARKERS</h6>
                     </td>
                     <td>
-                      <h6>$250</h6>
+                      <h6>$299</h6>
                     </td>
                   </tr>
                 </table>
@@ -1174,7 +1174,7 @@ function Pricings() {
                   <tr style={{borderBottom: '1px solid gray'}}>
                     <td>
                       <h6>
-                        <strong>PROPERTY SIZE</strong>
+                        <strong>PACKAGES</strong>
                       </h6>
                     </td>
                     <td>
@@ -1187,26 +1187,26 @@ function Pricings() {
 
                   <tr style={{borderBottom: '1px solid gray'}}>
                     <td>
-                      <h6>1,501 - 2,500 SQFT</h6>
+                      <h6>2D FLOOR PLANS</h6>
                     </td>
                     <td>
-                      <h6>$230</h6>
-                    </td>
-                  </tr>
-                  <tr style={{borderBottom: '1px solid gray'}}>
-                    <td>
-                      <h6>2,501 - 3,500 SQFT</h6>
-                    </td>
-                    <td>
-                      <h6>$270</h6>
+                      <h6>$99</h6>
                     </td>
                   </tr>
                   <tr style={{borderBottom: '1px solid gray'}}>
                     <td>
-                      <h6>3,501 - 4,500 SQFT</h6>
+                      <h6>3D FLOOR PLANS</h6>
                     </td>
                     <td>
-                      <h6>$320</h6>
+                      <h6>$149</h6>
+                    </td>
+                  </tr>
+                  <tr style={{borderBottom: '1px solid gray'}}>
+                    <td>
+                      <h6>2D & 3D FLOOR PLANS</h6>
+                    </td>
+                    <td>
+                      <h6>$199</h6>
                     </td>
                   </tr>
                 </table>
@@ -1218,9 +1218,7 @@ function Pricings() {
                     width: '80%',
                     margin: 'auto',
                   }}>
-                  {' '}
-                  UP TO 1,500 SQFT ($000), 4,501 - 6,000 SQFT ($000), AND 6,001-8,000 SQFT ($000)
-                  PACKAGES ARE ALSO AVAILABLE .
+                  THE PRICES ARE BASED ON THE SIZE OF THE PROPERTY.
                 </p>
 
                 <span style={{color: 'GRAY', fontSize: '10px'}}>*PRICES DO NOT INCLUDE TAX </span>

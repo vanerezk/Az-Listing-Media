@@ -209,7 +209,7 @@ function Listings() {
                     AGENT BRANDING
                   </Card.Title>
                   <Card.Text style={{marginBottom: '20px'}}>
-                    Custom media tailored to you — highlight your personality, process, and
+                    Custom media tailored to you - highlight your personality, process, and
                     professionalism to stand out in the market.
                   </Card.Text>
                 </Card.Body>

@@ -34,8 +34,13 @@ function Home() {
           <h1
             className=' text-white'
             style={{letterSpacing: '10px', fontSize: '30px'}}>
+            ARE YOU READY?
             <br />
-            <p style={{letterSpacing: '8px', fontSize: '78px'}}>LET'S GET STARTED </p>
+            <b
+              style={{letterSpacing: '8px', fontSize: '78px'}}
+              className='animated-text'>
+              LET'S GET STARTED
+            </b>
           </h1>
 
           <button
