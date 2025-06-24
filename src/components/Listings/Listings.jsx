@@ -261,7 +261,7 @@ function Listings() {
       {/* Mobile layout */}
       <div
         id='listingsmobile'
-        className='bg-light   pt-5 pb-5 '>
+        className='bg-light pt-5 pb-5 '>
         <h6
           className='text-center '
           style={{letterSpacing: '10px'}}>
@@ -284,12 +284,12 @@ function Listings() {
           transitionDuration={500}
           removeArrowOnDeviceType={['tablet', 'mobile']}
           indicators={false}
-          className='w-75 mx-auto mt-5 mb-5'>
+          className=' mt-5 '>
           <Carousel.Item>
             <Card
               style={{
                 width: 'auto',
-                height: '25rem',
+                height: '28rem',
                 borderRadius: '15px 15px 15px 15px',
               }}>
               <Card.Img
@@ -299,7 +299,7 @@ function Listings() {
                   width: 'auto',
                   padding: '0px',
                   borderRadius: '15px 15px 0px 0px',
-                  height: '15rem',
+                  height: '19rem',
                   objectFit: 'cover',
                 }}
               />
@@ -322,7 +322,7 @@ function Listings() {
             <Card
               style={{
                 width: 'auto',
-                height: '25rem',
+                height: '28rem',
                 borderRadius: '15px 15px 15px 15px',
               }}>
               <Card.Img
@@ -331,7 +331,7 @@ function Listings() {
                 style={{
                   padding: '0px',
                   borderRadius: '15px 15px 0px 0px',
-                  height: '15rem',
+                  height: '19rem',
                   objectFit: 'cover',
                 }}
               />
@@ -355,7 +355,7 @@ function Listings() {
             <Card
               style={{
                 width: 'auto',
-                height: '25rem',
+                height: '28rem',
                 borderRadius: '15px 15px 15px 15px',
               }}>
               <Card.Img
@@ -364,7 +364,7 @@ function Listings() {
                 style={{
                   padding: '0px',
                   borderRadius: '15px 15px 0px 0px',
-                  height: '15rem',
+                  height: '19rem',
                   objectFit: 'cover',
                 }}
               />
@@ -388,7 +388,7 @@ function Listings() {
             <Card
               style={{
                 width: 'auto',
-                height: '25rem',
+                height: '28rem',
                 borderRadius: '15px 15px 15px 15px',
               }}>
               <Card.Img
@@ -397,7 +397,7 @@ function Listings() {
                 style={{
                   padding: '0px',
                   borderRadius: '15px 15px 0px 0px',
-                  height: '15rem',
+                  height: '19rem',
                   objectFit: 'cover',
                 }}
               />
@@ -411,8 +411,7 @@ function Listings() {
                   AGENT BRANDING
                 </Card.Title>
                 <Card.Text style={{marginBottom: '20px'}}>
-                  Custom media tailored to you — highlight your personality, process, and
-                  professionalism to stand out in the market.
+                  Custom media showcasing your personality and professionalism to stand out.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -422,7 +421,7 @@ function Listings() {
               style={{
                 width: 'auto',
 
-                height: '25rem',
+                height: '28rem',
                 borderRadius: '15px 15px 15px 15px',
               }}>
               <Card.Img
@@ -431,7 +430,7 @@ function Listings() {
                 style={{
                   padding: '0px',
                   borderRadius: '15px 15px 0px 0px',
-                  height: '15rem',
+                  height: '19rem',
                   objectFit: 'cover',
                 }}
               />

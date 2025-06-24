@@ -9,7 +9,7 @@ function Aboutmain() {
     <>
       <div
         id='aboutmain'
-        className='mx-auto '
+        className='mx-auto d-none d-md-block'
         style={{marginTop: '20px', width: '80%', marginBottom: '100px', scale: '0.9'}}>
         <Row style={{marginTop: '50px'}}>
           <Col style={{marginTop: '50px'}}>
