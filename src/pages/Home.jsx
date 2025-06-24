@@ -30,7 +30,7 @@ function Home() {
             filter: 'brightness(70%)',
           }}
         />
-        <Col className='text-container  '>
+        <Col className='text-container d-none d-md-block  '>
           <h1
             className=' text-white'
             style={{letterSpacing: '10px', fontSize: '30px'}}>
@@ -48,6 +48,37 @@ function Home() {
             style={{
               marginTop: '60px',
 
+              borderRadius: '5px',
+              padding: '15px 35px',
+            }}>
+            <Link
+              to='https://spiro.media/'
+              target='_blank'
+              style={{
+                textDecoration: 'none',
+                color: 'black',
+                letterSpacing: '1px',
+                fontSize: '18px',
+              }}>
+              BOOK A SHOOT
+            </Link>
+          </button>
+        </Col>
+        <Col className='text-container d-block d-md-none  '>
+          <h1
+            className=' text-white'
+            style={{letterSpacing: '10px', fontSize: '15px'}}>
+            ARE YOU READY?
+            <br />
+            <br />
+            <b style={{letterSpacing: '8px', fontSize: '30px'}}>LET'S GET STARTED</b>
+          </h1>
+
+          <button
+            className='btn btn-light'
+            style={{
+              marginTop: '30px',
+              scale: '0.8',
               borderRadius: '5px',
               padding: '15px 35px',
             }}>

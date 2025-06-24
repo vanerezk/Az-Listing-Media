@@ -8,7 +8,7 @@ import interlackenfive from '../../assets/photos/42 E Interlacken Dr-43.jpg';
 import puggetone from '../../assets/photos/19312 W Puget Ave-21.jpg';
 import puggettwo from '../../assets/photos/19312 W Puget Ave-25.jpg';
 import puggetthree from '../../assets/photos/19312 W Puget Ave-29.jpg';
-import puggetfour from '../../assets/photos/19312 W Puget Ave Website-1.jpg';
+import puggetfour from '../../assets/photos/1836_E_Turquoise_Ave-24.jpg';
 import puggetfive from '../../assets/photos/19312 W Puget Ave Website-2.jpg';
 import puggetsix from '../../assets/photos/19312 W Puget Ave Website-3 3.jpg';
 import puggetseven from '../../assets/photos/19312 W Puget Ave_Twilight-1.jpg';
@@ -20,14 +20,53 @@ import dronethird from '../../assets/photos/207208 N 129th Dr-145.jpg';
 import dronefourth from '../../assets/photos/22619 N San Ramon_Drone-3.jpg';
 import dronefifth from '../../assets/photos/39718 N Bridlewood Way Drone-10.jpg';
 import './PortfolioMosaic.css';
+import Modal from 'react-bootstrap/Modal';
+import CloseButton from 'react-bootstrap/CloseButton';
+import {useState} from 'react';
 
 function PortfolioMosaic() {
+  const [modalShow, setModalShow] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+  const handleImageClick = (image) => {
+    setSelectedImage(image);
+    setModalShow(true);
+  };
   return (
     <div
       style={{marginTop: '25px', marginBottom: '25px'}}
       className='container'
       id='mosaic-container'>
       <div className='tile'>
+        {images.map((image, index) => (
+          <div
+            className='d-flex justify-content-center'
+            key={index}>
+            <img
+              className='firstphoto'
+              src={image}
+              alt='Image'
+              onClick={() => handleImageClick(image)}
+            />
+            <Modal
+              show={modalShow}
+              onHide={() => setModalShow(false)}
+              size='xl'
+              aria-labelledby='contained-modal-title-vcenter'
+              centered>
+              <Modal.Body style={{padding: '0px', margin: '0px'}}>
+                <CloseButton
+                  style={{float: 'right', zIndex: 1, marginTop: '-30px'}}
+                  onClick={() => setModalShow(false)}
+                />
+                <img
+                  src={selectedImage}
+                  alt='Selected Image'
+                  style={{width: '100%', height: '70%'}}
+                />
+              </Modal.Body>
+            </Modal>
+          </div>
+        ))}
         <img
           src={interlacken}
           alt='interlacken'
@@ -76,6 +115,12 @@ function PortfolioMosaic() {
         />
       </div>
       <div className='tile'>
+        {/* <video
+          src={puggetfour}
+          controls
+          alt='pugget'
+          style={{width: '100%', height: '100%', objectFit: 'cover'}}
+        /> */}
         <img
           src={puggetfour}
           alt='pugget'

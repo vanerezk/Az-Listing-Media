@@ -35,7 +35,7 @@ function Portfolio() {
         <h1
           className='text-center text-white'
           style={{letterSpacing: '8px', fontSize: '78px', marginBottom: '50px'}}>
-          OUR POTFOLIO
+          OUR PORTFOLIO
         </h1>
       </div>
       <div className='text-container d-block d-md-none '>
