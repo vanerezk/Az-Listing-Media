@@ -1,5 +1,5 @@
-// import firstvideo from '../assets/videos/V1_15323 W Campbell Ave.mp4';
-// import puggetvideo from '../assets/videos/19321 W Puget Ave_V1.mp4';
+import {useState} from 'react';
+import Modal from 'react-bootstrap/Modal';
 import interlacken from '../../assets/photos/42 E Interlacken Dr-1.jpg';
 import interlackentwo from '../../assets/photos/42 E Interlacken Dr-5.jpg';
 import droneone from '../../assets/photos/42 E Interlacken Dr-35.jpg';
@@ -20,172 +20,170 @@ import dronethird from '../../assets/photos/207208 N 129th Dr-145.jpg';
 import dronefourth from '../../assets/photos/22619 N San Ramon_Drone-3.jpg';
 import dronefifth from '../../assets/photos/39718 N Bridlewood Way Drone-10.jpg';
 import './PortfolioMosaic.css';
-import Modal from 'react-bootstrap/Modal';
-import CloseButton from 'react-bootstrap/CloseButton';
-import {useState} from 'react';
 
 function PortfolioMosaic() {
-  const [modalShow, setModalShow] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+
   const handleImageClick = (image) => {
     setSelectedImage(image);
-    setModalShow(true);
+    setShowModal(true);
   };
+
+  const handleClose = () => setShowModal(false);
+
   return (
     <div
       style={{marginTop: '25px', marginBottom: '25px'}}
       className='container'
       id='mosaic-container'>
       <div className='tile'>
-        {images.map((image, index) => (
-          <div
-            className='d-flex justify-content-center'
-            key={index}>
-            <img
-              className='firstphoto'
-              src={image}
-              alt='Image'
-              onClick={() => handleImageClick(image)}
-            />
-            <Modal
-              show={modalShow}
-              onHide={() => setModalShow(false)}
-              size='xl'
-              aria-labelledby='contained-modal-title-vcenter'
-              centered>
-              <Modal.Body style={{padding: '0px', margin: '0px'}}>
-                <CloseButton
-                  style={{float: 'right', zIndex: 1, marginTop: '-30px'}}
-                  onClick={() => setModalShow(false)}
-                />
-                <img
-                  src={selectedImage}
-                  alt='Selected Image'
-                  style={{width: '100%', height: '70%'}}
-                />
-              </Modal.Body>
-            </Modal>
-          </div>
-        ))}
         <img
           src={interlacken}
           alt='interlacken'
+          onClick={() => handleImageClick(interlacken)}
         />
       </div>
       <div className='tile'>
         <img
           src={interlackentwo}
           alt='interlacken'
+          onClick={() => handleImageClick(interlackentwo)}
         />
       </div>
       <div className='tile'>
         <img
           src={droneone}
           alt='drone'
+          onClick={() => handleImageClick(droneone)}
         />
       </div>
       <div className='tile'>
         <img
           src={dronetwo}
           alt='drone'
+          onClick={() => handleImageClick(dronetwo)}
         />
       </div>
       <div className='tile'>
         <img
           src={interlackenfive}
           alt='interlacken'
+          onClick={() => handleImageClick(interlackenfive)}
         />
       </div>
       <div className='tile'>
         <img
           src={puggetone}
           alt='pugget'
+          onClick={() => handleImageClick(puggetone)}
         />
       </div>
       <div className='tile'>
         <img
           src={puggettwo}
           alt='pugget'
+          onClick={() => handleImageClick(puggettwo)}
         />
       </div>
       <div className='tile'>
         <img
           src={puggetthree}
           alt='pugget'
+          onClick={() => handleImageClick(puggetthree)}
         />
       </div>
       <div className='tile'>
-        {/* <video
-          src={puggetfour}
-          controls
-          alt='pugget'
-          style={{width: '100%', height: '100%', objectFit: 'cover'}}
-        /> */}
         <img
           src={puggetfour}
           alt='pugget'
+          onClick={() => handleImageClick(puggetfour)}
         />
       </div>
       <div className='tile'>
         <img
           src={puggetfive}
           alt='pugget'
+          onClick={() => handleImageClick(puggetfive)}
         />
       </div>
       <div className='tile'>
         <img
           src={puggetsix}
           alt='pugget'
+          onClick={() => handleImageClick(puggetsix)}
         />
       </div>
       <div className='tile'>
         <img
           src={puggetseven}
           alt='pugget'
+          onClick={() => handleImageClick(puggetseven)}
         />
       </div>
       <div className='tile'>
         <img
           src={puggeteight}
           alt='pugget'
+          onClick={() => handleImageClick(puggeteight)}
         />
       </div>
       <div className='tile'>
         <img
           src={drfirst}
           alt='drone'
+          onClick={() => handleImageClick(drfirst)}
         />
       </div>
       <div className='tile'>
         <img
           src={drsecond}
           alt='drone'
+          onClick={() => handleImageClick(drsecond)}
         />
       </div>
       <div className='tile'>
         <img
           src={drthird}
           alt='drone'
+          onClick={() => handleImageClick(drthird)}
         />
       </div>
       <div className='tile'>
         <img
           src={dronethird}
           alt='drone'
+          onClick={() => handleImageClick(dronethird)}
         />
       </div>
       <div className='tile'>
         <img
           src={dronefourth}
           alt='drone'
+          onClick={() => handleImageClick(dronefourth)}
         />
       </div>
       <div className='tile'>
         <img
           src={dronefifth}
           alt='drone'
+          onClick={() => handleImageClick(dronefifth)}
         />
       </div>
+      <Modal
+        show={showModal}
+        onHide={handleClose}
+        size='lg'
+        aria-labelledby='contained-modal-title-vcenter'
+        centered>
+        <Modal.Body style={{padding: 0}}>
+          <img
+            src={selectedImage}
+            alt='Selected Image'
+            style={{width: '100%'}}
+          />
+        </Modal.Body>
+      </Modal>
     </div>
   );
 }
