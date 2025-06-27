@@ -3,7 +3,7 @@ import 'react-multi-carousel/lib/styles.css';
 import {useState} from 'react';
 import {Link} from 'react-router-dom';
 import Modal from 'react-bootstrap/Modal';
-import CloseButton from 'react-bootstrap/CloseButton';
+
 import firstphoto from '../../assets/photos/23555 N 159th Ave-12.jpg';
 import secondphoto from '../../assets/photos/42 E Interlacken Dr-35.jpg';
 import thirdphoto from '../../assets/photos/207208 N 129th Dr-95.jpg';
@@ -30,6 +30,8 @@ function Portfolio() {
     setSelectedImage(image);
     setModalShow(true);
   };
+
+  const handleClose = () => setModalShow(false);
   const responsive = {
     superLargeDesktop: {
       breakpoint: {max: 4000, min: 3000},
@@ -92,27 +94,23 @@ function Portfolio() {
                 alt='Image'
                 onClick={() => handleImageClick(image)}
               />
-              <Modal
-                show={modalShow}
-                onHide={() => setModalShow(false)}
-                size='xl'
-                aria-labelledby='contained-modal-title-vcenter'
-                centered>
-                <Modal.Body style={{padding: '0px', margin: '0px'}}>
-                  <CloseButton
-                    style={{float: 'right', zIndex: 1, marginTop: '-30px'}}
-                    onClick={() => setModalShow(false)}
-                  />
-                  <img
-                    src={selectedImage}
-                    alt='Selected Image'
-                    style={{width: '100%', height: '70%'}}
-                  />
-                </Modal.Body>
-              </Modal>
             </div>
           ))}
         </Carousel>
+        <Modal
+          show={modalShow}
+          onHide={handleClose}
+          size='lg'
+          aria-labelledby='contained-modal-title-vcenter'
+          centered>
+          <Modal.Body style={{padding: 0}}>
+            <img
+              src={selectedImage}
+              alt='Selected Image'
+              style={{width: '100%'}}
+            />
+          </Modal.Body>
+        </Modal>
         <div style={{padding: '50px ', marginTop: '50px'}}>
           <button
             className='btn btn-dark  '
