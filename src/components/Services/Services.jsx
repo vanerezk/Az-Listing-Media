@@ -2,10 +2,10 @@ import {Card, Col, Row, Carousel} from 'react-bootstrap';
 
 import './Services.css';
 
-import listingMediaImage from '../../assets/photos/28556 N 124th Dr Website-2 2.jpg';
-import aerialMediaImage from '../../assets/photos/4323_W_Ardmore_Rd-55.jpg';
-import marketingVideosImage from '../../assets/photos/Marketing_Video-1.jpg';
-import agentBrandingImage from '../../assets/photos/Dining Room-1.jpg';
+import listingMediaImage from '../../assets/photos/28556 N 124th Dr Website-1.jpg';
+import aerialMediaImage from '../../assets/photos/image.jpeg';
+import marketingVideosImage from '../../assets/photos/13406 W Rowel Rd-24.jpg';
+import agentBrandingImage from '../../assets/photos/1836 E Turquoise Ave-63.jpg';
 
 function Services() {
   return (

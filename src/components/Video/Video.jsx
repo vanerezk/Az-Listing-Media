@@ -1,7 +1,7 @@
 import './Video.css';
 import {Link} from 'react-router-dom';
 
-import photo from '../../assets/photos/1836_E_Turquoise_Ave-1.jpg';
+import photo from '../../assets/photos/207208 N 129th Dr-90.jpg';
 import {useState, useEffect} from 'react';
 function Video() {
   const [currentText, setCurrentText] = useState('MEDIA COMPANY');

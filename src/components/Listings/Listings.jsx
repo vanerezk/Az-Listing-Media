@@ -3,10 +3,10 @@ import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import photographyphoto from '../../assets/photos/23555 N 159th Ave-3.jpg';
-import aerialphoto from '../../assets/photos/21887 N 181st Ave_Drone-8.jpg';
+import photographyphoto from '../../assets/photos/Twilight_28556 N 124th Dr-1.png';
+import aerialphoto from '../../assets/photos/aerialphoto.jpeg';
 import videographyphoto from '../../assets/photos/19312 W Puget Ave-77.jpg';
-import virtualtourphoto from '../../assets/photos/19312 W Puget Ave-51.jpg';
+import virtualtourphoto from '../../assets/photos/agentbranding.jpeg';
 import floorplansphoto from '../../assets/photos/9637_E_Gold_Dust_Ave.jpg';
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -76,7 +76,7 @@ function Listings() {
                     width: 'auto',
                     padding: '0px',
                     borderRadius: '15px 15px 0px 0px',
-                    height: '15rem',
+                    height: '17rem',
                     objectFit: 'cover',
                   }}
                 />
@@ -114,7 +114,7 @@ function Listings() {
                   style={{
                     padding: '0px',
                     borderRadius: '15px 15px 0px 0px',
-                    height: '15rem',
+                    height: '17rem',
                     objectFit: 'cover',
                   }}
                 />
@@ -129,8 +129,7 @@ function Listings() {
                   </Card.Title>
                   <Card.Text style={{marginBottom: '20px'}}>
                     A bird’s-eye perspective that highlights not just the property, but its stunning
-                    surroundings. Perfect for showcasing landscapes, location, and curb appeal in
-                    one shot.
+                    surroundings.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -145,7 +144,7 @@ function Listings() {
               <Card
                 style={{
                   width: 'auto',
-                  height: '25rem',
+                  height: '26rem',
                   borderRadius: '15px 15px 15px 15px',
 
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -156,7 +155,7 @@ function Listings() {
                   style={{
                     padding: '0px',
                     borderRadius: '15px 15px 0px 0px',
-                    height: '15rem',
+                    height: '17rem',
                     objectFit: 'cover',
                   }}
                 />
@@ -184,7 +183,7 @@ function Listings() {
               <Card
                 style={{
                   width: 'auto',
-                  height: '25rem',
+                  height: '26rem',
                   borderRadius: '15px 15px 15px 15px',
 
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -195,8 +194,9 @@ function Listings() {
                   style={{
                     padding: '0px',
                     borderRadius: '15px 15px 0px 0px',
-                    height: '15rem',
+                    height: '17rem',
                     objectFit: 'cover',
+                    objectPosition: 'top center',
                   }}
                 />
                 <Card.Body className='text-center my-auto mt-3 '>
@@ -223,7 +223,7 @@ function Listings() {
               <Card
                 style={{
                   width: 'auto',
-                  height: '25rem',
+                  height: '26rem',
                   borderRadius: '15px 15px 15px 15px',
 
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
@@ -234,7 +234,7 @@ function Listings() {
                   style={{
                     padding: '0px',
                     borderRadius: '15px 15px 0px 0px',
-                    height: '15rem',
+                    height: '17rem',
                     objectFit: 'contain',
                   }}
                 />

@@ -1,6 +1,6 @@
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import aboutphoto from '../../assets/photos/42 E Interlacken Dr-43.jpg';
+import aboutphoto from '../../assets/photos/1836 E Turquoise Website-1.jpg';
 import {Link} from 'react-router-dom';
 import './Aboutmain.css';
 
@@ -78,9 +78,9 @@ function Aboutmain() {
               id='aboutphoto'
               alt='NO PHOTO YET'
               style={{
-                width: '100%',
+                width: '80%',
                 height: '100%',
-                objectFit: 'cover',
+
                 borderRadius: '30px 0 30px 0px',
               }}
             />
