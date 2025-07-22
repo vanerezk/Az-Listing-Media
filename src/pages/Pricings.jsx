@@ -290,7 +290,7 @@ function Pricings() {
                     style={{borderBottom: '1px solid gray'}}
                     onClick={() => setCurrentImage(0)}>
                     <td>
-                      <h6>TWILIGHT PHOTOS</h6>
+                      <h6 style={{cursor: 'help'}}>TWILIGHT PHOTOS</h6>
                     </td>
                     <td className='text-center'>
                       <h6>$299</h6>
@@ -300,7 +300,7 @@ function Pricings() {
                     style={{borderBottom: '1px solid gray'}}
                     onClick={() => setCurrentImage(1)}>
                     <td>
-                      <h6>VIRTUAL TWILIGHT</h6>
+                      <h6 style={{cursor: 'help'}}>VIRTUAL TWILIGHT</h6>
                     </td>
                     <td className='text-center'>
                       <h6>$39 PER IMG</h6>
@@ -311,7 +311,7 @@ function Pricings() {
                     onClick={() => setCurrentImage(2)} //
                   >
                     <td>
-                      <h6>VIRTUAL STAGING</h6>
+                      <h6 style={{cursor: 'help'}}>VIRTUAL STAGING</h6>
                     </td>
                     <td className='text-center'>
                       <h6>$49 PER IMG</h6>
@@ -321,7 +321,7 @@ function Pricings() {
                     style={{borderBottom: '1px solid gray'}}
                     onClick={() => setCurrentImage(3)}>
                     <td>
-                      <h6>AERIAL PHOTOGRAPHY</h6>
+                      <h6 style={{cursor: 'help'}}>AERIAL PHOTOGRAPHY</h6>
                     </td>
                     <td className='text-center'>
                       <h6>$99 (6 - 12 PHOTOS)</h6>
@@ -332,7 +332,7 @@ function Pricings() {
                     onClick={() => setCurrentImage(4)} // Update currentImage to 4 when clicked
                   >
                     <td>
-                      <h6>AERIAL PHOTOGRAPHY</h6>
+                      <h6 style={{cursor: 'help'}}>AERIAL PHOTOGRAPHY</h6>
                     </td>
                     <td className='text-center'>
                       <h6>$149 (13 - 24 PHOTOS)</h6>
@@ -413,145 +413,16 @@ function Pricings() {
                   marginBottom: '20px',
                   fontSize: '12px',
                 }}>
-                CHOOSE IF YOU WOULD LIKE AN AGENT OR NOT. (No se que poner)
+                CHOOSE IF YOU WOULD LIKE AN AGENT OR NOT.
               </h6>
             </Row>
 
-            <button
-              className='btn btn-warning'
-              style={{
-                padding: '10px 15px',
-                letterSpacing: '2px',
-                marginRight: '10px',
-                boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
-              }}
-              data-table='table1'
-              onClick={() => handleTableToggle('table1')}>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='20'
-                height='20'
-                fill='black'
-                viewBox='0 0 16 16'>
-                <path d='M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z' />
-                <path d='M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0' />
-              </svg>
-            </button>
-            <button
-              className='btn btn-warning '
-              style={{
-                padding: '10px 15px',
-                letterSpacing: '2px',
-
-                boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
-              }}
-              data-table='table2'
-              onClick={() => handleTableToggle('table2')}>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='20'
-                height='20'
-                fill='black'
-                viewBox='0 0 16 16'>
-                <path d='M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0M1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0' />
-                <path d='M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm6 8.73V7.27l-3.5 1.555v4.35zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1' />
-                <path d='M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6M7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0' />
-              </svg>
-            </button>
             <Row className='text-center mx-auto p-5'>
               <Col
                 md={6}
                 id='table1'
                 style={{display: activeTable === 'table1' ? 'block' : 'none'}}>
                 <h4 className='text-center'> WITH AGENT</h4>
-                <table
-                  className='table table-borderless'
-                  style={{
-                    fontSize: '12px',
-
-                    width: '90%',
-                    margin: 'auto',
-                  }}>
-                  <tr style={{borderBottom: '1px solid gray'}}>
-                    <td>
-                      <h6>
-                        <strong>PROPERTY SIZE</strong>
-                      </h6>
-                    </td>
-                    <td>
-                      <h6>
-                        {' '}
-                        <strong>PRICE</strong>
-                      </h6>
-                    </td>
-                  </tr>
-
-                  <tr style={{borderBottom: '1px solid gray'}}>
-                    <td>
-                      <h6>0 - 2000 SQ FT</h6>
-                    </td>
-                    <td>
-                      <h6>$249</h6>
-                    </td>
-                  </tr>
-                  <tr style={{borderBottom: '1px solid gray'}}>
-                    <td>
-                      <h6>2001 - 4000 SQ FT</h6>
-                    </td>
-                    <td>
-                      <h6>$299</h6>
-                    </td>
-                  </tr>
-                  <tr style={{borderBottom: '1px solid gray'}}>
-                    <td>
-                      <h6>4001 - 6000 SQ FT</h6>
-                    </td>
-                    <td>
-                      <h6>$349</h6>
-                    </td>
-                  </tr>
-                </table>
-
-                <p
-                  style={{
-                    color: 'GRAY',
-                    fontSize: '12px',
-                    marginTop: '20px',
-                    width: '80%',
-                    margin: 'auto',
-                  }}>
-                  {' '}
-                  ADDITIONAL 6,001 - 8,000 SQFT ($399), AND 8,001-10,000 SQFT ($499) PACKAGES ARE
-                  ALSO AVAILABLE .
-                </p>
-
-                <span style={{color: 'GRAY', fontSize: '10px'}}>*PRICES DO NOT INCLUDE TAX </span>
-                <button
-                  className='btn btn-dark d-block mx-auto '
-                  style={{
-                    borderRadius: '5px',
-                    marginTop: '40px',
-                    padding: '15px 35px',
-                    boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
-                  }}>
-                  <Link
-                    to='https://spiro.media/'
-                    target='_blank'
-                    style={{
-                      textDecoration: 'none',
-                      color: 'white',
-                      letterSpacing: '1px',
-                      fontSize: '18px',
-                    }}>
-                    BOOK NOW
-                  </Link>
-                </button>
-              </Col>
-              <Col
-                md={6}
-                id='table2'
-                style={{display: activeTable === 'table2' ? 'block' : 'none'}}>
-                <h4 className='text-center'> WITHOUT AGENT</h4>
                 <table
                   className='table table-borderless'
                   style={{
@@ -587,7 +458,7 @@ function Pricings() {
                       <h6>2001 - 4000 SQ FT</h6>
                     </td>
                     <td>
-                      <h6>$199</h6>
+                      <h6>$399</h6>
                     </td>
                   </tr>
                   <tr style={{borderBottom: '1px solid gray'}}>
@@ -595,10 +466,11 @@ function Pricings() {
                       <h6>4001 - 6000 SQ FT</h6>
                     </td>
                     <td>
-                      <h6>$249</h6>
+                      <h6>$449</h6>
                     </td>
                   </tr>
-                </table>{' '}
+                </table>
+
                 <p
                   style={{
                     color: 'GRAY',
@@ -608,9 +480,9 @@ function Pricings() {
                     margin: 'auto',
                   }}>
                   {' '}
-                  ADDITIONAL 6,001 - 8,000 SQFT ($299), AND 8,001-10,000 SQFT ($349) PACKAGES ARE
-                  ALSO AVAILABLE .
+                  $100 ADDITIONAL FEE FOR AGENT IN SOCIAL MEDIA REEL
                 </p>
+
                 <span style={{color: 'GRAY', fontSize: '10px'}}>*PRICES DO NOT INCLUDE TAX </span>
                 <button
                   className='btn btn-dark d-block mx-auto '
@@ -633,6 +505,7 @@ function Pricings() {
                   </Link>
                 </button>
               </Col>
+
               <Col md={6}>
                 <Col md={6}>
                   <video

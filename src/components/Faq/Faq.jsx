@@ -1,4 +1,5 @@
 import Accordion from 'react-bootstrap/Accordion';
+import './Faq.css';
 
 function Faq() {
   return (
@@ -30,8 +31,8 @@ function Faq() {
           <Accordion
             defaultActiveKey='0'
             flush
+            className='accordion'
             style={{
-              maxWidth: '70%',
               margin: '0 auto',
               marginBottom: '50px',
 

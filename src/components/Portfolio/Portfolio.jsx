@@ -90,6 +90,7 @@ function Portfolio() {
               key={index}>
               <img
                 className='firstphoto'
+                style={{cursor: 'zoom-in'}}
                 src={image}
                 alt='Image'
                 onClick={() => handleImageClick(image)}
