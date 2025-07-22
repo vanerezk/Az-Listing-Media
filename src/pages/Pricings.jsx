@@ -97,10 +97,10 @@ function Pricings() {
             <Row className='text-center mx-auto p-5'>
               <Col md={6}>
                 <table
-                  className='table table-borderless'
+                  className='table table-borderless '
                   style={{
                     fontSize: '12px',
-
+                    marginTop: '30px',
                     width: '90%',
                     margin: 'auto',
                   }}>
@@ -186,18 +186,15 @@ function Pricings() {
                 </button>
               </Col>
               <Col md={6}>
-                <Col md={6}>
-                  <Card.Img
-                    style={{
-                      width: '200%',
-                      height: '370px',
-                      objectFit: 'cover',
-                      borderRadius: '15px',
-                    }}
-                    src={photoFondo}
-                    alt='Community Ground Photo Example'
-                  />
-                </Col>
+                <Card.Img
+                  style={{
+                    height: '450px',
+                    objectFit: 'cover',
+                    borderRadius: '15px',
+                  }}
+                  src={photoFondo}
+                  alt='Community Ground Photo Example'
+                />
               </Col>
             </Row>
           </Card.Body>
