@@ -141,14 +141,14 @@ function Header() {
                 <Link
                   to='/Pricings'
                   reloadDocument
-                  style={{marginRight: '25px', fontSize: '17px'}}
+                  style={{marginRight: '25px', fontSize: '17px', color: 'black'}}
                   className='nav-link'>
                   PRICING
                 </Link>
               </b>
               <b>
                 <Link
-                  style={{marginRight: '25px', fontSize: '17px'}}
+                  style={{marginRight: '25px', fontSize: '17px', color: 'black'}}
                   reloadDocument
                   to='/portfolio'
                   className='nav-link'>
@@ -159,7 +159,7 @@ function Header() {
 
               <b>
                 <Link
-                  style={{marginRight: '25px', fontSize: '17px'}}
+                  style={{marginRight: '25px', fontSize: '17px', color: 'black'}}
                   reloadDocument
                   to='/contact'
                   className='nav-link'>

@@ -229,7 +229,8 @@ function Pricings() {
                   marginBottom: '20px',
                   fontSize: '12px',
                 }}>
-                BOOST YOUR PROPERTY'S VISIBILITY WITH THE FOLLOWING SERVICES
+                BOOST YOUR PROPERTY'S <b style={{fontSize: '12px'}}>VISIBILITY</b> WITH THE
+                FOLLOWING SERVICES.
               </h6>
             </Row>
 
@@ -410,16 +411,15 @@ function Pricings() {
                   marginBottom: '20px',
                   fontSize: '12px',
                 }}>
-                CHOOSE IF YOU WOULD LIKE AN AGENT OR NOT.
+                A DYNAMIC, VISUALLY COMPELLING MINI-TOUR DESIGNED TO SPARK INTEREST AND DRIVE
+                ENGAGEMENT FOR A PROPERTY.
               </h6>
             </Row>
 
             <Row className='text-center mx-auto p-5'>
               <Col
                 md={6}
-                id='table1'
                 style={{display: activeTable === 'table1' ? 'block' : 'none'}}>
-                <h4 className='text-center'> WITH AGENT</h4>
                 <table
                   className='table table-borderless'
                   style={{
@@ -555,7 +555,8 @@ function Pricings() {
                   marginBottom: '20px',
                   fontSize: '12px',
                 }}>
-                SHOT WITH A CAMERA, THIS IS BEST USED TO PORTRAY THE SPACE AND DETAILS OF THE HOME.
+                A CRISP, CINEMATIC WALKTHROUGH THAT SHOWCASES A PROPERTY'S DESIGN, FLOW, AND
+                ATMOSPHERE IN RICH DETAIL.
               </h6>
             </Row>
 
@@ -688,8 +689,8 @@ function Pricings() {
                   marginBottom: '20px',
                   fontSize: '12px',
                 }}>
-                WE WANT TO<b style={{fontSize: '12px'}}> SHOW OFF </b> EVERY LITTLE DETAIL AND
-                NUANCE OF YOUR LISTING.
+                A POLISHED, STORY-DRIVEN FILM THAT ARTFULLY HIGHLIGHTS A PROPERTY'S UNIQUE
+                CHARACTER, MOOD, AND LIFESTYLE APPEAL.
               </h6>
             </Row>
 
@@ -820,7 +821,7 @@ function Pricings() {
                   fontSize: '28px',
                   letterSpacing: '10px',
                 }}>
-                AERIAL ONLY
+                AERIAL SOLUTIONS
               </Card.Title>
               <hr style={{width: '30%', margin: 'auto', marginBottom: '20px'}} />
               <h6
@@ -829,7 +830,8 @@ function Pricings() {
                   marginBottom: '20px',
                   fontSize: '12px',
                 }}>
-                RESIDENTIAL HOMES, COMMUNITIES, COMMERCIAL BUILDINGS, LANDS AND MORE!
+                STRIKING DRONE PHOTOS AND VIDEOS THAT REVEAL A PROPERTY'S SURROUNDINGS, SCALE, AND
+                SETTING FROM A CAPTIVATING BIRD'S-EYE VIEW.
               </h6>
             </Row>
             <button
@@ -1056,7 +1058,8 @@ function Pricings() {
                   marginBottom: '20px',
                   fontSize: '12px',
                 }}>
-                <b style={{fontSize: '12px'}}> BLUEPRINTS </b> ARE MADE WITH DIGITAL PHOTOGRAPHY.
+                ACCURATE VISUAL MAPS, FLAT (2D) OR DIMENSIONAL (3D), THAT HELP BUYERS UNDERSTAND A
+                PROPERTY'S LAYOUT, FLOW, AND SPATIAL POTENTIAL AT A GLANCE.
               </h6>
             </Row>
 

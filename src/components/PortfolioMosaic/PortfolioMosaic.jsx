@@ -34,8 +34,7 @@ function PortfolioMosaic() {
 
   return (
     <div
-      style={{marginTop: '25px', marginBottom: '25px'}}
-      className='container'
+      style={{marginTop: '25px', marginBottom: '25px', marginLeft: '25px', marginRight: '25px'}}
       id='mosaic-container'>
       <div className='tile'>
         <img
