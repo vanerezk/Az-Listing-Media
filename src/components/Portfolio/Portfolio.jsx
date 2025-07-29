@@ -11,7 +11,7 @@ import sixthphoto from '../../assets/photos/207208 N 129th Dr-89.jpg';
 import seventhphoto from '../../assets/photos/28556 N 124th Dr Website-2 2.jpg';
 import eightphoto from '../../assets/photos/23555 N 159th Ave-17.jpg';
 import ninephoto from '../../assets/photos/23555 N 159th Ave-22.jpg';
-
+import './Portfolio.css';
 function Portfolio() {
   const [modalShow, setModalShow] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -33,21 +33,23 @@ function Portfolio() {
 
   const handleClose = () => setModalShow(false);
   const responsive = {
-    superLargeDesktop: {
-      breakpoint: {max: 4000, min: 3000},
-      items: 5,
-    },
     desktop: {
       breakpoint: {max: 3000, min: 1024},
       items: 3,
+      draggable: true,
+      partialVisbile: true,
     },
     tablet: {
       breakpoint: {max: 1024, min: 464},
       items: 2,
+      draggable: true,
+      partialVisbile: true,
     },
     mobile: {
       breakpoint: {max: 464, min: 0},
       items: 1,
+      draggable: true,
+      partialVisbile: true,
     },
   };
 
@@ -74,11 +76,10 @@ function Portfolio() {
 
         <Carousel
           responsive={responsive}
-          interval={4000}
+          interval={3000}
           infinite={true}
           autoPlay={true}
-          swipeable={true}
-          arrows={false}
+          arrows={true}
           renderDotsOutside={true}
           customTransition='transform 300ms ease-in-out'
           transitionDuration={300}

@@ -5,7 +5,7 @@ import Topbutton from '../components/Top/Topbutton';
 import {Link} from 'react-router-dom';
 import videography from '../assets/videos/2016 W Gloria Ln_V1.mp4';
 import floorplans from '../assets/photos/9637_E_Gold_Dust_Ave.jpg';
-import photoFondo from '../assets/photos/4131_E_Maya_Way_VT-2.jpg';
+import photoFondo from '../assets/photos/19312 W Puget Ave Website-3 3.jpg';
 import aerialtrial from '../assets/photos/aerialttrial.jpg';
 import aerialaddonone from '../assets/photos/1110_N_Gull_Haven_Court-144.jpg';
 import upgradedronephoto from '../assets/photos/42 E Interlacken Dr-36.jpg';
@@ -102,7 +102,7 @@ function Pricings() {
                   style={{
                     fontSize: '12px',
                     marginTop: '30px',
-                    width: '90%',
+                    width: '80%',
                     margin: 'auto',
                   }}>
                   <tr style={{borderBottom: '1px solid gray'}}>
@@ -206,7 +206,6 @@ function Pricings() {
         <Card
           style={{
             width: '70%',
-
             marginBottom: '80px',
             margin: 'auto',
             border: 'none',
@@ -217,7 +216,6 @@ function Pricings() {
                 style={{
                   textAlign: 'center',
                   marginTop: '70px',
-
                   fontSize: '28px',
                   letterSpacing: '10px',
                 }}>
@@ -237,35 +235,32 @@ function Pricings() {
 
             <Row className='text-left mx-auto p-5'>
               <Col md={6}>
-                <Col md={6}>
-                  {images[currentImage] instanceof Object ? (
-                    <div
-                      style={{
-                        width: '200%',
-                        height: '370px',
-                        borderRadius: '15px',
-                        objectFit: 'cover',
-                      }}>
-                      {images[currentImage]}
-                    </div>
-                  ) : (
-                    <Card.Img
-                      style={{
-                        width: '200%',
-                        height: '370px',
-                        borderRadius: '15px',
-                        objectFit: 'cover',
-                      }}
-                      src={images[currentImage]}
-                    />
-                  )}
-                </Col>
+                {images[currentImage] instanceof Object ? (
+                  <div
+                    style={{
+                      height: '460px',
+                      borderRadius: '15px',
+                      objectFit: 'cover',
+                    }}>
+                    {images[currentImage]}
+                  </div>
+                ) : (
+                  <Card.Img
+                    style={{
+                      height: '460px',
+                      borderRadius: '15px',
+                      objectFit: 'cover',
+                    }}
+                    src={images[currentImage]}
+                  />
+                )}
               </Col>
               <Col md={6}>
                 <table
                   className='table table-borderless'
                   style={{
                     fontSize: '12px',
+                    marginTop: '20px',
                     width: '90%',
                     margin: 'auto',
                   }}>
@@ -425,8 +420,8 @@ function Pricings() {
                   className='table table-borderless'
                   style={{
                     fontSize: '12px',
-
-                    width: '90%',
+                    marginTop: '30px',
+                    width: '80%',
                     margin: 'auto',
                   }}>
                   <tr style={{borderBottom: '1px solid gray'}}>
@@ -551,8 +546,8 @@ function Pricings() {
                   className='table table-borderless'
                   style={{
                     fontSize: '12px',
-
-                    width: '90%',
+                    marginTop: '30px',
+                    width: '80%',
                     margin: 'auto',
                   }}>
                   <tr style={{borderBottom: '1px solid gray'}}>
@@ -629,18 +624,16 @@ function Pricings() {
                   </Link>
                 </button>
               </Col>
+
               <Col md={6}>
-                <Col md={6}>
-                  <Card.Img
-                    style={{
-                      width: '200%',
-                      height: '370px',
-                      objectFit: 'cover',
-                      borderRadius: '15px',
-                    }}
-                    src={images[currentImage]}
-                  />
-                </Col>
+                <Card.Img
+                  style={{
+                    height: '450px',
+                    objectFit: 'cover',
+                    borderRadius: '15px',
+                  }}
+                  src={photoFondo}
+                />
               </Col>
             </Row>
           </Card.Body>
@@ -684,7 +677,7 @@ function Pricings() {
                 <video
                   style={{
                     width: '100%',
-                    height: '370px',
+                    height: '450px',
                     objectFit: 'cover',
                     borderRadius: '15px',
                   }}
@@ -702,8 +695,8 @@ function Pricings() {
                   className='table table-borderless'
                   style={{
                     fontSize: '12px',
-
-                    width: '90%',
+                    marginTop: '30px',
+                    width: '80%',
                     margin: 'auto',
                   }}>
                   <tr style={{borderBottom: '1px solid gray'}}>
@@ -815,73 +808,30 @@ function Pricings() {
                   marginBottom: '20px',
                   fontSize: '12px',
                 }}>
-                STRIKING DRONE PHOTOS AND VIDEOS THAT REVEAL A PROPERTY'S SURROUNDINGS, SCALE, AND
-                SETTING FROM A CAPTIVATING BIRD'S-EYE VIEW.
+                STRIKING DRONE PHOTOS AND VIDEOS THAT REVEAL A{' '}
+                <b style={{fontSize: '12px'}}> PROPERTY'S SURROUNDINGS</b> , SCALE, AND SETTING FROM
+                A CAPTIVATING BIRD'S-EYE VIEW.
               </h6>
             </Row>
-            <button
-              className='btn btn-warning'
-              style={{
-                padding: '10px 15px',
-                letterSpacing: '2px',
-                marginRight: '10px',
-                boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
-              }}
-              data-table='table1'
-              onClick={() => handleTableToggle('table1')}>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='20'
-                height='20'
-                fill='black'
-                viewBox='0 0 16 16'>
-                <path d='M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z' />
-                <path d='M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0' />
-              </svg>
-            </button>
-            <button
-              className='btn btn-warning '
-              style={{
-                padding: '10px 15px',
-                letterSpacing: '2px',
 
-                boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
-              }}
-              data-table='table2'
-              onClick={() => handleTableToggle('table2')}>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='20'
-                height='20'
-                fill='black'
-                viewBox='0 0 16 16'>
-                <path d='M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0M1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0' />
-                <path d='M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm6 8.73V7.27l-3.5 1.555v4.35zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1' />
-                <path d='M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6M7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0' />
-              </svg>
-            </button>
             <Row className='text-center mx-auto p-5'>
-              <Col
-                md={6}
-                id='table1'
-                style={{display: activeTable === 'table1' ? 'block' : 'none'}}>
-                <h4 className='text-center'> DRONE PHOTOS</h4>
+              <Col md={6}>
                 <table
                   className='table table-borderless'
                   style={{
                     fontSize: '12px',
-
-                    width: '90%',
+                    marginTop: '30px',
+                    width: '80%',
                     margin: 'auto',
                   }}>
                   <tr style={{borderBottom: '1px solid gray'}}>
                     <td>
                       <h6>
-                        <strong>PHOTOS</strong>
+                        <strong>PACKS</strong>
                       </h6>
                     </td>
                     <td>
-                      <h6>
+                      <h6 style={{marginRight: '30px'}}>
                         {' '}
                         <strong>PRICE</strong>
                       </h6>
@@ -893,7 +843,7 @@ function Pricings() {
                       <h6>12 IMAGES</h6>
                     </td>
                     <td>
-                      <h6>$199</h6>
+                      <h6 style={{marginRight: '30px'}}>$199</h6>
                     </td>
                   </tr>
                   <tr style={{borderBottom: '1px solid gray'}}>
@@ -901,7 +851,23 @@ function Pricings() {
                       <h6>24 IMAGES</h6>
                     </td>
                     <td>
-                      <h6>$249</h6>
+                      <h6 style={{marginRight: '30px'}}>$249</h6>
+                    </td>
+                  </tr>
+                  <tr style={{borderBottom: '1px solid gray'}}>
+                    <td>
+                      <h6>AERIAL VIDEO TOUR</h6>
+                    </td>
+                    <td>
+                      <h6 style={{marginRight: '30px'}}>$199</h6>
+                    </td>
+                  </tr>
+                  <tr style={{borderBottom: '1px solid gray'}}>
+                    <td>
+                      <h6>LOT LINES + MARKERS</h6>
+                    </td>
+                    <td>
+                      <h6 style={{marginRight: '30px'}}>$299</h6>
                     </td>
                   </tr>
                 </table>
@@ -928,85 +894,16 @@ function Pricings() {
                   </Link>
                 </button>
               </Col>
-              <Col
-                md={6}
-                id='table2'
-                style={{display: activeTable === 'table2' ? 'block' : 'none'}}>
-                <h4 className='text-center'> AERIAL VIDEO</h4>
-                <table
-                  className='table table-borderless'
-                  style={{
-                    fontSize: '12px',
 
-                    width: '90%',
-                    margin: 'auto',
-                  }}>
-                  <tr style={{borderBottom: '1px solid gray'}}>
-                    <td>
-                      <h6>
-                        <strong>VIDEOS</strong>
-                      </h6>
-                    </td>
-                    <td>
-                      <h6>
-                        {' '}
-                        <strong>PRICE</strong>
-                      </h6>
-                    </td>
-                  </tr>
-
-                  <tr style={{borderBottom: '1px solid gray'}}>
-                    <td>
-                      <h6>VIDEO ONLY</h6>
-                    </td>
-                    <td>
-                      <h6>$199</h6>
-                    </td>
-                  </tr>
-                  <tr style={{borderBottom: '1px solid gray'}}>
-                    <td>
-                      <h6>WITH LOT LINES + MARKERS</h6>
-                    </td>
-                    <td>
-                      <h6>$299</h6>
-                    </td>
-                  </tr>
-                </table>
-
-                <span style={{color: 'GRAY', fontSize: '10px'}}>*PRICES DO NOT INCLUDE TAX </span>
-                <button
-                  className='btn btn-dark d-block mx-auto '
-                  style={{
-                    borderRadius: '5px',
-                    marginTop: '40px',
-                    padding: '15px 35px',
-                    boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
-                  }}>
-                  <Link
-                    to='https://spiro.media/'
-                    target='_blank'
-                    style={{
-                      textDecoration: 'none',
-                      color: 'white',
-                      letterSpacing: '1px',
-                      fontSize: '18px',
-                    }}>
-                    BOOK NOW
-                  </Link>
-                </button>
-              </Col>
               <Col md={6}>
-                <Col md={6}>
-                  <Card.Img
-                    style={{
-                      width: '200%',
-                      height: '370px',
-                      objectFit: 'cover',
-                      borderRadius: '15px',
-                    }}
-                    src={aerialtrial}
-                  />
-                </Col>
+                <Card.Img
+                  style={{
+                    height: '450px',
+                    objectFit: 'cover',
+                    borderRadius: '15px',
+                  }}
+                  src={aerialtrial}
+                />
               </Col>
             </Row>
           </Card.Body>
@@ -1019,7 +916,6 @@ function Pricings() {
         <Card
           style={{
             width: '70%',
-
             marginBottom: '80px',
             margin: 'auto',
             border: 'none',
@@ -1050,12 +946,22 @@ function Pricings() {
 
             <Row className='text-center mx-auto p-5'>
               <Col md={6}>
+                <Card.Img
+                  style={{
+                    height: '450px',
+                    objectFit: 'cover',
+                    borderRadius: '15px',
+                  }}
+                  src={floorplans}
+                />
+              </Col>
+              <Col md={6}>
                 <table
                   className='table table-borderless'
                   style={{
                     fontSize: '12px',
-
-                    width: '90%',
+                    marginTop: '30px',
+                    width: '80%',
                     margin: 'auto',
                   }}>
                   <tr style={{borderBottom: '1px solid gray'}}>
@@ -1130,18 +1036,137 @@ function Pricings() {
                   </Link>
                 </button>
               </Col>
+            </Row>
+          </Card.Body>
+        </Card>
+
+        <br />
+
+        {/* INTERACTIVE */}
+
+        <Card
+          style={{
+            width: '70%',
+
+            marginBottom: '80px',
+            margin: 'auto',
+            border: 'none',
+          }}>
+          <Card.Body>
+            <Row style={{textAlign: 'center', marginBottom: '20px'}}>
+              <Card.Title
+                style={{
+                  textAlign: 'center',
+                  marginTop: '70px',
+
+                  fontSize: '28px',
+                  letterSpacing: '10px',
+                }}>
+                INTERACTIVE 2D FLOOR PLANS
+              </Card.Title>
+              <hr style={{width: '30%', margin: 'auto', marginBottom: '20px'}} />
+              <h6
+                style={{
+                  textAlign: 'center',
+                  marginBottom: '20px',
+                  fontSize: '12px',
+                }}>
+                STRIKING DRONE PHOTOS AND VIDEOS THAT REVEAL A{' '}
+                <b style={{fontSize: '12px'}}> PROPERTY'S SURROUNDINGS</b> , SCALE, AND SETTING FROM
+                A CAPTIVATING BIRD'S-EYE VIEW.
+              </h6>
+            </Row>
+
+            <Row className='text-center mx-auto p-5'>
               <Col md={6}>
-                <Col md={6}>
-                  <Card.Img
+                <table
+                  className='table table-borderless'
+                  style={{
+                    fontSize: '12px',
+                    marginTop: '30px',
+                    width: '80%',
+                    margin: 'auto',
+                  }}>
+                  <tr style={{borderBottom: '1px solid gray'}}>
+                    <td>
+                      <h6>
+                        <strong>PACKS</strong>
+                      </h6>
+                    </td>
+                    <td>
+                      <h6 style={{marginRight: '30px'}}>
+                        {' '}
+                        <strong>PRICE</strong>
+                      </h6>
+                    </td>
+                  </tr>
+
+                  <tr style={{borderBottom: '1px solid gray'}}>
+                    <td>
+                      <h6>12 IMAGES</h6>
+                    </td>
+                    <td>
+                      <h6 style={{marginRight: '30px'}}>$199</h6>
+                    </td>
+                  </tr>
+                  <tr style={{borderBottom: '1px solid gray'}}>
+                    <td>
+                      <h6>24 IMAGES</h6>
+                    </td>
+                    <td>
+                      <h6 style={{marginRight: '30px'}}>$249</h6>
+                    </td>
+                  </tr>
+                  <tr style={{borderBottom: '1px solid gray'}}>
+                    <td>
+                      <h6>AERIAL VIDEO TOUR</h6>
+                    </td>
+                    <td>
+                      <h6 style={{marginRight: '30px'}}>$199</h6>
+                    </td>
+                  </tr>
+                  <tr style={{borderBottom: '1px solid gray'}}>
+                    <td>
+                      <h6>LOT LINES + MARKERS</h6>
+                    </td>
+                    <td>
+                      <h6 style={{marginRight: '30px'}}>$299</h6>
+                    </td>
+                  </tr>
+                </table>
+
+                <span style={{color: 'GRAY', fontSize: '10px'}}>*PRICES DO NOT INCLUDE TAX </span>
+                <button
+                  className='btn btn-dark d-block mx-auto '
+                  style={{
+                    borderRadius: '5px',
+                    marginTop: '40px',
+                    padding: '15px 35px',
+                    boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
+                  }}>
+                  <Link
+                    to='https://spiro.media/'
+                    target='_blank'
                     style={{
-                      width: '200%',
-                      height: '370px',
-                      objectFit: 'cover',
-                      borderRadius: '15px',
-                    }}
-                    src={floorplans}
-                  />
-                </Col>
+                      textDecoration: 'none',
+                      color: 'white',
+                      letterSpacing: '1px',
+                      fontSize: '18px',
+                    }}>
+                    BOOK NOW
+                  </Link>
+                </button>
+              </Col>
+
+              <Col md={6}>
+                <Card.Img
+                  style={{
+                    height: '450px',
+                    objectFit: 'cover',
+                    borderRadius: '15px',
+                  }}
+                  src={aerialtrial}
+                />
               </Col>
             </Row>
           </Card.Body>

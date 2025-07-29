@@ -142,7 +142,8 @@ function Header() {
                   to='/Pricings'
                   reloadDocument
                   style={{marginRight: '25px', fontSize: '17px', color: 'black'}}
-                  className='nav-link'>
+                  className='nav-link'
+                  id='btn'>
                   PRICING
                 </Link>
               </b>
@@ -151,7 +152,8 @@ function Header() {
                   style={{marginRight: '25px', fontSize: '17px', color: 'black'}}
                   reloadDocument
                   to='/portfolio'
-                  className='nav-link'>
+                  className='nav-link'
+                  id='btn'>
                   {' '}
                   PORTFOLIO
                 </Link>
@@ -162,7 +164,8 @@ function Header() {
                   style={{marginRight: '25px', fontSize: '17px', color: 'black'}}
                   reloadDocument
                   to='/contact'
-                  className='nav-link'>
+                  className='nav-link'
+                  id='btn'>
                   CONTACT
                 </Link>
               </b>

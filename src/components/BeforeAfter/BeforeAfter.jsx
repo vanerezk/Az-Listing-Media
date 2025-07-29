@@ -4,22 +4,20 @@ import ReactCompareImage from 'react-compare-image';
 
 const BeforeAfter = () => {
   return (
-    <div className='image-container'>
-      <ReactCompareImage
-        leftImage={before}
-        rightImage={after}
-        leftImageCss={{
-          width: '100%',
-          height: '370px',
-          borderRadius: '15px',
-        }}
-        rightImageCss={{
-          width: '100%',
-          height: '370px',
-          borderRadius: '15px',
-        }}
-      />
-    </div>
+    <ReactCompareImage
+      leftImage={before}
+      rightImage={after}
+      leftImageCss={{
+        width: '100%',
+        height: '450px',
+        borderRadius: '15px ',
+      }}
+      rightImageCss={{
+        width: '100%',
+        height: '450px',
+        borderRadius: '15px',
+      }}
+    />
   );
 };
 

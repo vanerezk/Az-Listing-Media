@@ -2,14 +2,24 @@
     position: relative;
     width: 250px;
     height: 460px;
-    
+    margin: auto;
     border: 10px #000 solid;
     border-top-width: 40px;
     border-bottom-width: 35px;
     border-radius: 20px;
-    
     background: #000;
+    margin-top: -10px;
+    
 }
+
+.container-smartphone {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
 
 .smartphone:before {
     content: '';

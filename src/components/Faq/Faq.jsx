@@ -38,6 +38,8 @@ function Faq() {
 
               '--bs-accordion-bg': 'rgb(255, 255, 255)',
 
+              '--bs-accordion-active-color': 'rgb(0, 0, 0)',
+
               '--bs-accordion-btn-focus-box-shadow': 'none',
 
               '--bs-accordion-active-bg': 'rgb(255, 255, 255)',

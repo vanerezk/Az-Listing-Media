@@ -175,6 +175,46 @@ function Listings() {
                 </Card.Body>
               </Card>
             </Col>
+
+            <Col
+              xs={12}
+              sm={6}
+              md={4}
+              className='text-center'>
+              <Card
+                style={{
+                  width: 'auto',
+                  height: '26rem',
+                  borderRadius: '15px 15px 15px 15px',
+
+                  boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
+                }}>
+                <Card.Img
+                  variant='top'
+                  src={floorplansphoto}
+                  style={{
+                    padding: '0px',
+                    borderRadius: '15px 15px 0px 0px',
+                    height: '17rem',
+                    objectFit: 'contain',
+                  }}
+                />
+                <Card.Body className='text-center my-auto mt-3 '>
+                  <Card.Title
+                    style={{
+                      letterSpacing: '2px',
+                      fontWeight: 'bold',
+                      fontSize: '23px',
+                    }}>
+                    FLOOR PLANS
+                  </Card.Title>
+                  <Card.Text style={{marginBottom: '20px'}}>
+                    Clean, easy-to-read layouts that give buyers a clear understanding of the home’s
+                    flow and dimensions.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
             <Col
               xs={12}
               sm={6}
@@ -211,45 +251,6 @@ function Listings() {
                   <Card.Text style={{marginBottom: '20px'}}>
                     Custom media tailored to you - highlight your personality, process, and
                     professionalism to stand out in the market.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col
-              xs={12}
-              sm={6}
-              md={4}
-              className='text-center'>
-              <Card
-                style={{
-                  width: 'auto',
-                  height: '26rem',
-                  borderRadius: '15px 15px 15px 15px',
-
-                  boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
-                }}>
-                <Card.Img
-                  variant='top'
-                  src={floorplansphoto}
-                  style={{
-                    padding: '0px',
-                    borderRadius: '15px 15px 0px 0px',
-                    height: '17rem',
-                    objectFit: 'contain',
-                  }}
-                />
-                <Card.Body className='text-center my-auto mt-3 '>
-                  <Card.Title
-                    style={{
-                      letterSpacing: '2px',
-                      fontWeight: 'bold',
-                      fontSize: '23px',
-                    }}>
-                    FLOOR PLANS
-                  </Card.Title>
-                  <Card.Text style={{marginBottom: '20px'}}>
-                    Clean, easy-to-read layouts that give buyers a clear understanding of the home’s
-                    flow and dimensions.
                   </Card.Text>
                 </Card.Body>
               </Card>
