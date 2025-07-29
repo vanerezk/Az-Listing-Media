@@ -11,6 +11,7 @@ import aerialaddonone from '../assets/photos/1110_N_Gull_Haven_Court-144.jpg';
 import upgradedronephoto from '../assets/photos/42 E Interlacken Dr-36.jpg';
 import BeforeAfter from '../components/BeforeAfter/BeforeAfter';
 import upgradedtwilightphoto from '../assets/photos/49903 N 26th Ave_Virtual Twilight-1.jpg';
+import SocialMediaReel from '../components/SocialMediaReel/SocialMediaReel';
 
 function Pricings() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -288,7 +289,7 @@ function Pricings() {
                     style={{borderBottom: '1px solid gray'}}
                     onClick={() => setCurrentImage(0)}>
                     <td>
-                      <h6 style={{cursor: 'help'}}>TWILIGHT PHOTOS</h6>
+                      <h6 style={{cursor: 'grab'}}>TWILIGHT PHOTOS</h6>
                     </td>
                     <td className='text-center'>
                       <h6>$299</h6>
@@ -298,7 +299,7 @@ function Pricings() {
                     style={{borderBottom: '1px solid gray'}}
                     onClick={() => setCurrentImage(1)}>
                     <td>
-                      <h6 style={{cursor: 'help'}}>VIRTUAL TWILIGHT</h6>
+                      <h6 style={{cursor: 'grab'}}>VIRTUAL TWILIGHT</h6>
                     </td>
                     <td className='text-center'>
                       <h6>$39 PER IMG</h6>
@@ -309,7 +310,7 @@ function Pricings() {
                     onClick={() => setCurrentImage(2)} //
                   >
                     <td>
-                      <h6 style={{cursor: 'help'}}>VIRTUAL STAGING</h6>
+                      <h6 style={{cursor: 'grab'}}>VIRTUAL STAGING</h6>
                     </td>
                     <td className='text-center'>
                       <h6>$49 PER IMG</h6>
@@ -319,7 +320,7 @@ function Pricings() {
                     style={{borderBottom: '1px solid gray'}}
                     onClick={() => setCurrentImage(3)}>
                     <td>
-                      <h6 style={{cursor: 'help'}}>AERIAL PHOTOGRAPHY</h6>
+                      <h6 style={{cursor: 'grab'}}>AERIAL PHOTOGRAPHY</h6>
                     </td>
                     <td className='text-center'>
                       <h6>$99 (6 - 12 PHOTOS)</h6>
@@ -330,7 +331,7 @@ function Pricings() {
                     onClick={() => setCurrentImage(4)} // Update currentImage to 4 when clicked
                   >
                     <td>
-                      <h6 style={{cursor: 'help'}}>AERIAL PHOTOGRAPHY</h6>
+                      <h6 style={{cursor: 'grab'}}>AERIAL PHOTOGRAPHY</h6>
                     </td>
                     <td className='text-center'>
                       <h6>$149 (13 - 24 PHOTOS)</h6>
@@ -412,7 +413,7 @@ function Pricings() {
                   fontSize: '12px',
                 }}>
                 A DYNAMIC, VISUALLY COMPELLING MINI-TOUR DESIGNED TO SPARK INTEREST AND DRIVE
-                ENGAGEMENT FOR A PROPERTY.
+                <b style={{fontSize: '12px'}}> ENGAGEMENT </b> FOR A PROPERTY.
               </h6>
             </Row>
 
@@ -504,23 +505,7 @@ function Pricings() {
               </Col>
 
               <Col md={6}>
-                <Col md={6}>
-                  <video
-                    style={{
-                      width: '200%',
-                      height: '370px',
-                      objectFit: 'cover',
-                      borderRadius: '15px',
-                    }}
-                    autoPlay
-                    loop
-                    muted>
-                    <source
-                      src={videography}
-                      type='video/mp4'
-                    />
-                  </video>
-                </Col>
+                <SocialMediaReel />
               </Col>
             </Row>
           </Card.Body>
@@ -555,8 +540,8 @@ function Pricings() {
                   marginBottom: '20px',
                   fontSize: '12px',
                 }}>
-                A CRISP, CINEMATIC WALKTHROUGH THAT SHOWCASES A PROPERTY'S DESIGN, FLOW, AND
-                ATMOSPHERE IN RICH DETAIL.
+                A CRISP,<b style={{fontSize: '12px'}}> CINEMATIC WALKTHROUGH </b> THAT SHOWCASES A
+                PROPERTY'S DESIGN, FLOW, AND ATMOSPHERE IN RICH DETAIL.
               </h6>
             </Row>
 
@@ -689,8 +674,8 @@ function Pricings() {
                   marginBottom: '20px',
                   fontSize: '12px',
                 }}>
-                A POLISHED, STORY-DRIVEN FILM THAT ARTFULLY HIGHLIGHTS A PROPERTY'S UNIQUE
-                CHARACTER, MOOD, AND LIFESTYLE APPEAL.
+                A POLISHED, <b style={{fontSize: '12px'}}> STORY-DRIVEN FILM </b> THAT ARTFULLY
+                HIGHLIGHTS A PROPERTY'S UNIQUE CHARACTER, MOOD, AND LIFESTYLE APPEAL.
               </h6>
             </Row>
 

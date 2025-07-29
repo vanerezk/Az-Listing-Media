@@ -1,0 +1,26 @@
+.smartphone {
+    position: relative;
+    width: 250px;
+    height: 460px;
+    
+    border: 10px #000 solid;
+    border-top-width: 40px;
+    border-bottom-width: 35px;
+    border-radius: 20px;
+    
+    background: #000;
+}
+
+.smartphone:before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+    z-index: 1;
+}
