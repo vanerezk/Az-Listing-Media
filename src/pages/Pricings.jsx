@@ -827,7 +827,7 @@ function Pricings() {
                   <tr style={{borderBottom: '1px solid gray'}}>
                     <td>
                       <h6>
-                        <strong>PACKS</strong>
+                        <strong>PACKAGES</strong>
                       </h6>
                     </td>
                     <td>
@@ -862,17 +862,13 @@ function Pricings() {
                       <h6 style={{marginRight: '30px'}}>$199</h6>
                     </td>
                   </tr>
-                  <tr style={{borderBottom: '1px solid gray'}}>
-                    <td>
-                      <h6>LOT LINES + MARKERS</h6>
-                    </td>
-                    <td>
-                      <h6 style={{marginRight: '30px'}}>$299</h6>
-                    </td>
-                  </tr>
                 </table>
 
-                <span style={{color: 'GRAY', fontSize: '10px'}}>*PRICES DO NOT INCLUDE TAX </span>
+                <span style={{color: 'black', fontSize: '10px'}}>
+                  *ADD LOT LINES AND LOCATION MARKERS TO YOUR VIDEO FOR $99
+                </span>
+                <br />
+                <span style={{color: 'GRAY', fontSize: '10px'}}>*PRICES DO NOT INCLUDE TAX</span>
                 <button
                   className='btn btn-dark d-block mx-auto '
                   style={{
@@ -1003,16 +999,6 @@ function Pricings() {
                     </td>
                   </tr>
                 </table>
-                <p
-                  style={{
-                    color: 'GRAY',
-                    fontSize: '12px',
-                    marginTop: '20px',
-                    width: '80%',
-                    margin: 'auto',
-                  }}>
-                  THE PRICES ARE BASED ON THE SIZE OF THE PROPERTY.
-                </p>
 
                 <span style={{color: 'GRAY', fontSize: '10px'}}>*PRICES DO NOT INCLUDE TAX </span>
                 <button
@@ -1035,138 +1021,6 @@ function Pricings() {
                     BOOK NOW
                   </Link>
                 </button>
-              </Col>
-            </Row>
-          </Card.Body>
-        </Card>
-
-        <br />
-
-        {/* INTERACTIVE */}
-
-        <Card
-          style={{
-            width: '70%',
-
-            marginBottom: '80px',
-            margin: 'auto',
-            border: 'none',
-          }}>
-          <Card.Body>
-            <Row style={{textAlign: 'center', marginBottom: '20px'}}>
-              <Card.Title
-                style={{
-                  textAlign: 'center',
-                  marginTop: '70px',
-
-                  fontSize: '28px',
-                  letterSpacing: '10px',
-                }}>
-                INTERACTIVE 2D FLOOR PLANS
-              </Card.Title>
-              <hr style={{width: '30%', margin: 'auto', marginBottom: '20px'}} />
-              <h6
-                style={{
-                  textAlign: 'center',
-                  marginBottom: '20px',
-                  fontSize: '12px',
-                }}>
-                STRIKING DRONE PHOTOS AND VIDEOS THAT REVEAL A{' '}
-                <b style={{fontSize: '12px'}}> PROPERTY'S SURROUNDINGS</b> , SCALE, AND SETTING FROM
-                A CAPTIVATING BIRD'S-EYE VIEW.
-              </h6>
-            </Row>
-
-            <Row className='text-center mx-auto p-5'>
-              <Col md={6}>
-                <table
-                  className='table table-borderless'
-                  style={{
-                    fontSize: '12px',
-                    marginTop: '30px',
-                    width: '80%',
-                    margin: 'auto',
-                  }}>
-                  <tr style={{borderBottom: '1px solid gray'}}>
-                    <td>
-                      <h6>
-                        <strong>PACKS</strong>
-                      </h6>
-                    </td>
-                    <td>
-                      <h6 style={{marginRight: '30px'}}>
-                        {' '}
-                        <strong>PRICE</strong>
-                      </h6>
-                    </td>
-                  </tr>
-
-                  <tr style={{borderBottom: '1px solid gray'}}>
-                    <td>
-                      <h6>12 IMAGES</h6>
-                    </td>
-                    <td>
-                      <h6 style={{marginRight: '30px'}}>$199</h6>
-                    </td>
-                  </tr>
-                  <tr style={{borderBottom: '1px solid gray'}}>
-                    <td>
-                      <h6>24 IMAGES</h6>
-                    </td>
-                    <td>
-                      <h6 style={{marginRight: '30px'}}>$249</h6>
-                    </td>
-                  </tr>
-                  <tr style={{borderBottom: '1px solid gray'}}>
-                    <td>
-                      <h6>AERIAL VIDEO TOUR</h6>
-                    </td>
-                    <td>
-                      <h6 style={{marginRight: '30px'}}>$199</h6>
-                    </td>
-                  </tr>
-                  <tr style={{borderBottom: '1px solid gray'}}>
-                    <td>
-                      <h6>LOT LINES + MARKERS</h6>
-                    </td>
-                    <td>
-                      <h6 style={{marginRight: '30px'}}>$299</h6>
-                    </td>
-                  </tr>
-                </table>
-
-                <span style={{color: 'GRAY', fontSize: '10px'}}>*PRICES DO NOT INCLUDE TAX </span>
-                <button
-                  className='btn btn-dark d-block mx-auto '
-                  style={{
-                    borderRadius: '5px',
-                    marginTop: '40px',
-                    padding: '15px 35px',
-                    boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
-                  }}>
-                  <Link
-                    to='https://spiro.media/'
-                    target='_blank'
-                    style={{
-                      textDecoration: 'none',
-                      color: 'white',
-                      letterSpacing: '1px',
-                      fontSize: '18px',
-                    }}>
-                    BOOK NOW
-                  </Link>
-                </button>
-              </Col>
-
-              <Col md={6}>
-                <Card.Img
-                  style={{
-                    height: '450px',
-                    objectFit: 'cover',
-                    borderRadius: '15px',
-                  }}
-                  src={aerialtrial}
-                />
               </Col>
             </Row>
           </Card.Body>
