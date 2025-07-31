@@ -84,7 +84,7 @@ function Portfolio() {
           customTransition='transform 300ms ease-in-out'
           transitionDuration={300}
           containerClass='carousel-container'
-          className=' mx-auto w-75'>
+          className=' mx-auto w-75 '>
           {images.map((image, index) => (
             <div
               className='d-flex justify-content-center'

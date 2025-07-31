@@ -674,22 +674,15 @@ function Pricings() {
 
             <Row className='text-center mx-auto p-5'>
               <Col md={6}>
-                <video
-                  style={{
-                    width: '100%',
-                    height: '450px',
-                    objectFit: 'cover',
-                    borderRadius: '15px',
-                  }}
-                  autoPlay
-                  loop
-                  muted>
-                  <source
-                    src={videography}
-                    type='video/mp4'
-                  />
-                </video>
+                <iframe
+                  width='560'
+                  height='315'
+                  src='https://www.youtube.com/embed/zEUmnZNX46o?si=wQ3SxPVWH64gprvV'
+                  title='YouTube video player'
+                  allow='autoplay'
+                  allowfullscreen></iframe>
               </Col>
+
               <Col md={6}>
                 <table
                   className='table table-borderless'
@@ -740,7 +733,7 @@ function Pricings() {
                 </table>
                 <p
                   style={{
-                    color: 'GRAY',
+                    color: 'black',
                     fontSize: '12px',
                     marginTop: '20px',
                     width: '80%',
@@ -863,7 +856,6 @@ function Pricings() {
                     </td>
                   </tr>
                 </table>
-
                 <span style={{color: 'black', fontSize: '10px'}}>
                   *ADD LOT LINES AND LOCATION MARKERS TO YOUR VIDEO FOR $99
                 </span>

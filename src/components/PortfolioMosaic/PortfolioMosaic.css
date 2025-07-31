@@ -86,6 +86,26 @@
     grid-column: span 4;
 }
 
+.tile:nth-child(22) {
+    grid-column: span 4;
+}
+
+.tile:nth-child(23) {
+    grid-column: span 2;
+}
+
+.tile:nth-child(24) {
+    grid-column: span 3;
+}
+
+.tile:nth-child(25) {
+    grid-column: span 3;
+}
+
+.tile:nth-child(26) {
+    grid-column: span 2;
+}
+
 
 
 @media screen and (max-width: 650px) {

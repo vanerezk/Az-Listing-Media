@@ -1,7 +1,8 @@
 import './Video.css';
 import {Link} from 'react-router-dom';
 
-import photo from '../../assets/photos/1836_E_Turquoise_Ave-61.jpg';
+// import photo from '../../assets/photos/1836_E_Turquoise_Ave-61.jpg';
+import video from '../../assets/videos/backgroundvideo.mp4';
 import {useState, useEffect} from 'react';
 function Video() {
   const [currentText, setCurrentText] = useState('MEDIA COMPANY');
@@ -18,12 +19,25 @@ function Video() {
 
   return (
     <>
-      <img
+      {/* <img
         src={photo}
         id='backgroundphoto'
         className='w-100 mx-auto '
         alt='Community Ground Photo Example'
-      />
+      /> */}
+
+      <video
+        id='backgroundvideo'
+        className='w-100 mx-auto '
+        alt='Community Ground Video Example'
+        autoPlay
+        muted
+        loop>
+        <source
+          src={video}
+          type='video/mp4'
+        />
+      </video>
 
       <div
         className='text-container d-none d-md-block '
