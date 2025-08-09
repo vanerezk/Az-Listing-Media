@@ -57,8 +57,8 @@ function Portfolio() {
     <>
       <div
         className='
-             mx-auto text-center bg-light  w-100 '
-        style={{marginTop: '100px', paddingTop: '100px'}}>
+             mx-auto text-center bg-light  '
+        style={{marginTop: '100px', paddingTop: '100px', width: '100%'}}>
         <h6
           className='text-center '
           style={{letterSpacing: '10px'}}>
@@ -84,7 +84,7 @@ function Portfolio() {
           customTransition='transform 300ms ease-in-out'
           transitionDuration={300}
           containerClass='carousel-container'
-          className=' mx-auto w-75 '>
+          className=' mx-auto'>
           {images.map((image, index) => (
             <div
               className='d-flex justify-content-center'

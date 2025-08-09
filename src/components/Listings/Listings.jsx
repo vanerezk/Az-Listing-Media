@@ -20,7 +20,7 @@ function Listings() {
         className='bg-light  '>
         <div
           className=' mx-auto p-5   '
-          style={{width: '90%', scale: '0.9'}}>
+          style={{width: '100%', scale: '0.9'}}>
           <Row>
             <Col
               xs={12}

@@ -18,8 +18,8 @@ function Home() {
       <Video />
       <Services />
       <Portfolio />
-      <Aboutmain />
       <Listings />
+      <Aboutmain />
       <div style={{textAlign: 'center', position: 'relative'}}>
         <img
           src={finalImage}
