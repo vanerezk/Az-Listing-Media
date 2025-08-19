@@ -58,7 +58,7 @@ function Portfolio() {
       <div
         className='
              mx-auto text-center bg-light  '
-        style={{marginTop: '100px', paddingTop: '100px', width: '100%'}}>
+        style={{marginTop: '100px', paddingTop: '100px'}}>
         <h6
           className='text-center '
           style={{letterSpacing: '10px'}}>
@@ -77,14 +77,14 @@ function Portfolio() {
         <Carousel
           responsive={responsive}
           interval={3000}
-          infinite={true}
           autoPlay={true}
-          arrows={true}
-          renderDotsOutside={true}
+          autoPlaySpeed={3000}
+          infinite={true}
           customTransition='transform 300ms ease-in-out'
           transitionDuration={300}
           containerClass='carousel-container'
-          className=' mx-auto'>
+          id='carouselhome'
+          className='carousel-width'>
           {images.map((image, index) => (
             <div
               className='d-flex justify-content-center'
@@ -93,8 +93,6 @@ function Portfolio() {
                 className='firstphoto'
                 style={{cursor: 'zoom-in'}}
                 src={image}
-                alt='Image'
-                onClick={() => handleImageClick(image)}
               />
             </div>
           ))}
