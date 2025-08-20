@@ -5,7 +5,7 @@ import './Services.css';
 import listingMediaImage from '../../assets/photos/28556 N 124th Dr Website-1.jpg';
 import aerialMediaImage from '../../assets/photos/image.jpeg';
 import marketingVideosImage from '../../assets/photos/13406 W Rowel Rd-24.jpg';
-import agentBrandingImage from '../../assets/photos/1836 E Turquoise Ave-63.jpg';
+import agentBrandingImage from '../../assets/photos/wesley-tingey-K2eShE-1yGw-unsplash-scaled.jpg';
 
 function Services() {
   return (
@@ -128,6 +128,7 @@ function Services() {
                 borderRadius: '15px 15px 0px 0px',
                 height: '18rem',
                 objectFit: 'cover',
+                objectPosition: '45%',
               }}
             />
             <Card.Body className='text-center'>

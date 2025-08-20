@@ -8,73 +8,51 @@ function Footer() {
       {/*Desktop Footer*/}
 
       <footer
-        className='d-none d-lg-block '
-        style={{bottom: 0, width: '100%', height: '100px'}}>
-        <Container>
+        className=' d-flex flex-column justify-content-center bg-light'
+        style={{bottom: 0, height: '100px', width: '100%'}}>
+        <Container
+          className='d-flex flex-column justify-content-center'
+          style={{
+            textAlign: 'center',
+          }}>
           <Row>
-            <Col style={{fontSize: '14px', marginTop: '20px'}}>
-              <span>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  width='16'
-                  height='16'
-                  fill='currentColor'
-                  viewBox='0 0 16 16'>
-                  <path d='M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z' />
-                </svg>{' '}
-                623-640-8909{' '}
-              </span>
-
-              <span style={{marginLeft: '20px'}}>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  width='16'
-                  height='16'
-                  fill='currentColor'
-                  viewBox='0 0 16 16'>
-                  <path d='M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z' />
-                </svg>{' '}
-                azlistingmedia@gmail.com
-              </span>
-            </Col>
             <Col>
-              <button
-                className='btn btn-dark mt-3  '
-                style={{
-                  borderRadius: '5px',
-                  padding: '5px 15px',
-                  boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
-                }}>
-                <Link
-                  to='https://spiro.media/'
-                  target='_blank'
-                  style={{
-                    textDecoration: 'none',
-                    color: 'white',
-                    letterSpacing: '1px',
-                    fontSize: '18px',
-                  }}>
-                  SCHEDULE NOW
-                </Link>
-              </button>
+              <Row style={{paddingLeft: '20px', marginTop: '20px', marginRight: '-90px'}}>
+                <span>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    style={{marginRight: '10px'}}
+                    width='16'
+                    height='16'
+                    fill='currentColor'
+                    viewBox='0 0 16 16'>
+                    <path d='M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z' />
+                  </svg>{' '}
+                  623-640-8909{' '}
+                </span>
+              </Row>
             </Col>
-            <Col>
-              <img
-                src={logofooter}
-                style={{
-                  width: 'auto',
-                  height: '70px',
-                }}
-                alt='logo'
-              />
+            <Col style={{fontSize: '14px', marginLeft: '-80px', marginRight: '20px'}}>
+              <Row style={{marginTop: '20px'}}>
+                <span>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    style={{marginRight: '10px'}}
+                    width='16'
+                    height='16'
+                    fill='currentColor'
+                    viewBox='0 0 16 16'>
+                    <path d='M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z' />
+                  </svg>{' '}
+                  azlistingmedia@gmail.com
+                </span>
+              </Row>
             </Col>
 
             <Col>
-              <Row
-                className='text-center '
-                style={{marginTop: '20px'}}>
+              <Row style={{marginTop: '10px', marginLeft: '-80px'}}>
                 <button
-                  className='btn mx-3 '
+                  className='btn  '
                   style={{
                     border: 'none',
                     padding: '10px',
@@ -94,7 +72,7 @@ function Footer() {
                   </a>
                 </button>
                 <button
-                  className='btn  mx-3'
+                  className='btn'
                   style={{
                     border: 'none',
 
@@ -116,7 +94,7 @@ function Footer() {
                   </a>
                 </button>
                 <button
-                  className='btn mx-3 '
+                  className='btn'
                   style={{
                     border: 'none',
 
@@ -136,6 +114,38 @@ function Footer() {
                       <path d='M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z' />
                     </svg>
                   </a>
+                </button>
+              </Row>
+            </Col>
+            {/* <Col>
+              <Row style={{scale: '0.9'}}>
+                <img
+                  src={logofooter}
+                  alt=''
+                  style={{width: '100px'}}
+                />
+              </Row>
+            </Col> */}
+            <Col>
+              <Row style={{marginTop: '10px', scale: '0.9'}}>
+                <button
+                  className='btn btn-dark  '
+                  style={{
+                    borderRadius: '5px',
+                    padding: '5px 5px',
+                    boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
+                  }}>
+                  <Link
+                    to='https://spiro.media/'
+                    target='_blank'
+                    style={{
+                      textDecoration: 'none',
+                      color: 'white',
+                      letterSpacing: '1px',
+                      fontSize: '18px',
+                    }}>
+                    SCHEDULE NOW
+                  </Link>
                 </button>
               </Row>
             </Col>

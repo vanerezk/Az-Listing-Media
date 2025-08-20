@@ -28,20 +28,6 @@
 }
 
 
-.firstphotoanother {
-    
-    margin-top: 10px;
-    width: 100%;
-    padding: 2%;
-    height: 300px;
-    object-fit: cover;
-    border: none;
-        background: none;
-        cursor: pointer;
-}
-
-
-
 .table td {
     padding: 3px !important; 
     

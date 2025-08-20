@@ -5,11 +5,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Topbutton from '../components/Top/Topbutton';
 import Services from '../components/Services/Services';
 import Portfolio from '../components/Portfolio/Portfolio';
-import Listings from '../components/Listings/Listings';
+// import Listings from '../components/Listings/Listings';
 import Aboutmain from '../components/Aboutmain/Aboutmain';
 
 import 'react-multi-carousel/lib/styles.css';
-import finalImage from '../assets/photos/1836_E_Turquoise_Ave-63.jpg';
+import finalImage from '../assets/photos/OC-Website-2.jpg';
 import {Col} from 'react-bootstrap';
 
 function Home() {
@@ -25,7 +25,7 @@ function Home() {
           src={finalImage}
           className='w-100 mx-auto'
           style={{
-            height: '700px',
+            height: '800px',
             objectFit: 'cover',
             filter: 'brightness(70%)',
           }}

@@ -8,14 +8,14 @@
 
 
 .react-multiple-carousel__arrow--left {
-    background-color: black !important;
+    background-color: rgba(0, 0, 0, 0.355) !important;
     color: white !important;
     
 
 }
 
 .react-multiple-carousel__arrow--right {
-    background-color: black !important;
+    background-color: rgba(0, 0, 0, 0.355) !important;
     color: white !important;
     
 

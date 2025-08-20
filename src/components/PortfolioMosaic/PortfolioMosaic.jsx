@@ -78,9 +78,9 @@ function PortfolioMosaic() {
       </div>
       <div className='tile'>
         <img
-          src={photo6}
-          alt='photo6'
-          onClick={() => handleImageClick(photo6)}
+          src={photo8}
+          alt='photo8'
+          onClick={() => handleImageClick(photo8)}
         />
       </div>
       <div className='tile'>
@@ -92,9 +92,9 @@ function PortfolioMosaic() {
       </div>
       <div className='tile'>
         <img
-          src={photo8}
-          alt='photo8'
-          onClick={() => handleImageClick(photo8)}
+          src={photo6}
+          alt='photo6'
+          onClick={() => handleImageClick(photo6)}
         />
       </div>
       <div className='tile'>
@@ -134,23 +134,23 @@ function PortfolioMosaic() {
       </div>
       <div className='tile'>
         <img
-          src={photo14}
-          alt='photo14'
-          onClick={() => handleImageClick(photo14)}
-        />
-      </div>
-      <div className='tile'>
-        <img
-          src={photo15}
-          alt='photo15'
-          onClick={() => handleImageClick(photo15)}
-        />
-      </div>
-      <div className='tile'>
-        <img
           src={photo16}
           alt='photo16'
           onClick={() => handleImageClick(photo16)}
+        />
+      </div>
+      <div className='tile'>
+        <img
+          src={photo19}
+          alt='photo19'
+          onClick={() => handleImageClick(photo19)}
+        />
+      </div>
+      <div className='tile'>
+        <img
+          src={photo14}
+          alt='photo14'
+          onClick={() => handleImageClick(photo14)}
         />
       </div>
       <div className='tile'>
@@ -169,9 +169,9 @@ function PortfolioMosaic() {
       </div>
       <div className='tile'>
         <img
-          src={photo19}
-          alt='photo19'
-          onClick={() => handleImageClick(photo19)}
+          src={photo15}
+          alt='photo15'
+          onClick={() => handleImageClick(photo15)}
         />
       </div>
       <div className='tile'>
