@@ -23,7 +23,7 @@ import photo20 from '../../assets/photos/imageaerial.jpeg';
 import photo21 from '../../assets/photos/30287 N 115th Dr-48.jpg';
 import photo22 from '../../assets/photos/2016 W Gloria Website-1.jpg';
 import photo23 from '../../assets/photos/Day 2-4.jpg';
-import photo24 from '../../assets/photos/42 E Interlacken Dr-35.jpg';
+
 import './PortfolioMosaic.css';
 
 function PortfolioMosaic() {
@@ -200,13 +200,6 @@ function PortfolioMosaic() {
           src={photo23}
           alt='photo23'
           onClick={() => handleImageClick(photo23)}
-        />
-      </div>
-      <div className='tile'>
-        <img
-          src={photo24}
-          alt='photo24'
-          onClick={() => handleImageClick(photo24)}
         />
       </div>
 

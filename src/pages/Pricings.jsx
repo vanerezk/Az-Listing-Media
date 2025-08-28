@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom';
 import videography from '../assets/videos/2016 W Gloria Ln_V1.mp4';
 import floorplans from '../assets/photos/9637_E_Gold_Dust_Ave.jpg';
 import photoFondo from '../assets/photos/19312 W Puget Ave Website-3 3.jpg';
+import photography from '../assets/photos/28556 N 124th Dr Website-1.jpg';
 import aerialtrial from '../assets/photos/aerialttrial.jpg';
 import aerialaddonone from '../assets/photos/1110_N_Gull_Haven_Court-144.jpg';
 import upgradedronephoto from '../assets/photos/42 E Interlacken Dr-36.jpg';
@@ -193,7 +194,7 @@ function Pricings() {
                     objectFit: 'cover',
                     borderRadius: '15px',
                   }}
-                  src={photoFondo}
+                  src={photography}
                   alt='Community Ground Photo Example'
                 />
               </Col>

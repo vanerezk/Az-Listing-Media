@@ -1,5 +1,4 @@
 import {Link} from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
@@ -37,7 +36,7 @@ function Header() {
               style={{cursor: 'pointer', textDecoration: 'none'}}
               target='_blank'>
               {' '}
-              623-640-8909
+              623‑252‑0066
             </a>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -52,7 +51,7 @@ function Header() {
               className='text-white mx-3 '
               style={{cursor: 'pointer', textDecoration: 'none'}}
               target='_blank'>
-              azlistingmedia@gmail.com
+              info@azlistingmedia.com
             </a>
             <svg
               xmlns='http://www.w3.org/2000/svg'
