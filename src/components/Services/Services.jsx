@@ -1,11 +1,14 @@
-import {Card, Col, Row, Carousel} from 'react-bootstrap';
+import {Card, Col, Row} from 'react-bootstrap';
+import {BsCameraFill, BsPlayCircleFill} from 'react-icons/bs';
 
+import {GiDeliveryDrone} from 'react-icons/gi';
+import {GoPeople} from 'react-icons/go';
 import './Services.css';
 
 import listingMediaImage from '../../assets/photos/28556 N 124th Dr Website-1.jpg';
-import aerialMediaImage from '../../assets/photos/image.jpeg';
-import marketingVideosImage from '../../assets/photos/13406 W Rowel Rd-24.jpg';
-import agentBrandingImage from '../../assets/photos/wesley-tingey-K2eShE-1yGw-unsplash-scaled.jpg';
+import marketingImage from '../../assets/photos/image.jpeg'; // Assuming this is the video image
+import aerialServicesImage from '../../assets/photos/13406 W Rowel Rd-24.jpg'; // Assuming this is the virtual tour image
+import agentBrandingImage from '../../assets/photos/wesley-tingey-K2eShE-1yGw-unsplash-scaled.jpg'; // Assuming this is the floor plan image
 
 function Services() {
   return (
@@ -23,255 +26,92 @@ function Services() {
         MEDIA SOLUTION
       </h1>
 
-      <Row className='fourcards'>
+      <Row
+        xs={1}
+        md={2}
+        lg={4}
+        className='g-4 mx-auto fourcards '
+        style={{width: '90%'}}>
+        {/* Listing Media Card */}
+
         <Col>
-          <Card className='servicecard'>
+          <Card className='service-card'>
             <Card.Img
               variant='top'
               src={listingMediaImage}
-              style={{
-                width: '100%',
-                padding: '0px',
-                borderRadius: '15px 15px 0px 0px',
-                height: '18rem',
-                objectFit: 'cover',
-              }}
+              alt='Listing Photos'
+              className='card-image'
             />
-            <Card.Body className='text-center'>
-              <Card.Title
-                style={{
-                  letterSpacing: '2px',
-                  marginTop: '10px',
-                  fontWeight: 'bold',
-                  fontSize: '25px',
-                  marginBottom: '20px',
-                }}>
-                LISTING MEDIA
-              </Card.Title>
-              <Card.Text style={{marginBottom: '20px'}}>
+            <Card.ImgOverlay className='card-overlay'>
+              <BsCameraFill className='card-icon' />
+              <Card.Title className='card-title'>Listing Media</Card.Title>
+              <Card.Text className='card-text'>
                 Listing photos, property videos, 3D Tours, Virtual Tours and more.
               </Card.Text>
-            </Card.Body>
+            </Card.ImgOverlay>
           </Card>
         </Col>
 
-        <Col className='text-center'>
-          <Card className='servicecard'>
+        {/* Marketing Videos Card */}
+        <Col>
+          <Card className='service-card'>
             <Card.Img
               variant='top'
-              src={marketingVideosImage}
-              style={{
-                width: '100%',
-                padding: '0px',
-                borderRadius: '15px 15px 0px 0px',
-                height: '18rem',
-                objectFit: 'cover',
-              }}
+              src={marketingImage}
+              alt='Marketing Videos'
+              className='card-image'
             />
-            <Card.Body className='text-center'>
-              <Card.Title
-                style={{
-                  letterSpacing: '2px',
-                  marginTop: '10px',
-                  fontWeight: 'bold',
-                  fontSize: '24px',
-                  marginBottom: '20px',
-                }}>
-                MARKETING VIDEOS
-              </Card.Title>
-              <Card.Text style={{marginBottom: '20px'}}>
+            <Card.ImgOverlay className='card-overlay'>
+              <BsPlayCircleFill className='card-icon' />
+              <Card.Title className='card-title'>Marketing videos</Card.Title>
+              <Card.Text className='card-text'>
                 Cinematic highlights, lifestyle videos and social media content.
               </Card.Text>
-            </Card.Body>
+            </Card.ImgOverlay>
           </Card>
         </Col>
 
-        <Col className='text-center'>
-          <Card className='servicecard'>
+        {/* Aerial Services Card */}
+        <Col>
+          <Card className='service-card'>
             <Card.Img
               variant='top'
-              src={aerialMediaImage}
-              style={{
-                width: '100%',
-                padding: '0px',
-                borderRadius: '15px 15px 0px 0px',
-                height: '18rem',
-                objectFit: 'cover',
-              }}
+              src={aerialServicesImage}
+              alt='Virtual Tours'
+              className='card-image'
             />
-            <Card.Body className='text-center'>
-              <Card.Title
-                style={{
-                  letterSpacing: '2px',
-                  marginTop: '10px',
-                  fontWeight: 'bold',
-                  fontSize: '25px',
-                  marginBottom: '20px',
-                }}>
-                AERIAL SERVICES
-              </Card.Title>
-              <Card.Text style={{marginBottom: '20px'}}>
+            <Card.ImgOverlay className='card-overlay'>
+              <GiDeliveryDrone className='card-icon' />
+              <Card.Title className='card-title'>Aerial Services</Card.Title>
+              <Card.Text className='card-text'>
                 Get a view from above with our licensed drone pilots.
               </Card.Text>
-            </Card.Body>
+            </Card.ImgOverlay>
           </Card>
         </Col>
 
-        <Col className='text-center'>
-          <Card className='servicecard'>
+        {/* Agent Branding Card */}
+        <Col>
+          <Card className='service-card'>
             <Card.Img
               variant='top'
               src={agentBrandingImage}
-              style={{
-                width: '100%',
-                padding: '0px',
-                borderRadius: '15px 15px 0px 0px',
-                height: '18rem',
-                objectFit: 'cover',
-                objectPosition: '45%',
-              }}
+              alt='Floor Plans'
+              className='card-image'
             />
-            <Card.Body className='text-center'>
-              <Card.Title
-                style={{
-                  letterSpacing: '2px',
-                  marginTop: '10px',
-                  fontWeight: 'bold',
-                  fontSize: '25px',
-                  marginBottom: '20px',
-                }}>
-                AGENT BRANDING
-              </Card.Title>
-              <Card.Text style={{marginBottom: '20px'}}>
+            <Card.ImgOverlay className='card-overlay'>
+              <GoPeople className='card-icon' />
+              <Card.Title className='card-title'>Agent Branding</Card.Title>
+              <Card.Text className='card-text'>
                 Elevate your brand with our agent-focused media solutions.
               </Card.Text>
-            </Card.Body>
+            </Card.ImgOverlay>
           </Card>
         </Col>
       </Row>
 
-      <Carousel fade>
-        <Carousel.Item>
-          <Card className='servicecard'>
-            <Card.Img
-              variant='top'
-              src={listingMediaImage}
-              style={{
-                width: '100%',
-                padding: '0px',
-                borderRadius: '15px 15px 0px 0px',
-                height: '18rem',
-                objectFit: 'cover',
-              }}
-            />
-            <Card.Body className='text-center'>
-              <Card.Title
-                style={{
-                  letterSpacing: '2px',
-                  marginTop: '10px',
-                  fontWeight: 'bold',
-                  fontSize: '25px',
-                  marginBottom: '20px',
-                }}>
-                LISTING MEDIA
-              </Card.Title>
-              <Card.Text style={{marginBottom: '20px'}}>
-                Listing photos, property videos, 3D Tours, Virtual Tours and more.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Carousel.Item>
-        <Carousel.Item>
-          <Card className='servicecard'>
-            <Card.Img
-              variant='top'
-              src={marketingVideosImage}
-              style={{
-                width: '100%',
-                padding: '0px',
-                borderRadius: '15px 15px 0px 0px',
-                height: '18rem',
-                objectFit: 'cover',
-              }}
-            />
-            <Card.Body className='text-center'>
-              <Card.Title
-                style={{
-                  letterSpacing: '2px',
-                  marginTop: '10px',
-                  fontWeight: 'bold',
-                  fontSize: '24px',
-                  marginBottom: '20px',
-                }}>
-                MARKETING VIDEOS
-              </Card.Title>
-              <Card.Text style={{marginBottom: '20px'}}>
-                Cinematic highlights, lifestyle videos and social media content.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Carousel.Item>
-        <Carousel.Item>
-          <Card className='servicecard'>
-            <Card.Img
-              variant='top'
-              src={aerialMediaImage}
-              style={{
-                width: '100%',
-                padding: '0px',
-                borderRadius: '15px 15px 0px 0px',
-                height: '18rem',
-                objectFit: 'cover',
-              }}
-            />
-            <Card.Body className='text-center'>
-              <Card.Title
-                style={{
-                  letterSpacing: '2px',
-                  marginTop: '10px',
-                  fontWeight: 'bold',
-                  fontSize: '25px',
-                  marginBottom: '20px',
-                }}>
-                AERIAL SERVICES
-              </Card.Title>
-              <Card.Text style={{marginBottom: '20px'}}>
-                Get a view from above with our licensed drone pilots.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Carousel.Item>
-        <Carousel.Item>
-          <Card className='servicecard'>
-            <Card.Img
-              variant='top'
-              src={agentBrandingImage}
-              style={{
-                width: '100%',
-                padding: '0px',
-                borderRadius: '15px 15px 0px 0px',
-                height: '18rem',
-                objectFit: 'cover',
-              }}
-            />
-            <Card.Body className='text-center'>
-              <Card.Title
-                style={{
-                  letterSpacing: '2px',
-                  marginTop: '10px',
-                  fontWeight: 'bold',
-                  fontSize: '25px',
-                  marginBottom: '20px',
-                }}>
-                AGENT BRANDING
-              </Card.Title>
-              <Card.Text style={{marginBottom: '20px'}}>
-                Elevate your brand with our agent-focused media solutions.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Carousel.Item>
-      </Carousel>
+      {/* Remove Carousel or re-style it to match the new card design */}
+      {/* ... */}
     </div>
   );
 }

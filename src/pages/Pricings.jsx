@@ -985,6 +985,14 @@ function Pricings() {
                   </tr>
                   <tr style={{borderBottom: '1px solid gray'}}>
                     <td>
+                      <h6>2D +4,000 SQFT</h6>
+                    </td>
+                    <td>
+                      <h6>$150</h6>
+                    </td>
+                  </tr>
+                  <tr style={{borderBottom: '1px solid gray'}}>
+                    <td>
                       <h6>2D & 3D FLOOR PLANS</h6>
                     </td>
                     <td>
