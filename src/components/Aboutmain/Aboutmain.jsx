@@ -72,7 +72,8 @@ function Aboutmain() {
             xl={6}
             lg={6}
             md={6}
-            sm={12}>
+            sm={12}
+            className='about-photo '>
             <img
               src={aboutphoto}
               id='aboutphoto'

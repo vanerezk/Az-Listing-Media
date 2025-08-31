@@ -82,22 +82,25 @@
 
 
 
-/* @media (min-width: 1536px) {
-    .carousel {
+/* Por defecto, muestra las tarjetas estáticas y oculta el carrusel */
+.static-cards {
+    display: block;
+}
+
+.mobile-carousel {
+    display: none;
+}
+
+/* Media Query: Aplica estos estilos cuando el ancho de la pantalla es menor o igual a 1535px */
+@media (max-width: 1535px) {
+
+    /* Oculta las tarjetas estáticas */
+    .static-cards {
         display: none;
     }
 
-   
-}
-
-@media (max-width: 1535px) {
-    .carousel {
+    /* Muestra el carrusel */
+    .mobile-carousel {
         display: block;
-        margin: auto;
-        width: 70%;
-       
-    } 
-
-    .fourcards {
-        display: none;
-    }   }  */
+    }
+}

@@ -1,36 +1,56 @@
-.smartphone {
-    position: relative;
-    width: 250px;
-    height: 460px;
-    margin: auto;
-    border: 10px #000 solid;
-    border-top-width: 40px;
-    border-bottom-width: 35px;
-    border-radius: 20px;
-    background: #000;
-    margin-top: -10px;
+.container-smartphone {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
     
 }
 
-.container-smartphone {
+.iphone {
+    position: relative;
+
+    width: 250px;
+    height: 460px;
+    background-color: #000;
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.iphone:hover {
+    transform: translateY(-10px);
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+
+    overflow: hidden;
+    position: relative;
+}
+
+.iphone video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
 
 
-
-
-
-.smartphone:before {
-    content: '';
-    display: block;
-    width: 40px;
-    height: 5px;
+.notch {
     position: absolute;
-    top: -20px;
+    top: 20px;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background: #333;
-    border-radius: 10px;
-    z-index: 1;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 15px;
+    background: #000;
+    border-radius: 15px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

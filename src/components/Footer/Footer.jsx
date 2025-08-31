@@ -132,16 +132,12 @@ function Footer() {
               </Row>
             </Col>
             <Col className='text-right'>
-              <b>
-                <button
-                  className='btn btn-dark'
-                  id='scheduleButton'
-                  onClick={() =>
-                    window.open('https://azlistingmedia.portal.realestatemediahero.com/', '_blank')
-                  }>
-                  SCHEDULE NOW
-                </button>
-              </b>
+              <div
+                className='text-center p-3'
+                style={{fontSize: '8px'}}>
+                © Copyright 2025 Eighteen Percent Productions LLC dba AZ Listing Media. All Rights
+                Reserved.
+              </div>
             </Col>
           </Row>
         </Container>

@@ -3,9 +3,9 @@ import {useState} from 'react';
 import {Col, Row} from 'react-bootstrap';
 import Topbutton from '../components/Top/Topbutton';
 import {Link} from 'react-router-dom';
-import videography from '../assets/videos/2016 W Gloria Ln_V1.mp4';
+
 import floorplans from '../assets/photos/9637_E_Gold_Dust_Ave.jpg';
-import photoFondo from '../assets/photos/19312 W Puget Ave Website-3 3.jpg';
+import photoFondo from '../assets/photos/Twilight_28556 N 124th Dr-1.png';
 import photography from '../assets/photos/28556 N 124th Dr Website-1.jpg';
 import aerialtrial from '../assets/photos/aerialttrial.jpg';
 import aerialaddonone from '../assets/photos/1110_N_Gull_Haven_Court-144.jpg';
@@ -23,12 +23,6 @@ function Pricings() {
     aerialaddonone,
     aerialtrial,
   ];
-
-  const [activeTable, setActiveTable] = useState('table1');
-
-  const handleTableToggle = (tableId) => {
-    setActiveTable(tableId);
-  };
 
   return (
     <>
@@ -175,7 +169,7 @@ function Pricings() {
                     boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
                   }}>
                   <Link
-                    to='https://spiro.media/'
+                    to='https://azlistingmedia.portal.realestatemediahero.com/'
                     target='_blank'
                     style={{
                       textDecoration: 'none',
@@ -324,8 +318,7 @@ function Pricings() {
                   </tr>
                   <tr
                     style={{borderBottom: '1px solid gray'}}
-                    onClick={() => setCurrentImage(4)} // Update currentImage to 4 when clicked
-                  >
+                    onClick={() => setCurrentImage(4)}>
                     <td>
                       <h6 style={{cursor: 'grab'}}>AERIAL PHOTOGRAPHY</h6>
                     </td>
@@ -361,7 +354,7 @@ function Pricings() {
                     boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
                   }}>
                   <Link
-                    to='https://spiro.media/'
+                    to='https://azlistingmedia.portal.realestatemediahero.com/'
                     target='_blank'
                     style={{
                       textDecoration: 'none',
@@ -414,9 +407,7 @@ function Pricings() {
             </Row>
 
             <Row className='text-center mx-auto p-5'>
-              <Col
-                md={6}
-                style={{display: activeTable === 'table1' ? 'block' : 'none'}}>
+              <Col md={6}>
                 <table
                   className='table table-borderless'
                   style={{
@@ -487,7 +478,7 @@ function Pricings() {
                     boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
                   }}>
                   <Link
-                    to='https://spiro.media/'
+                    to='https://azlistingmedia.portal.realestatemediahero.com/'
                     target='_blank'
                     style={{
                       textDecoration: 'none',
@@ -613,7 +604,7 @@ function Pricings() {
                     boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
                   }}>
                   <Link
-                    to='https://spiro.media/'
+                    to='https://azlistingmedia.portal.realestatemediahero.com/'
                     target='_blank'
                     style={{
                       textDecoration: 'none',
@@ -755,7 +746,7 @@ function Pricings() {
                     boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
                   }}>
                   <Link
-                    to='https://spiro.media/'
+                    to='https://azlistingmedia.portal.realestatemediahero.com/'
                     target='_blank'
                     style={{
                       textDecoration: 'none',
@@ -871,7 +862,7 @@ function Pricings() {
                     boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
                   }}>
                   <Link
-                    to='https://spiro.media/'
+                    to='https://azlistingmedia.portal.realestatemediahero.com/'
                     target='_blank'
                     style={{
                       textDecoration: 'none',
@@ -1011,7 +1002,7 @@ function Pricings() {
                     boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
                   }}>
                   <Link
-                    to='https://spiro.media/'
+                    to='https://azlistingmedia.portal.realestatemediahero.com/'
                     target='_blank'
                     style={{
                       textDecoration: 'none',

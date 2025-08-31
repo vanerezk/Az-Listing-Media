@@ -2,4 +2,18 @@
     mask-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0),rgba(255, 255, 255,0.1), rgb(255, 255, 255), rgba(255, 255, 255, 1));
     mask-size: 100% 100%;
     mask-position: 0% 0%;
-    mask-repeat: no-repeat; }
+    mask-repeat: no-repeat; 
+    }
+
+
+
+
+@media screen and (max-width: 768px) {
+    #bgimg {
+        display: none !important;
+    }
+}
+
+
+
+

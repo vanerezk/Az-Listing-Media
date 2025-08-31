@@ -47,10 +47,10 @@ function Contact() {
                 marginBottom: '40px',
               }}>
               <p>
-                <b>Phone:</b> 623-640-8909
+                <b>Phone:</b> 623-252-0066
               </p>
               <p>
-                <b>Email:</b> azlistingmedia@gmail.com
+                <b>Email:</b> info@azlistingmedia.com
               </p>
             </div>{' '}
             <div style={{padding: '50px ', marginTop: '50px'}}>
@@ -62,7 +62,7 @@ function Contact() {
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
                 }}>
                 <Link
-                  to='https://spiro.media/'
+                  to='https://azlistingmedia.portal.realestatemediahero.com/'
                   target='_blank'
                   style={{
                     textDecoration: 'none',
