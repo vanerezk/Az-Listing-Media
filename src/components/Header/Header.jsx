@@ -79,7 +79,6 @@ function Header() {
               target='_blank'
               className='mx-4'>
               <svg
-                style={{marginLeft: '10px'}}
                 xmlns='http://www.w3.org/2000/svg'
                 width='20'
                 height='20'
@@ -90,7 +89,7 @@ function Header() {
             </a>
             <a
               href='https://www.instagram.com/azlistingmedia'
-              className='mx-4'
+              style={{marginRight: '20px'}}
               target='_blank'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'

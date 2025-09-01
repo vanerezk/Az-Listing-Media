@@ -55,9 +55,22 @@ function Footer() {
             </Col>
 
             <Col>
-              <Row className='justify-content-center'>
+              <Col className='text-right'>
+                <div
+                  className='text-center'
+                  style={{fontSize: '10px'}}>
+                  © Copyright 2025 Eighteen Percent Productions LLC dba AZ Listing Media. All Rights
+                  Reserved.
+                </div>
+              </Col>
+            </Col>
+
+            <Col>
+              <Row
+                className='justify-content-end'
+                style={{marginRight: '10px'}}>
                 <button
-                  className='btn  '
+                  className='btn'
                   style={{
                     border: 'none',
                     padding: '10px',
@@ -121,23 +134,6 @@ function Footer() {
                   </a>
                 </button>
               </Row>
-            </Col>
-            <Col>
-              <Row className='d-flex justify-content-center'>
-                <img
-                  src={logofooter}
-                  alt=''
-                  style={{width: '100px'}}
-                />
-              </Row>
-            </Col>
-            <Col className='text-right'>
-              <div
-                className='text-center p-3'
-                style={{fontSize: '8px'}}>
-                © Copyright 2025 Eighteen Percent Productions LLC dba AZ Listing Media. All Rights
-                Reserved.
-              </div>
             </Col>
           </Row>
         </Container>

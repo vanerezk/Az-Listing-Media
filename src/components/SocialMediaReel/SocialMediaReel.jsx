@@ -21,7 +21,7 @@ const SocialMediaReel = () => {
             loop
             muted
             autoPlay
-            src='../../src/assets/videos/SocialMediaReel.mp4'
+            src='../../src/assets/videos/SocialMediaReel2.mp4'
           />
         </div>
       </div>
