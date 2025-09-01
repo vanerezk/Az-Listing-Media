@@ -111,7 +111,7 @@ function Portfolio() {
             />
           </Modal.Body>
         </Modal>
-        <div style={{padding: '50px ', marginTop: '50px'}}>
+        <div style={{padding: '50px ', marginTop: '10px'}}>
           <button
             className='btn btn-dark  '
             style={{

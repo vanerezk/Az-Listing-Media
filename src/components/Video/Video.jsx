@@ -106,7 +106,7 @@ function Video() {
             padding: '15px 35px',
           }}>
           <Link
-            to='https://spiro.media/'
+            to='https://azlistingmedia.portal.realestatemediahero.com/'
             target='_blank'
             style={{
               textDecoration: 'none',
