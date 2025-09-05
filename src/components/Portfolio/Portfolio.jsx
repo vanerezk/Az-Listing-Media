@@ -120,7 +120,7 @@ function Portfolio() {
               boxShadow: '0 8px 16px 0 rgba(0,0,0,0.1)',
             }}>
             <Link
-              to='https://spiro.media/'
+              to='/Portfolio'
               target='_blank'
               style={{
                 textDecoration: 'none',
