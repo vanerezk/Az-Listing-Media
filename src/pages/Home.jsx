@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Topbutton from '../components/Top/Topbutton';
 import Services from '../components/Services/Services';
 import Portfolio from '../components/Portfolio/Portfolio';
-// import Listings from '../components/Listings/Listings';
+
 import Aboutmain from '../components/Aboutmain/Aboutmain';
 
 import 'react-multi-carousel/lib/styles.css';

@@ -129,7 +129,7 @@ function Header() {
           <Nav navbarScroll>
             <b>
               <Link
-                to='/Pricings'
+                to='/pricings'
                 reloadDocument
                 style={{marginRight: '25px', fontSize: '17px', color: 'black'}}
                 className='nav-link'
@@ -141,11 +141,23 @@ function Header() {
               <Link
                 style={{marginRight: '25px', fontSize: '17px', color: 'black'}}
                 reloadDocument
-                to='/portfolio'
+                to='portfolio'
                 className='nav-link'
                 id='btn'>
                 {' '}
                 PORTFOLIO
+              </Link>
+            </b>
+            <b>
+              <Link
+                style={{marginRight: '25px', fontSize: '17px', color: 'black'}}
+                reloadDocument
+                to='https://theluxuryblock.com'
+                target='_blank'
+                className='nav-link'
+                id='btn'>
+                {' '}
+                LUXURY
               </Link>
             </b>
 

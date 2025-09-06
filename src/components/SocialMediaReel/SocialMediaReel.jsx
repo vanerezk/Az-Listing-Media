@@ -3,7 +3,9 @@ import './SocialMediaReel.css';
 const SocialMediaReel = () => {
   return (
     <div className='container-smartphone'>
-      <div className='iphone'>
+      <div
+        className='iphone'
+        style={{marginRight: '50px'}}>
         <div className='notch'></div>
         <div className='content'>
           <video
@@ -14,7 +16,9 @@ const SocialMediaReel = () => {
           />
         </div>
       </div>
-      <div className='iphone'>
+      <div
+        className='iphonetwo'
+        style={{marginLeft: '50px', marginRight: '100px'}}>
         <div className='notch'></div>
         <div className='content'>
           <video
