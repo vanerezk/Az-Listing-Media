@@ -148,7 +148,7 @@ function Header() {
                 PORTFOLIO
               </Link>
             </b>
-            <b>
+            {/* <b>
               <Link
                 style={{marginRight: '25px', fontSize: '17px', color: 'black'}}
                 reloadDocument
@@ -159,7 +159,7 @@ function Header() {
                 {' '}
                 LUXURY
               </Link>
-            </b>
+            </b> */}
 
             <b>
               <Link
