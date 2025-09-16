@@ -4,7 +4,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Header.css';
-
 import logo from '../../assets/photos/AZ_Listing_Media.png';
 
 function Header() {

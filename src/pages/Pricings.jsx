@@ -12,7 +12,7 @@ import aerialaddonone from '../assets/photos/1110_N_Gull_Haven_Court-144.jpg';
 import upgradedronephoto from '../assets/photos/42 E Interlacken Dr-36.jpg';
 import BeforeAfter from '../components/BeforeAfter/BeforeAfter';
 import upgradedtwilightphoto from '../assets/photos/49903 N 26th Ave_Virtual Twilight-1.jpg';
-import SocialMediaReel from '../components/SocialMediaReel/SocialMediaReel';
+import '../components/SocialMediaReel/SocialMediaReel.css';
 
 function Pricings() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -490,7 +490,34 @@ function Pricings() {
               </Col>
 
               <Col md={6}>
-                <SocialMediaReel />
+                <div className='container-smartphone'>
+                  <div
+                    className='iphone'
+                    style={{marginRight: '50px'}}>
+                    <div className='notch'></div>
+                    <div className='content'>
+                      <video
+                        loop
+                        muted
+                        autoPlay
+                        src='../../src/assets/videos/SocialMediaReel.mp4'
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className='iphonetwo'
+                    style={{marginLeft: '50px', marginRight: '100px'}}>
+                    <div className='notch'></div>
+                    <div className='content'>
+                      <video
+                        loop
+                        muted
+                        autoPlay
+                        src='../../src/assets/videos/SocialMediaReel2.mp4'
+                      />
+                    </div>
+                  </div>
+                </div>
               </Col>
             </Row>
           </Card.Body>
