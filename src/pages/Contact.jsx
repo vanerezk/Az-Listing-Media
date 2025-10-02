@@ -1,3 +1,4 @@
+import contactbg from '../../src/assets/photos/contactbg.jpg';
 import {Link} from 'react-router-dom';
 import Faq from '../components/Faq/Faq';
 
@@ -9,12 +10,13 @@ function Contact() {
       <div className='contactbg'>
         <img
           className='contactbgimg w-100  position-absolute top-0 start-0'
-          src='../../src/assets/photos/contactbg.jpg'
+          src={contactbg}
           alt='bgimg'
           id='bgimg'
           style={{zIndex: '-1', height: '100%', objectFit: 'cover'}}
         />
       </div>
+
       <div
         className=' text-center'
         style={{marginTop: '250px', marginBottom: '100px'}}>

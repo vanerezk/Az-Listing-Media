@@ -3,7 +3,8 @@ import {useState} from 'react';
 import {Col, Row} from 'react-bootstrap';
 import Topbutton from '../components/Top/Topbutton';
 import {Link} from 'react-router-dom';
-
+import reelone from '../assets/videos/SocialMediaReel.mp4';
+import reeltwo from '../assets/videos/SocialMediaReel2.mp4';
 import floorplans from '../assets/photos/9637_E_Gold_Dust_Ave.jpg';
 import photoFondo from '../assets/photos/Twilight_28556 N 124th Dr-1.png';
 import photography from '../assets/photos/28556 N 124th Dr Website-1.jpg';
@@ -500,7 +501,7 @@ function Pricings() {
                         loop
                         muted
                         autoPlay
-                        src='../../src/assets/videos/SocialMediaReel.mp4'
+                        src={reelone}
                       />
                     </div>
                   </div>
@@ -513,7 +514,7 @@ function Pricings() {
                         loop
                         muted
                         autoPlay
-                        src='../../src/assets/videos/SocialMediaReel2.mp4'
+                        src={reeltwo}
                       />
                     </div>
                   </div>
